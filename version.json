@@ -1,9 +1,9 @@
 {
   "version": "1.0.42",
   "url": "https://pan.baidu.com/s/14OInqWfrM5LfvasEfLIMAQ?pwd=4v6z",
-  "sha256": "c94c4d7e2eba64b354d034018ac63820a480e9c914d70396fbe26883c2f63603",
-  "size": 213505900,
-  "changelog": "1.0.42（2026-11-09）热点广场独立栏目\n\n· 左侧新增「🔥 热点广场」独立入口（原来嵌在「一键标题」页面里）\n· 热点广场包含：10w+ 爆文推荐栏 + 公众号平台榜单（阅读增长/综合实力/头条增长）\n· 一键标题保留：赛道+关键词搜索、灵感模式、搜索结果\n· WebView2 缓存问题已修：start_user.bat 每次启动自动清缓存，更新后不再看到旧页面\n\n下载：百度网盘「AI项目 / 万物写作工坊」文件夹（提取码 4v6z）。",
+  "sha256": "3a70698966ef15547825c02dd619bd0d8fd7d8d7ed8494b9a04954f5f8fe4aea",
+  "size": 213505184,
+  "changelog": "1.0.42（2026-11-09）热点广场独立栏目（修复版）\n\n· 左侧新增「🔥 热点广场」入口——10w+ 爆文 + 公众号平台榜单（阅读增长/综合实力/头条增长）\n· 一键标题保留搜索+灵感模式（爆文/榜单搬到热点广场）\n· WebView2 缓存自动清理（start_user.bat 每次启动清旧缓存，更新后不再看到旧页面）\n\n下载：百度网盘「AI项目 / 万物写作工坊」文件夹（提取码 4v6z）。",
   "name": "公众号AI工作台",
   "manual_url": "https://pan.baidu.com/netdisk/share?surl=4OInqWfrM5LfvasEfLIMAQ&pwd=4v6z",
   "pwd": "4v6z",
