@@ -1776,7 +1776,10 @@ class Handler(SimpleHTTPRequestHandler):
             elif "?v=" in self.path:
                 self.send_header("Cache-Control", "public, max-age=31536000")
             else:
-                self.send_header("Cache-Control", "public, max-age=300")
+                # 🔴 2026-11-27：网页端上线自有域名后，静态资源一律 no-cache（走 304）。
+                #    原来 max-age=300 会让「已修好的 bug」在用户浏览器里继续存在 5 分钟，
+                #    验收时极难分辨是没修好还是缓存没刷。1KB 级的 js 走 304 成本可忽略。
+                self.send_header("Cache-Control", "no-cache")
             self.end_headers()
             if getattr(self, "_head_only", False):
                 return                       # HEAD 只要头，写 body 会让下游 500
