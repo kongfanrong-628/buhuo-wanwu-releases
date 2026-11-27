@@ -838,6 +838,8 @@
     var css = document.createElement("style");
     css.id = "wb-contact-css";
     css.textContent =
+      /* 高于登录遮罩 9500：未登录访客从遮罩内点「联系我」也能看到弹窗 */
+      '#contact-modal{z-index:9999}' +
       '#contact-modal .bh-modal-card{max-width:430px;text-align:center}' +
       '#contact-modal .ct-qr{width:210px;height:210px;object-fit:contain;border-radius:12px;' +
       'border:1px solid var(--hairline,#e3e3e3);background:#fff;display:block;margin:6px auto 14px}' +
@@ -901,6 +903,29 @@
       // rail 尚未就绪时退化：DOMContentLoaded 再试一次
       document.addEventListener("DOMContentLoaded", injectBtn);
     }
+
+    // 5) 登录遮罩（z-index 9500）会盖住整个侧栏，未登录访客点不到「联系我」。
+    //    联系方式本就是公开信息，所以在遮罩内也放一个入口。
+    function injectMaskEntry() {
+      var mask = document.getElementById("wbauth-mask");
+      if (!mask || mask.querySelector(".wb-contact-mask-btn")) return;
+      var card = mask.querySelector(".bh-modal-card") || mask.firstElementChild || mask;
+      var a = document.createElement("div");
+      a.className = "wb-contact-mask-btn";
+      a.style.cssText = "margin-top:12px;text-align:center;font-size:.82rem;color:#2b3a22;" +
+        "cursor:pointer;text-decoration:underline;font-weight:700";
+      a.textContent = "📮 联系我 / 加微信";
+      a.addEventListener("click", function (e) {
+        e.stopPropagation();
+        window.openContact && window.openContact();
+      });
+      card.appendChild(a);
+    }
+    injectMaskEntry();
+    document.addEventListener("DOMContentLoaded", injectMaskEntry);
+    try {
+      new MutationObserver(injectMaskEntry).observe(document.body, { childList: true, subtree: true });
+    } catch (e) {}
   }
 
   /* 🔴 2026-11-27 胜元拍板 BUG4：网页端排版太紧凑，「尤其是输入框」。
