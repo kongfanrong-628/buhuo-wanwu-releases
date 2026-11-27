@@ -112,6 +112,22 @@
   ];
 
   function stubFor(path) {
+    /* 🔴 2026-11-27：这两个必须是「按真实登录态」动态返回，不能用静态 stub。
+       写死 logged_in:true 会让前端永远以为已登录 —— 写作区顶部不提示登录、
+       热点广场也不提示，用户只看到「初始化库存读取失败」这种误导文案。 */
+    if (path === "/api/auth/access") {
+      var a = authLoad();
+      return {
+        allowed: true, need_login: !a,
+        cloud: { logged_in: !!a, username: a ? (a.u || "网页版用户") : "" },
+        license: { is_activated: true, tier: "web" },
+        reason: "", message: a ? "" : "登录后可同步云端热点库存"
+      };
+    }
+    if (path === "/api/cloud/status") {
+      var b = authLoad();
+      return { logged_in: !!b, username: b ? (b.u || "网页版用户") : "", membership: {} };
+    }
     if (STUB[path]) return STUB[path];
     for (var i = 0; i < STUB_PREFIX.length; i++) {
       if (path.indexOf(STUB_PREFIX[i]) === 0) {
@@ -223,6 +239,15 @@
       var body = {};
       try { body = JSON.parse((init && init.body) || "{}"); } catch (e) {}
       return window.WBGen.generate(body).then(function (r) { return jsonResp(r); });
+    }
+
+    // 模型预设：网页端自己实现（清单在 localStorage，Key 进云端保险箱）
+    // 🔴 必须排在 STUB_PREFIX 的 /api/presets/ 之前，否则会被兜底成空清单
+    if (path.indexOf("/api/presets/writing/") === 0) {
+      var pact = path.slice("/api/presets/writing/".length);
+      var pbd = {};
+      try { pbd = JSON.parse((init && init.body) || "{}"); } catch (e) {}
+      return presetsHandle(pact, pbd).then(function (o) { return jsonResp(o); });
     }
 
     // 未实现端点 → 友好空数据（同步返回 Promise，不打扰后端）
@@ -354,7 +379,21 @@
     "font-size:14px;font-weight:700;cursor:pointer}" +
     "#wbauth-go:disabled{opacity:.6;cursor:default}" +
     "#wbauth-later{margin-top:10px;text-align:center;font-size:12px;color:#8a9681;cursor:pointer}" +
-    "#wbauth-later:hover{color:#4a5a3e}";
+    "#wbauth-later:hover{color:#4a5a3e}" +
+    "#wbauth-card .wbauth-tabs{display:flex;gap:20px;margin:0 0 14px;font-size:15px;font-weight:700;color:#b6c0ad}" +
+    "#wbauth-card .wbauth-tabs span{cursor:pointer;padding-bottom:6px;border-bottom:2px solid transparent}" +
+    "#wbauth-card .wbauth-tabs span.on{color:#1b2416;border-bottom-color:#C8FF00}" +
+    "#wbauth-card .wbauth-row{display:flex;gap:8px;align-items:center}" +
+    "#wbauth-card .wbauth-row input{flex:1;margin-bottom:10px}" +
+    "#wbauth-card .wbauth-mini{white-space:nowrap;height:38px;padding:0 12px;border:1px solid #dde4d6;" +
+    "border-radius:9px;background:#fff;font-size:12px;font-weight:600;color:#3d4a33;cursor:pointer;" +
+    "font-family:inherit;margin-bottom:10px}" +
+    "#wbauth-card .wbauth-mini:disabled{opacity:.55;cursor:default}" +
+    "#wbauth-r-go{width:100%;height:40px;border:0;border-radius:10px;background:#C8FF00;color:#12210a;" +
+    "font-size:14px;font-weight:700;cursor:pointer;font-family:inherit}" +
+    "#wbauth-r-go:disabled{opacity:.6;cursor:default}" +
+    "#wbauth-r-err{min-height:16px;font-size:12px;color:#c0392b;margin:0 0 6px}" +
+    "#wbauth-card .sub b{color:#1b2416}";
 
   function authUi() {
     var st = document.createElement("style");
@@ -368,12 +407,28 @@
     mask.id = "wbauth-mask";
     mask.innerHTML =
       '<div id="wbauth-card">' +
-      "<h3>登录会员账号</h3>" +
+      '<div class="wbauth-tabs">' +
+      '<span data-tab="login" class="on">登录</span>' +
+      '<span data-tab="reg">注册</span>' +
+      "</div>" +
+      '<div class="wbauth-f" data-f="login">' +
       '<p class="sub">登录后同步云端热点库存、按积分生图；写作和配图填自己的 Key 不用登录。</p>' +
       '<input id="wbauth-u" type="text" placeholder="邮箱 / 手机号" autocomplete="username">' +
       '<input id="wbauth-p" type="password" placeholder="密码" autocomplete="current-password">' +
       '<div id="wbauth-err"></div>' +
       '<button id="wbauth-go">登录</button>' +
+      "</div>" +
+      '<div class="wbauth-f" data-f="reg" style="display:none">' +
+      '<p class="sub">新用户注册即开通 <b>24 小时体验</b>，到账 <b>10 积分</b>（生图 3 分/张，可出 3 张）。</p>' +
+      '<input id="wbauth-r-id" type="text" placeholder="邮箱 / 手机号" autocomplete="username">' +
+      '<div class="wbauth-row">' +
+      '<input id="wbauth-r-code" type="text" placeholder="验证码" inputmode="numeric" autocomplete="one-time-code">' +
+      '<button id="wbauth-r-send" class="wbauth-mini" type="button">获取验证码</button>' +
+      "</div>" +
+      '<input id="wbauth-r-pwd" type="password" placeholder="设置密码（至少 6 位）" autocomplete="new-password">' +
+      '<div id="wbauth-r-err"></div>' +
+      '<button id="wbauth-r-go" type="button">注册并开通体验</button>' +
+      "</div>" +
       '<div id="wbauth-later">先不用，稍后再说</div>' +
       "</div>";
     document.body.appendChild(pill);
@@ -383,6 +438,112 @@
     var p = mask.querySelector("#wbauth-p");
     var err = mask.querySelector("#wbauth-err");
     var go = mask.querySelector("#wbauth-go");
+    // ---- 注册 tab ----
+    var rId = mask.querySelector("#wbauth-r-id");
+    var rCode = mask.querySelector("#wbauth-r-code");
+    var rPwd = mask.querySelector("#wbauth-r-pwd");
+    var rSend = mask.querySelector("#wbauth-r-send");
+    var rGo = mask.querySelector("#wbauth-r-go");
+    var rErr = mask.querySelector("#wbauth-r-err");
+    var regVid = "";
+
+    /* 注册三步走（云端强制）：发验证码 → 换 verification_token → 建号。
+       建号 succeeds 后服务端顺手调 trial_auto_open，24 小时体验 + 10 积分自动到账。 */
+    function sendOtp() {
+      var id = (rId.value || "").trim();
+      if (!id) { rErr.textContent = "请先填邮箱或手机号"; return; }
+      rSend.disabled = true;
+      rSend.textContent = "发送中…";
+      rErr.textContent = "";
+      _fetch("/api/auth/send-otp", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ident: id })
+      }).then(function (r) { return r.json(); }).then(function (j) {
+        if (!j || !j.ok) {
+          rErr.textContent = (j && (j.message || j.error)) || "验证码没发出去";
+          rSend.disabled = false; rSend.textContent = "重新获取";
+          return;
+        }
+        if (j.is_user) {
+          rErr.textContent = "这个账号已经注册过了，切到「登录」直接登就行";
+          rSend.disabled = false; rSend.textContent = "获取验证码";
+          return;
+        }
+        regVid = j.verification_id;
+        var left = 60;
+        rSend.textContent = left + "s 后重发";
+        var t = setInterval(function () {
+          left -= 1;
+          if (left <= 0) { clearInterval(t); rSend.disabled = false; rSend.textContent = "重新获取"; return; }
+          rSend.textContent = left + "s 后重发";
+        }, 1000);
+        try { rCode.focus(); } catch (e) {}
+      }).catch(function () {
+        rErr.textContent = "网络异常，稍后再试";
+        rSend.disabled = false; rSend.textContent = "获取验证码";
+      });
+    }
+
+    function submitReg() {
+      var id = (rId.value || "").trim();
+      var code = (rCode.value || "").trim();
+      var pwd = rPwd.value || "";
+      if (!id || !code || !pwd) { rErr.textContent = "账号、验证码、密码都要填"; return; }
+      if (pwd.length < 6) { rErr.textContent = "密码至少 6 位"; return; }
+      if (!regVid) { rErr.textContent = "请先点「获取验证码」"; return; }
+      rGo.disabled = true;
+      rGo.textContent = "注册中…";
+      rErr.textContent = "";
+      _fetch("/api/auth/verify-otp", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ verification_id: regVid, code: code })
+      }).then(function (r) { return r.json(); }).then(function (v) {
+        if (!v || !v.ok) {
+          rErr.textContent = (v && (v.message || v.error)) || "验证码不对";
+          rGo.disabled = false; rGo.textContent = "注册并开通体验";
+          return null;
+        }
+        return _fetch("/api/auth/signup", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ ident: id, password: pwd, verification_token: v.verification_token })
+        }).then(function (r) { return r.json(); }).then(function (s) {
+          if (!s || !s.ok) {
+            rErr.textContent = (s && (s.message || s.error)) || "注册没成功";
+            rGo.disabled = false; rGo.textContent = "注册并开通体验";
+            return;
+          }
+          try {
+            localStorage.setItem(AUTH_KEY, JSON.stringify({
+              t: s.token, e: Number(s.exp) || 0, u: s.username || id
+            }));
+          } catch (e) {}
+          var tr = s.trial || {};
+          rGo.textContent = (tr && tr.granted)
+            ? "✅ 已到账 " + tr.granted + " 积分，正在进入…"
+            : "✅ 注册成功，正在进入…";
+          setTimeout(function () { location.reload(); }, 1000);
+        });
+      }).catch(function () {
+        rErr.textContent = "网络异常，稍后再试";
+        rGo.disabled = false; rGo.textContent = "注册并开通体验";
+      });
+    }
+
+    function switchTab(name) {
+      var tabs = mask.querySelectorAll(".wbauth-tabs span");
+      for (var i = 0; i < tabs.length; i++) {
+        tabs[i].className = (tabs[i].getAttribute("data-tab") === name) ? "on" : "";
+      }
+      var fs = mask.querySelectorAll(".wbauth-f");
+      for (var k = 0; k < fs.length; k++) {
+        fs[k].style.display = (fs[k].getAttribute("data-f") === name) ? "" : "none";
+      }
+      err.textContent = ""; rErr.textContent = "";
+      setTimeout(function () { (name === "reg" ? rId : u).focus(); }, 30);
+    }
 
     function paint() {
       var a = authLoad();
@@ -449,6 +610,16 @@
       open_();
     });
     go.addEventListener("click", submit);
+    rSend.addEventListener("click", sendOtp);
+    rGo.addEventListener("click", submitReg);
+    rCode.addEventListener("keydown", function (e) { if (e.key === "Enter") rPwd.focus(); });
+    rPwd.addEventListener("keydown", function (e) { if (e.key === "Enter") submitReg(); });
+    var tabEls = mask.querySelectorAll(".wbauth-tabs span");
+    for (var ti = 0; ti < tabEls.length; ti++) {
+      tabEls[ti].addEventListener("click", function () {
+        switchTab(this.getAttribute("data-tab"));
+      });
+    }
     p.addEventListener("keydown", function (e) { if (e.key === "Enter") submit(); });
     u.addEventListener("keydown", function (e) { if (e.key === "Enter") p.focus(); });
     mask.addEventListener("click", function (e) { if (e.target === mask) close_(); });
@@ -475,6 +646,181 @@
     authUi();
   }
 
+  // ---------- 5c) 生图结果桥接（2026-11-27）----------
+  /* 桌面端由 Python 后端把图存盘，前端用 /images/<fn> 取；网页端 wbgen 直连 KG API，
+     拿到的是 dataURL，index.html 渲染时仍写 /images/<fn> → 全部 404，
+     用户看到的就是「生成了但图是空的、下载也没反应」。这里补三件事：
+       ① 出图后把 dataURL POST 到 /api/img-cache 落盘（刷新后还在）
+       ② 页面里 /images/ 开头的 src 改写成 /imgcache/
+       ③ 接管「⬇下载」，用 <a download> 直接存到本机                        */
+  function initImgBridge() {
+    function rewrite() {
+      var list = document.querySelectorAll('img[src^="/images/"]');
+      for (var i = 0; i < list.length; i++) {
+        var s = list[i].getAttribute("src") || "";
+        var name = s.slice("/images/".length).split("?")[0];
+        if (!name) continue;
+        list[i].setAttribute("src", "/imgcache/" + name);
+      }
+    }
+    rewrite();
+    var pending = false;
+    try {
+      new MutationObserver(function () {
+        if (pending) return;
+        pending = true;
+        setTimeout(function () { pending = false; rewrite(); }, 80);
+      }).observe(document.documentElement, { childList: true, subtree: true });
+    } catch (e) {}
+
+    document.addEventListener("click", function (ev) {
+      var btn = ev.target && ev.target.closest
+        ? ev.target.closest('[data-action="imgCardDownload"]') : null;
+      if (!btn) return;
+      var idx = parseInt(btn.getAttribute("data-idx") || "-1", 10);
+      var st = (typeof State !== "undefined" && State) ? State : window.State;
+      var rec = st && st.generatedImages ? st.generatedImages[idx] : null;
+      if (!rec || !rec.filename) return;
+      ev.preventDefault();
+      ev.stopPropagation();
+      var a = document.createElement("a");
+      a.href = "/imgcache/" + encodeURIComponent(rec.filename);
+      a.download = rec.filename;
+      a.rel = "noopener";
+      document.body.appendChild(a);
+      a.click();
+      setTimeout(function () { if (a.parentNode) a.parentNode.removeChild(a); }, 300);
+    }, true);
+  }
+
+  // ---------- 5d) 模型预设 + Key（网页端：清单在本地，Key 进云端保险箱）----------
+  /* 桌面端预设走 /api/presets/writing/*（本机 JSON 文件），网页端这些端点被 stub 成空成功
+     → 下拉是空的、Key「保存」看着成功但没存下 → 写作必然 need_key。
+     网页端换个存法：
+       · 预设清单（名称/BaseURL/模型名）存 localStorage（不进云端，无敏感信息）
+       · 真 Key 进云端保险箱 /api/byok/save 的 writing 槽（AES-256-GCM，服务端代调时才取明文）
+     因此网页端要能 AI 写作，必须「登录 + 在设置里填一次 Key」。 */
+  var PRESET_LS = "buhuo_web_presets_v1";
+  var BUILTIN_PRESETS = [
+    { id: "deepseek-flash", name: "Deepseek", model: "deepseek-chat",
+      base_url: "https://api.deepseek.com/v1", builtin: true, is_default: true },
+    { id: "qwen-plus", name: "通义千问", model: "qwen-plus",
+      base_url: "https://dashscope.aliyuncs.com/compatible-mode/v1", builtin: true },
+    { id: "kimi", name: "Kimi", model: "moonshot-v1-8k",
+      base_url: "https://api.moonshot.cn/v1", builtin: true },
+    { id: "glm", name: "智谱 GLM", model: "glm-4-plus",
+      base_url: "https://open.bigmodel.cn/api/paas/v4", builtin: true },
+    { id: "doubao", name: "豆包", model: "doubao-pro-32k",
+      base_url: "https://ark.cn-beijing.volces.com/api/v3", builtin: true }
+  ];
+
+  function presetMine() {
+    try { return JSON.parse(localStorage.getItem(PRESET_LS) || "[]") || []; } catch (e) { return []; }
+  }
+  function presetAll() { return BUILTIN_PRESETS.concat(presetMine()); }
+  function presetFind(id) {
+    var all = presetAll();
+    for (var i = 0; i < all.length; i++) if (all[i].id === id) return all[i];
+    return null;
+  }
+  function vaultCall(path, payload) {
+    var tok = window.__wbToken();
+    if (!tok) return Promise.resolve({ ok: false, error: "NOT_SIGNED_IN", message: "先登录" });
+    return _fetch(path, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "x-user-token": tok },
+      body: JSON.stringify(payload || {})
+    }).then(function (r) { return r.json(); }).catch(function () {
+      return { ok: false, error: "NET" };
+    });
+  }
+
+  function presetsHandle(act, bd) {
+    if (act === "list") {
+      return vaultCall("/api/byok/list", {}).then(function (j) {
+        var w = null;
+        var keys = (j && j.keys) || [];
+        for (var i = 0; i < keys.length; i++) if (keys[i].slot === "writing") w = keys[i];
+        var presets = presetAll().map(function (p) {
+          return {
+            id: p.id, name: p.name, model: p.model, base_url: p.base_url,
+            builtin: !!p.builtin, is_default: !!p.is_default,
+            has_key: !!(w && w.key_tail),
+            key_preview: w && w.key_tail ? ("sk-****" + String(w.key_tail).slice(-4)) : ""
+          };
+        });
+        return { success: true, presets: presets, signed_in: !!window.__wbToken() };
+      });
+    }
+    if (act === "add") {
+      var mine = presetMine();
+      var nid = bd.id || ("web_" + Date.now());
+      mine.push({
+        id: nid, name: bd.name || "自定义模型",
+        base_url: bd.base_url || "", model: bd.model || ""
+      });
+      try { localStorage.setItem(PRESET_LS, JSON.stringify(mine)); } catch (e) {}
+      if (!bd.api_key) return Promise.resolve({ success: true, id: nid });
+      return vaultCall("/api/byok/save", {
+        slot: "writing", key: bd.api_key, name: bd.name || "",
+        base_url: bd.base_url || "", model: bd.model || ""
+      }).then(function (r) {
+        return r && r.ok ? { success: true, id: nid }
+          : { success: false, error: (r && r.message) || "Key 没存进云端" };
+      });
+    }
+    if (act === "update") {
+      var p = presetFind(bd.id);
+      var base = bd.base_url || (p && p.base_url) || "";
+      var model = bd.model || (p && p.model) || "";
+      var mine2 = presetMine();
+      var hit = false;
+      for (var k = 0; k < mine2.length; k++) {
+        if (mine2[k].id === bd.id) {
+          hit = true;
+          if (bd.name) mine2[k].name = bd.name;
+          if (bd.base_url) mine2[k].base_url = bd.base_url;
+          if (bd.model) mine2[k].model = bd.model;
+        }
+      }
+      if (hit) { try { localStorage.setItem(PRESET_LS, JSON.stringify(mine2)); } catch (e) {} }
+      if (!bd.api_key) return Promise.resolve({ success: true });
+      return vaultCall("/api/byok/save", {
+        slot: "writing", key: bd.api_key,
+        name: (bd.name || (p && p.name) || ""), base_url: base, model: model
+      }).then(function (r) {
+        return r && r.ok ? { success: true }
+          : { success: false, error: (r && r.message) || "Key 没存进云端" };
+      });
+    }
+    if (act === "delete") {
+      var left = presetMine().filter(function (x) { return x.id !== bd.id; });
+      try { localStorage.setItem(PRESET_LS, JSON.stringify(left)); } catch (e) {}
+      return Promise.resolve({ success: true });
+    }
+    if (act === "test") {
+      var p2 = presetFind(bd.id);
+      return vaultCall("/api/byok/test", {
+        base_url: bd.base_url || (p2 && p2.base_url) || "",
+        model: bd.model || (p2 && p2.model) || "",
+        api_key: bd.api_key || ""
+      }).then(function (j) {
+        if (j && j.ok) return { success: true, message: j.message || "连通" };
+        return { success: false, error: (j && (j.message || j.error)) || "测试失败" };
+      });
+    }
+    return Promise.resolve({ success: false, error: "unknown_action" });
+  }
+
+  function initWebBridges() {
+    initImgBridge();
+  }
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initWebBridges);
+  } else {
+    initWebBridges();
+  }
+
   window.__WB_ADAPTER__ = true;
 
   // ---------- 6) 强制隐藏（CSS !important，不受 JS 重渲染影响）----------
@@ -490,7 +836,10 @@
     '[data-module="comic-export"],[data-module="comic-ip"],[data-module="settings"]' +
     "{display:none !important}" +
     /* 板块切换器里的「漫画号」：网页端不做漫画（胜元 2026-11-26 拍板） */
-    '#ws-sector [data-sector="comic"],#nav-comic,#rail [data-sector="comic"]{display:none !important}';
+    '#ws-sector [data-sector="comic"],#nav-comic,#rail [data-sector="comic"]{display:none !important}' +
+    /* 网页端没有本机磁盘：「打包 zip」「打开文件夹」两个按钮点了只会报错，直接不显示。
+       单张「⬇下载」由 initImgBridge 接管（<a download> 存到浏览器下载目录）。 */
+    '[data-action="imgCardZipAll"],[data-action="imgCardFolder"]{display:none !important}';
   var hs = document.createElement("style");
   hs.id = "wb-hide-css";
   hs.textContent = HIDE_CSS;

@@ -479,6 +479,145 @@ def _jwt_exp(tok):
     except Exception:  # noqa: BLE001
         return 0
 
+
+def _cloud_post(path, payload, token=None, timeout=25):
+    """向云端发 JSON POST，返回 (status, obj)。
+
+    🔴 为什么所有 auth 调用都要走服务端：云端按 **Origin 白名单** 校验客户端，
+       浏览器从自有域名（知识不惑.cn）直连一律 403 access_denied；服务端请求能过。
+    status=0 表示连不上（网络层），由调用方翻成「稍后再试」。
+    """
+    import urllib.request
+    import urllib.error
+    headers = {
+        "Content-Type": "application/json",
+        "x-wb-webapp-access-key": CLOUD_PUB_KEY,
+        "Origin": CLOUD_ENDPOINT,
+        "Referer": CLOUD_ENDPOINT + "/",
+    }
+    if token:
+        headers["Authorization"] = "Bearer " + token
+    data = json.dumps(payload or {}).encode("utf-8")
+    try:
+        req = urllib.request.Request(CLOUD_ENDPOINT + path, data=data,
+                                     headers=headers, method="POST")
+        with urllib.request.urlopen(req, timeout=timeout) as r:
+            return r.status, json.loads(r.read(200_000).decode("utf-8", "replace") or "{}")
+    except urllib.error.HTTPError as e:
+        raw = e.read(200_000).decode("utf-8", "replace")
+        try:
+            return e.code, json.loads(raw or "{}")
+        except Exception:  # noqa: BLE001
+            return e.code, {"error": raw[:200]}
+    except Exception as e:  # noqa: BLE001
+        return 0, {"error": "%s: %s" % (type(e).__name__, e)}
+
+
+# ---------------------------------------------------------------- 网页端生图缓存（2026-11-27）
+# 浏览器直连 KG API 拿到的图只有 dataURL，存在页面内存里 —— 一刷新就没了，
+# 而 State.generatedImages 还留在 localStorage，页面上就是一排裂图。
+# 桌面端由 Python 后端存盘，网页端没有这个环节，所以补一个：前端把 dataURL 传上来落盘，
+# 返回 /imgcache/<name>.png 这种可直接 <img src> 和 <a download> 的地址。
+IMG_CACHE_DIR = os.path.join(ROOT, "imgcache")
+
+
+def _img_cache_prune(keep=400):
+    """只留最近 keep 张，防止磁盘被生图撑爆（每张 1–4MB）。"""
+    try:
+        if not os.path.isdir(IMG_CACHE_DIR):
+            return
+        files = [os.path.join(IMG_CACHE_DIR, n) for n in os.listdir(IMG_CACHE_DIR)]
+        files = [p for p in files if os.path.isfile(p)]
+        if len(files) <= keep:
+            return
+        files.sort(key=lambda p: os.path.getmtime(p), reverse=True)
+        for p in files[keep:]:
+            try:
+                os.remove(p)
+            except Exception:  # noqa: BLE001
+                pass
+    except Exception:  # noqa: BLE001
+        pass
+
+
+def _probe_model(base, model, key):
+    """用一次最小 chat 请求探活文本模型。
+
+    🔴 三条硬规矩：
+      1. 只接受 https，且拒绝内网/回环地址 —— 这端点绝不能变成开放代理；
+      2. max_tokens 给 64，别给 1~32（部分模型对极小值直接 400，会误判成「模型名不对」）；
+      3. 只回人话 + HTTP 码，不回上游原始 body（里面有 key 片段的风险）。
+    """
+    base = (base or "").strip().rstrip("/")
+    model = (model or "").strip()
+    key = (key or "").strip()
+    if not base or not model or not key:
+        return {"ok": False, "error": "missing", "message": "Base URL、模型名、Key 三样都要有"}
+    if not base.lower().startswith("https://"):
+        return {"ok": False, "error": "bad_url", "message": "Base URL 必须是 https 开头"}
+    host = (urllib.parse.urlparse(base).hostname or "").lower()
+    bad = (not host or host == "localhost" or host.startswith("127.")
+           or host.startswith("10.") or host.startswith("192.168.")
+           or host.startswith("169.254."))
+    if bad:
+        return {"ok": False, "error": "bad_url", "message": "不允许测试内网地址"}
+    import urllib.request
+    import urllib.error
+    body = json.dumps({
+        "model": model,
+        "messages": [{"role": "user", "content": "只回复两个字：连通"}],
+        "max_tokens": 64,
+    }).encode("utf-8")
+    t0 = time.time()
+    try:
+        req = urllib.request.Request(
+            base + "/chat/completions", data=body, method="POST",
+            headers={"Content-Type": "application/json",
+                     "Authorization": "Bearer " + key})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            r.read(200_000)
+        return {"ok": True, "message": "连通（%.1f 秒）" % (time.time() - t0)}
+    except urllib.error.HTTPError as e:
+        raw = ""
+        try:
+            raw = e.read(4000).decode("utf-8", "replace").lower()
+        except Exception:  # noqa: BLE001
+            pass
+        if e.code == 401:
+            return {"ok": False, "error": "key", "message": "Key 无效或已过期（HTTP 401）"}
+        if e.code == 429:
+            return {"ok": False, "error": "rate", "message": "被限流了（HTTP 429），稍后再试"}
+        if e.code == 404:
+            if "model" in raw:
+                return {"ok": False, "error": "model", "message": "模型名不对（HTTP 404）"}
+            return {"ok": False, "error": "endpoint", "message": "接口地址不对，Base URL 一般以 /v1 结尾（HTTP 404）"}
+        if e.code == 400:
+            if "model" in raw:
+                return {"ok": False, "error": "model", "message": "模型名不对（HTTP 400）"}
+            return {"ok": False, "error": "bad_request", "message": "请求被拒（HTTP 400），多为 Base URL 或模型名不匹配"}
+        return {"ok": False, "error": "http", "message": "上游返回 HTTP %s" % e.code}
+    except Exception as e:  # noqa: BLE001
+        return {"ok": False, "error": "network",
+                "message": "连不上（%s），检查 Base URL 或网络" % type(e).__name__}
+
+
+def _otp_msg(status, obj):
+    """把云端验证码错误翻成用户能照着做的中文。"""
+    txt = str((obj or {}).get("error_description") or (obj or {}).get("message")
+              or (obj or {}).get("error") or "")
+    low = txt.lower()
+    if status == 0:
+        return "连不上云端，稍后再试"
+    if "blacklist" in low:
+        return "这个号码被运营商限制接收短信，换一个号码，或改用邮箱注册"
+    if "insufficient" in low or "balance" in low:
+        return "短信通道余额不足，请改用邮箱注册"
+    if "template" in low or "signature" in low:
+        return "短信模板异常，请改用邮箱注册"
+    if "too many" in low or "rate" in low or status == 429:
+        return "发送太频繁，等 1 分钟再试"
+    return txt[:120] or ("云端返回 HTTP %s" % status)
+
 # ---------------------------------------------------------------- 热点同步（2026-11-26 / #61）
 # 独立模块放 fetcher/，import 失败只让热点接口不可用，绝不带崩站点。
 _hotspot = {"ok": False, "mod": None, "err": ""}
@@ -1023,6 +1162,27 @@ class Handler(SimpleHTTPRequestHandler):
             utok = (self.headers.get("x-user-token") or "").strip()
             self._api_call(lambda: self._do_whoami(utok))
             return
+        if path == "/api/auth/send-otp":
+            b = self._body()
+            self._api_call(lambda: self._do_send_otp(
+                b.get("ident") or b.get("email") or b.get("phone") or ""))
+            return
+        if path == "/api/auth/verify-otp":
+            b = self._body()
+            self._api_call(lambda: self._do_verify_otp(
+                b.get("verification_id") or "", b.get("code") or ""))
+            return
+        if path == "/api/auth/signup":
+            b = self._body()
+            self._api_call(lambda: self._do_signup(
+                b.get("ident") or b.get("email") or b.get("phone") or "",
+                b.get("password") or "",
+                b.get("verification_token") or b.get("vt") or ""))
+            return
+        if path == "/api/img-cache":
+            b = self._body()
+            self._api_call(lambda: self._do_img_cache(b))
+            return
         # ------------------------------------------------ BYOK 密钥保险箱（#62）
         if path.startswith("/api/byok/"):
             action = path[len("/api/byok/"):]
@@ -1052,28 +1212,9 @@ class Handler(SimpleHTTPRequestHandler):
         """
         if not username or not password:
             return {"ok": False, "error": "empty", "message": "账号和密码都要填"}
-        payload = json.dumps({"username": username, "password": password}).encode("utf-8")
-        headers = {
-            "Content-Type": "application/json",
-            "x-wb-webapp-access-key": CLOUD_PUB_KEY,
-            # 与 _cloud_headers 一致：云端把「完全没带 Origin」的客户端也当 another client
-            "Origin": CLOUD_ENDPOINT,
-            "Referer": CLOUD_ENDPOINT + "/",
-        }
-        url = CLOUD_ENDPOINT + "/.cloud/auth/v1/signin"
-        import urllib.request
-        import urllib.error
-        try:
-            req = urllib.request.Request(url, data=payload, headers=headers, method="POST")
-            with urllib.request.urlopen(req, timeout=25) as r:
-                raw = r.read(200_000).decode("utf-8", "replace")
-            obj = json.loads(raw or "{}")
-        except urllib.error.HTTPError as e:
-            raw = e.read(200_000).decode("utf-8", "replace")
-            try:
-                obj = json.loads(raw or "{}")
-            except Exception:  # noqa: BLE001
-                obj = {"error": raw[:200]}
+        st, obj = _cloud_post("/.cloud/auth/v1/signin",
+                              {"username": username, "password": password})
+        if st >= 400 or not obj:
             code = str(obj.get("code") or obj.get("error_code") or "").upper()
             desc = str(obj.get("error_description") or obj.get("error") or "")
             if "INVALID_USERNAME" in code or "invalid_username" in desc:
@@ -1082,15 +1223,99 @@ class Handler(SimpleHTTPRequestHandler):
                 return {"ok": False, "error": "origin_blocked",
                         "message": "云端拒绝了本站来源，需要把本站域名加进会员站白名单"}
             return {"ok": False, "error": "upstream",
-                    "message": (desc or code or ("HTTP %s" % e.code))[:160]}
-        except Exception as e:  # noqa: BLE001
-            return {"ok": False, "error": "network",
-                    "message": "连不上云端（%s），稍后再试" % type(e).__name__}
+                    "message": (desc or code or ("云端 HTTP %s" % st))[:160]}
         tok = _pick_access_token(obj)
         if not tok:
             return {"ok": False, "error": "no_token",
                     "message": "云端没返回登录凭证，稍后再试"}
         return {"ok": True, "token": tok, "exp": _jwt_exp(tok), "username": username}
+
+    # ------------------------------------------------ 网页端注册（2026-11-27）
+    # 流程：send-otp（发验证码）→ verify-otp（换 verification_token）→ signup（建号）
+    #       → 服务端顺手调 trial_auto_open（24 小时体验 + 10 积分，云端幂等）。
+    # 为什么必须三步：云端 signUp 强制要 verification_token，不接受「邮箱+密码」直建。
+    def _do_send_otp(self, ident):
+        ident = (ident or "").strip()
+        if not ident:
+            return {"ok": False, "error": "empty", "message": "请填邮箱或手机号"}
+        is_mail = "@" in ident
+        payload = ({"email": ident, "usage": "email"} if is_mail
+                   else {"phone_number": ident, "target": "ANY"})
+        st, obj = _cloud_post("/.cloud/auth/v1/verification", payload)
+        if st >= 400 or not (obj or {}).get("verification_id"):
+            return {"ok": False, "error": "send_failed", "message": _otp_msg(st, obj)}
+        return {"ok": True, "verification_id": obj["verification_id"],
+                "kind": "email" if is_mail else "phone",
+                "is_user": bool(obj.get("is_user"))}
+
+    def _do_verify_otp(self, vid, code):
+        if not vid or not code:
+            return {"ok": False, "error": "empty", "message": "验证码没填全"}
+        st, obj = _cloud_post("/.cloud/auth/v1/verification/verify",
+                              {"verification_id": vid, "verification_code": str(code).strip()})
+        vt = (obj or {}).get("verification_token")
+        if st >= 400 or not vt:
+            return {"ok": False, "error": "bad_code", "message": "验证码不对或已过期"}
+        return {"ok": True, "verification_token": vt}
+
+    def _do_signup(self, ident, password, vt):
+        ident = (ident or "").strip()
+        if not ident or not password or not vt:
+            return {"ok": False, "error": "empty", "message": "账号、密码、验证码都要填"}
+        if len(password) < 6:
+            return {"ok": False, "error": "weak_password", "message": "密码至少 6 位"}
+        payload = {"verification_token": vt, "password": password}
+        if "@" in ident:
+            payload["email"] = ident
+        else:
+            payload["phone_number"] = ident
+        st, obj = _cloud_post("/.cloud/auth/v1/signup", payload)
+        tok = _pick_access_token(obj)
+        if st >= 400 or not tok:
+            desc = str((obj or {}).get("error_description") or (obj or {}).get("error") or "")
+            if "exist" in desc.lower():
+                return {"ok": False, "error": "exists",
+                        "message": "这个账号已经注册过了，直接登录就行"}
+            return {"ok": False, "error": "signup_failed",
+                    "message": (desc[:140] or "注册没成功，稍后再试")}
+        # 注册成功即开通 24 小时体验 + 10 积分（云端 trial_auto_open 幂等：
+        # 已领过邀请码 / 已是会员 → 返回 already，不重复发）
+        trial = {}
+        st2, t2 = _cloud_post("/.cloud/database/rest/rpc/trial_auto_open", {}, token=tok)
+        if st2 < 400 and isinstance(t2, dict):
+            trial = t2
+        return {"ok": True, "token": tok, "exp": _jwt_exp(tok),
+                "username": ident, "trial": trial}
+
+    def _do_img_cache(self, b):
+        """网页端生图结果落盘：前端把 dataURL 传上来，这里存成文件并回可访问地址。"""
+        raw = str(b.get("data") or "")
+        if raw.startswith("data:"):
+            raw = raw.split(",", 1)[-1]
+        if not raw:
+            return {"ok": False, "error": "empty", "message": "没收到图片数据"}
+        try:
+            blob = base64.b64decode(raw, validate=False)
+        except Exception:  # noqa: BLE001
+            return {"ok": False, "error": "bad_base64", "message": "图片数据损坏"}
+        if len(blob) < 1024:
+            return {"ok": False, "error": "too_small", "message": "图片数据不完整"}
+        if len(blob) > 25 * 1024 * 1024:
+            return {"ok": False, "error": "too_large", "message": "图片太大（超过 25MB）"}
+        name = os.path.basename(str(b.get("filename") or ""))
+        name = "".join(c for c in name if c.isalnum() or c in "._-")
+        if not name or name.startswith(".") or not name.lower().endswith(
+                (".png", ".jpg", ".jpeg", ".webp")):
+            name = "web_%d.png" % int(time.time() * 1000)
+        try:
+            os.makedirs(IMG_CACHE_DIR, exist_ok=True)
+            with open(os.path.join(IMG_CACHE_DIR, name), "wb") as f:
+                f.write(blob)
+        except Exception as e:  # noqa: BLE001
+            return {"ok": False, "error": "write_failed", "message": str(e)[:120]}
+        _img_cache_prune()
+        return {"ok": True, "url": "/imgcache/" + name,
+                "filename": name, "size": len(blob)}
 
     def _do_whoami(self, token):
         """用 token 换云端身份，用于验证登录态是否还有效（不扣分、不占额度）。"""
@@ -1179,6 +1404,18 @@ class Handler(SimpleHTTPRequestHandler):
             if action == "delete":
                 data, _err = bv.delete(token, uid, str(body.get("slot") or ""))
                 return {"ok": True, **data}
+            if action == "test":
+                # 探活：没传 key 就用保险箱里 writing 槽的（前端「测试」按钮只传 id 时走这里）
+                base = str(body.get("base_url") or "").strip()
+                model = str(body.get("model") or "").strip()
+                key = str(body.get("api_key") or "").strip()
+                if not key:
+                    data, _err = bv.reveal(token, uid, "writing")
+                    got = data or {}
+                    key = got.get("key") or ""
+                    base = base or (got.get("base_url") or "")
+                    model = model or (got.get("model") or "")
+                return _probe_model(base, model, key)
             return {"ok": False, "error": "BAD_ACTION", "http": 400,
                     "message": "未知的保险箱操作：" + str(action)[:40]}
         except bv.VaultError as e:
