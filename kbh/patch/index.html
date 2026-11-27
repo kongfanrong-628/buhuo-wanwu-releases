@@ -20063,7 +20063,13 @@ document.addEventListener('click', async function(e){
     const kind=f==='sticker'?'贴图':(f==='article'?'长文':'情报');
     const _rv=(x.clicksCount==null||String(x.clicksCount)==='')?'':String(x.clicksCount);
     const ph=cover?'<div class="pv-ph">封面载入中…</div>':'<div class="pv-ph">文字情报</div>';
-    const img=cover?'<img src="/api/feed/img?u='+encodeURIComponent(cover)+'&w=360" referrerpolicy="no-referrer" loading="lazy" alt="" onerror="this.style.display=\'none\'">':'';
+    /* 🔴 2026-11-27（胜元）：封面按抓取的真实尺寸显示——
+       ① 不再传 w=360 缩略，服务端回原图（PIL 缩放跳过，7 天磁盘缓存不受影响）；
+       ② 库存里带 coverW/coverH 时给 img 写 aspect-ratio:auto W/H 占位，
+          图片懒加载落地前瀑布流列高就先按真实比例预留，落地后不跳动。 */
+    const _cw=Number(x.coverW||0), _ch=Number(x.coverH||0);
+    const _ar=(_cw>0&&_ch>0)?(' style="aspect-ratio:auto '+_cw+'/'+_ch+'"'):'';
+    const img=cover?'<img src="/api/feed/img?u='+encodeURIComponent(cover)+'" referrerpolicy="no-referrer" loading="lazy" alt=""'+_ar+' onerror="this.style.display=\'none\'">':'';
     return '<article class="pv-card" data-h10-act="regen" data-id="'+id+'" title="点封面或卡片空白处 = 参考这张封面重绘贴图同款；「详情」看竖版大图与全文、「一键同款」进二创工作台">'
       +'<div class="pv-shot">'+ph+img
         +'<span class="pv-tag">'+kind+'</span>'+orig+'<span class="pv-seq">'+('0'+(ix+1)).slice(-2)+'</span>'
