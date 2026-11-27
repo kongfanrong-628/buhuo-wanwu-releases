@@ -814,6 +814,26 @@
 
   function initWebBridges() {
     initImgBridge();
+    initSettingsEntry();
+  }
+
+  /* ---------- 5e) 设置入口（2026-11-27）----------
+     桌面端靠侧栏「⚙ 设置」模块打开 #settings-modal，网页端那个入口被隐藏了
+     （里面全是本机项），结果文本模型 Key / 公众号上传两个「网页端也需要」的配置
+     没有入口 —— 用户只能看到右侧的「提示词模板」面板。
+     这里补一个左下角浮动按钮，直接调桌面端现成的 openSettings()，不复制任何逻辑。 */
+  function initSettingsEntry() {
+    var b = document.createElement("div");
+    b.id = "wbset-btn";
+    b.textContent = "⚙ 设置";
+    b.title = "文本模型 Key / 公众号上传 / 出图计费";
+    document.body.appendChild(b);
+    b.addEventListener("click", function () {
+      if (typeof window.openSettings === "function") {
+        try { window.openSettings(); return; } catch (e) {}
+      }
+      try { toast("设置面板没加载出来，刷新页面再试", "warn"); } catch (e) {}
+    });
   }
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", initWebBridges);
@@ -839,7 +859,15 @@
     '#ws-sector [data-sector="comic"],#nav-comic,#rail [data-sector="comic"]{display:none !important}' +
     /* 网页端没有本机磁盘：「打包 zip」「打开文件夹」两个按钮点了只会报错，直接不显示。
        单张「⬇下载」由 initImgBridge 接管（<a download> 存到浏览器下载目录）。 */
-    '[data-action="imgCardZipAll"],[data-action="imgCardFolder"]{display:none !important}';
+    '[data-action="imgCardZipAll"],[data-action="imgCardFolder"]{display:none !important}' +
+    /* 设置弹窗里属于「本机」的部分（本地模型 / 授权状态 / 生图密钥 / 朱雀），网页端用不上 */
+    '#llm-panel,#llm-toggle-btn,#set-lic-info{display:none !important}' +
+    /* 设置入口：左下角浮动按钮（桌面端侧栏那个入口在网页端被隐藏） */
+    '#wbset-btn{position:fixed;left:16px;bottom:16px;z-index:9000;display:flex;align-items:center;' +
+    'gap:4px;padding:7px 13px;border-radius:999px;background:rgba(255,255,255,.92);color:#2b3a22;' +
+    "font:600 12px/1 'PingFang SC','Microsoft YaHei',sans-serif;cursor:pointer;" +
+    'box-shadow:0 4px 14px rgba(0,0,0,.12);border:1px solid rgba(0,0,0,.06);user-select:none}' +
+    '#wbset-btn:hover{background:#fff;box-shadow:0 6px 18px rgba(0,0,0,.16)}';
   var hs = document.createElement("style");
   hs.id = "wb-hide-css";
   hs.textContent = HIDE_CSS;
