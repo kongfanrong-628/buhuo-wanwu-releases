@@ -825,6 +825,82 @@
     initSettingsEntry();
     initWxScanWeb();
     relaxInputs();
+    initContactEntry();
+  }
+
+  /* 🔴 2026-11-27 胜元拍板：左侧导航加「联系我」——点击弹窗显示全平台名称、
+     二维码添加方式、个人微信。走注入层实现，两端 index.html 同源不动。
+     三个要点：①弹窗用现成 bh-modal 风格；②入口用 MutationObserver 挂住 renderRail
+     的每次重绘（切板块会重建 #rail，一次性插入会被冲掉）；③二维码指向 /static/
+     下的本地图（此前网页端漏部署导致裂图，本次一并补上）。 */
+  function initContactEntry() {
+    // 1) 样式
+    var css = document.createElement("style");
+    css.id = "wb-contact-css";
+    css.textContent =
+      '#contact-modal .bh-modal-card{max-width:430px;text-align:center}' +
+      '#contact-modal .ct-qr{width:210px;height:210px;object-fit:contain;border-radius:12px;' +
+      'border:1px solid var(--hairline,#e3e3e3);background:#fff;display:block;margin:6px auto 14px}' +
+      '#contact-modal .ct-name{font-size:15px;font-weight:800;color:var(--pri,#2b3a22);margin:2px 0 4px}' +
+      '#contact-modal .ct-row{font-size:.85rem;line-height:1.9;color:var(--text-2,#666)}' +
+      '#contact-modal .ct-wx{display:inline-block;font-size:1rem;font-weight:800;letter-spacing:.5px;' +
+      'background:rgba(43,58,34,.08);padding:5px 14px;border-radius:8px;color:var(--pri,#2b3a22);margin:4px 0}' +
+      '#contact-modal .ct-plats{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin:8px 0 4px}' +
+      '#contact-modal .ct-plat{font-size:.78rem;padding:4px 10px;border-radius:999px;' +
+      'background:var(--bg,#f4f4f4);color:var(--text-2,#555)}';
+    (document.head || document.documentElement).appendChild(css);
+
+    // 2) 弹窗 DOM
+    if (!document.getElementById("contact-modal")) {
+      var m = document.createElement("div");
+      m.id = "contact-modal";
+      m.className = "bh-modal";
+      m.innerHTML = '<div class="bh-modal-card">' +
+        '<div class="bh-modal-title">📮 联系我</div>' +
+        '<div class="bh-modal-sub">全平台同名 · 扫码添加个人微信</div>' +
+        '<img class="ct-qr" src="/static/qrcode_sydm628.jpg" alt="微信二维码">' +
+        '<div class="ct-name">孔不惑AIko</div>' +
+        '<div class="ct-plats"><span class="ct-plat">抖音</span><span class="ct-plat">小红书</span>' +
+        '<span class="ct-plat">视频号</span><span class="ct-plat">公众号</span></div>' +
+        '<div class="ct-row">全平台名称均为 <b>孔不惑AIko</b></div>' +
+        '<div class="ct-row" style="margin-top:8px">个人微信</div>' +
+        '<div class="ct-wx">sydm628</div>' +
+        '<div class="ct-row" style="font-size:.76rem;color:var(--text-3,#999);margin-top:6px">扫上方二维码或搜微信号添加</div>' +
+        '<div class="bh-modal-actions" style="margin-top:16px"><button class="btn btn-sm" id="contact-close">关闭</button></div>' +
+        '</div>';
+      document.body.appendChild(m);
+      m.addEventListener("click", function (e) { if (e.target === m) m.classList.remove("show"); });
+      m.querySelector("#contact-close").addEventListener("click", function () { m.classList.remove("show"); });
+    }
+
+    // 3) 暴露打开函数
+    window.openContact = function () {
+      var el = document.getElementById("contact-modal");
+      if (el) el.classList.add("show");
+    };
+
+    // 4) 入口按钮：挂住 renderRail 的每次重绘
+    function injectBtn() {
+      var rail = document.getElementById("rail");
+      if (!rail) return;
+      if (rail.querySelector(".wb-contact-btn")) return;   // 已注入，避免重复
+      var foot = rail.querySelector(".rail-foot");
+      var btn = document.createElement("button");
+      btn.className = "rail-btn wb-contact-btn";
+      btn.setAttribute("data-module", "contact");
+      btn.setAttribute("onclick", "window.openContact&&window.openContact()");
+      btn.innerHTML = '<span class="rb-ico">📮</span><span class="rb-txt">联系我</span>';
+      if (foot && foot.parentNode) foot.parentNode.insertBefore(btn, foot);
+      else rail.appendChild(btn);
+    }
+    injectBtn();
+    try {
+      new MutationObserver(injectBtn).observe(document.getElementById("rail") || document.body,
+        { childList: true, subtree: true });
+    } catch (e) {
+      // rail 尚未就绪时退化：DOMContentLoaded 再试一次
+      document.addEventListener("DOMContentLoaded", injectBtn);
+    }
   }
 
   /* 🔴 2026-11-27 胜元拍板 BUG4：网页端排版太紧凑，「尤其是输入框」。
