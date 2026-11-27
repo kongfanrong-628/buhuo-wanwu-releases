@@ -68,7 +68,15 @@
     "/api/accounts": { ok: true, accounts: [] },
     "/api/reminders": { ok: true, items: [] },
     "/api/user": { ok: true, username: "网页版用户" },
-    "/api/token-stats": { ok: true, total: 0 },
+    /* 网页端 Token 用量：真实统计在会员站侧还没接，给一份结构完整的空账。
+       🔴 必须是 success:true + today/week/by_model 全套：前端只判 d.success，
+          少一个字段就渲染成「⚠ 读取失败」，看着像坏了。 */
+    "/api/token-stats": {
+      success: true,
+      today: { tokens: 0, calls: 0 },
+      week: { tokens: 0, calls: 0 },
+      by_model: []
+    },
     "/api/models/vision": { ok: true, models: [] },
     "/api/themes14": { ok: true, themes: [] },
     "/api/styles": { ok: true, styles: [] },
@@ -860,8 +868,9 @@
     /* 网页端没有本机磁盘：「打包 zip」「打开文件夹」两个按钮点了只会报错，直接不显示。
        单张「⬇下载」由 initImgBridge 接管（<a download> 存到浏览器下载目录）。 */
     '[data-action="imgCardZipAll"],[data-action="imgCardFolder"]{display:none !important}' +
-    /* 设置弹窗里属于「本机」的部分（本地模型 / 授权状态 / 生图密钥 / 朱雀），网页端用不上 */
-    '#llm-panel,#llm-toggle-btn,#set-lic-info{display:none !important}' +
+    /* 设置弹窗里属于「本机」的部分（本地模型 / 授权状态 / 生图密钥 / 朱雀 / 清缓存），
+       网页端没有对应能力 —— 留着点了就是报错，直接不显示。 */
+    '#llm-panel,#llm-toggle-btn,#set-lic-info,#set-clear-cache-btn{display:none !important}' +
     /* 设置入口：左下角浮动按钮（桌面端侧栏那个入口在网页端被隐藏） */
     '#wbset-btn{position:fixed;left:16px;bottom:16px;z-index:9000;display:flex;align-items:center;' +
     'gap:4px;padding:7px 13px;border-radius:999px;background:rgba(255,255,255,.92);color:#2b3a22;' +
