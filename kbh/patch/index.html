@@ -20046,7 +20046,10 @@ document.addEventListener('click', async function(e){
     else list.sort(function(a,b){ return String(b.dataDate||'').localeCompare(String(a.dataDate||''))||feedNum(b.clicksCount)-feedNum(a.clicksCount); });
     const total=list.length;
     const shown=list.slice(0,_pvShown);
-    grid.innerHTML=total?shown.map(pvCardHTML).join(''):'<div class="pv-empty">没有符合条件的内容，换个筛选条件试试</div>';
+    /* 🔴 区分两种空：库存本身为空（未登录/未同步 → 引导登录）vs 筛选无结果 */
+    grid.innerHTML=total?shown.map(pvCardHTML).join('')
+      :(base.length?'<div class="pv-empty">没有符合条件的内容，换个筛选条件试试</div>'
+                   :'<div class="pv-empty">热点库暂空 · 登录后可查看主理人同步的完整热点库</div>');
     pvApplyCols(); pvApplyRatio();
     const more=document.getElementById('pv-more'), txt=document.getElementById('pv-tail-txt');
     if(more) more.style.display=total>shown.length?'':'none';
