@@ -1187,16 +1187,61 @@ body[data-view="module"][data-setwin="off"] #setwin[data-showtab="1"] .sw-tab{di
   <div id="ht-results" data-page-node-id="aMBQWVXaD4uWQhg3B2QA00"></div>
 </div>
 
-<!-- ──── 热点广场（2026-11-09 从「一键标题」拆出独立栏目） ──── -->
+<!-- ──── 热点广场（2026-11-09 从「一键标题」拆出独立栏目；2026-11-27 v4 布局落地第一期） ──── -->
 <div class="module-panel" id="mod-feed-plaza">
-  <div class="module-header">
-    <div class="module-title">🔥 热点广场</div>
-    <div class="module-subtitle">10w+ 爆文 · 公众号平台榜单 · 一键二创/同款</div>
+  <div class="pv-app">
+    <aside class="pv-side">
+      <div class="pv-brand"><div class="pv-logo">万</div><div><b>万物写作工坊</b><small>CONTENT OS</small></div></div>
+      <nav class="pv-nav" id="pv-nav"></nav>
+      <div class="pv-sidebox">
+        <div class="pv-sb-t"><span>云端积分</span><b id="pv-credit">—</b></div>
+        <small>会员站充值 · 万物抓取按次扣分</small>
+      </div>
+    </aside>
+    <div class="pv-main">
+      <div class="pv-topbar">
+        <div class="pv-crumb"><b>工作台</b><span class="pv-slash">/</span><b class="pv-cur">热点广场</b><span class="pv-live"><i></i>LIVE FEED</span></div>
+        <label class="pv-cmd"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="pv-q" placeholder="搜索标题 / 账号 / 赛道"></label>
+      </div>
+      <div class="pv-content">
+        <section class="pv-hero">
+          <div>
+            <div class="pv-eyebrow">HOT FEED / REAL DATA / T+1 SYNC</div>
+            <h1>热点<em>广场</em></h1>
+            <p>10w+ 爆文实时库 · 封面按原始比例展示，不做裁切 · 全部来自真实阅读数据</p>
+          </div>
+          <div class="pv-stats">
+            <div class="pv-stat"><b id="pv-st-total">—</b><span>ITEMS</span></div>
+            <div class="pv-stat"><b id="pv-st-tracks">—</b><span>TRACKS</span></div>
+            <div class="pv-stat pv-acidstat"><b id="pv-st-latest">—</b><span>LATEST</span></div>
+          </div>
+        </section>
+        <div class="pv-deck">
+          <div class="pv-grp"><span class="pv-grp-label">FILTER</span>
+            <button class="pv-chip on" data-pv-act="kind" data-kind="all">全部 <i id="pv-c-all">0</i></button>
+            <button class="pv-chip" data-pv-act="kind" data-kind="article">长文 <i id="pv-c-article">0</i></button>
+            <button class="pv-chip" data-pv-act="kind" data-kind="sticker">贴图 <i id="pv-c-sticker">0</i></button>
+            <button class="pv-chip" data-pv-act="kind" data-kind="ori">原创 <i id="pv-c-ori">0</i></button>
+          </div>
+          <div class="pv-grp"><span class="pv-grp-label">SORT</span>
+            <select class="pv-select" id="pv-sort"><option value="date">最新优先</option><option value="reads">阅读量优先</option></select>
+          </div>
+          <div class="pv-grp"><span class="pv-grp-label">DENSITY</span>
+            <div class="pv-range"><input type="range" id="pv-density" min="2" max="5" value="4"><span id="pv-dv">4 COL</span></div>
+          </div>
+          <div class="pv-grp">
+            <div class="pv-toggle on" id="pv-ratio"><div class="pv-switch"></div><span>原图比例</span></div>
+          </div>
+          <div class="pv-spacer"></div>
+          <div class="pv-status"><i></i>SYNC · 资讯由主理人统一同步</div>
+        </div>
+        <div class="pv-masonry" id="pv-grid"><div class="pv-empty">正在读取本地初始化库存…</div></div>
+        <div class="pv-tail"><span id="pv-tail-txt">END OF FEED</span><button class="pv-load" id="pv-more" data-pv-act="more">加载更多 ↓</button></div>
+        <div class="pv-sec-head"><b>公众号账号榜</b><span>阅读增长 / 综合实力 / 头条增长 · 看榜选账号 → 抓作品 → 二创</span></div>
+        <div id="plat-rank-board"></div>
+      </div>
+    </div>
   </div>
-  <!-- 平台榜单（阅读增长 / 综合实力 / 头条增长） -->
-  <div id="plat-rank-board"></div>
-  <!-- 10w+ 爆文推荐栏 -->
-  <div id="hot10-board"></div>
 </div>
 
 <!-- ──── Module 2: 二创改写 ──── -->
@@ -3463,6 +3508,184 @@ body[data-view="module"][data-setwin="off"] #setwin[data-showtab="1"] .sw-tab{di
       JS 用 inline style 覆盖 → 优先级更高，运行期照常可变。 */
 #feed-board{--feed-cols:4}
 #hot10-board{--h10-cols:4}
+
+/* ═══ v4 热点广场（2026-11-27 胜元拍板第一期：v4 布局落地到 feed-plaza）═══
+   全部类名 pv- 前缀，配色变量挂在 #mod-feed-plaza 容器上（pv-* 变量名，
+   与现有 --bg/--card 等全局令牌零交集，css-var 门禁「引用 vs 定义」差集不受影响）。
+   深色皮肤（acid-dark / night）下整块翻深色，其余皮肤固定浅酸绿 = v4 默认观感。 */
+#mod-feed-plaza{--pv-bg:#F6F7F3;--pv-panel:#FFFFFF;--pv-panel2:#F1F3EE;--pv-panel3:#E8EBE3;
+  --pv-line:#E3E6DF;--pv-line2:#D4D9D0;--pv-ink:#161A16;--pv-ink2:#5F6A61;--pv-ink3:#949C94;
+  --pv-acid:#C8FF00;--pv-acid-ink:#4D7A00;--pv-acid2:#3D6300;
+  --pv-dim:rgba(77,122,0,.075);--pv-aline:rgba(77,122,0,.34);
+  --pv-glow:0 0 0 rgba(200,255,0,0);--pv-grid:rgba(77,122,0,.045);
+  --pv-tagbg:rgba(255,255,255,.9);--pv-seqbg:rgba(22,26,22,.76);
+  --pv-shadow:0 4px 18px rgba(0,0,0,.055);--pv-cmdbg:#FFFFFF}
+body[data-skin="acid-dark"] #mod-feed-plaza,body[data-skin="night"] #mod-feed-plaza{
+  --pv-bg:#0A0C0B;--pv-panel:#101311;--pv-panel2:#161A17;--pv-panel3:#1C211D;
+  --pv-line:#262C27;--pv-line2:#333B35;--pv-ink:#EDF2EE;--pv-ink2:#98A39B;--pv-ink3:#5F6A62;
+  --pv-acid:#C8FF00;--pv-acid-ink:#C8FF00;--pv-acid2:#E4FF9B;
+  --pv-dim:rgba(200,255,0,.12);--pv-aline:rgba(200,255,0,.3);
+  --pv-glow:0 0 18px rgba(200,255,0,.16);--pv-grid:rgba(200,255,0,.018);
+  --pv-tagbg:rgba(10,12,11,.82);--pv-seqbg:rgba(0,0,0,.6);
+  --pv-shadow:0 8px 28px rgba(0,0,0,.5);--pv-cmdbg:#101311}
+#mod-feed-plaza .pv-app{display:flex;align-items:stretch;background:var(--pv-bg);color:var(--pv-ink);
+  background-image:linear-gradient(var(--pv-grid) 1px,transparent 1px),linear-gradient(90deg,var(--pv-grid) 1px,transparent 1px);
+  background-size:40px 40px;border-radius:14px;overflow:clip}
+/* 左栏 224px：sticky 挂 #panels 滚动容器；nav 内部自滚 */
+#mod-feed-plaza .pv-side{width:224px;flex:0 0 224px;position:sticky;top:0;align-self:flex-start;
+  max-height:calc(100vh - 76px);background:var(--pv-panel);border-right:1px solid var(--pv-line);
+  display:flex;flex-direction:column;padding:20px 0 14px;border-radius:14px 0 0 14px}
+#mod-feed-plaza .pv-brand{display:flex;align-items:center;gap:10px;padding:0 18px 22px}
+#mod-feed-plaza .pv-logo{width:28px;height:28px;background:var(--pv-acid);color:#000;display:grid;place-items:center;
+  font-weight:800;font-size:14px;border-radius:6px;box-shadow:var(--pv-glow);flex:0 0 28px}
+#mod-feed-plaza .pv-brand b{font-size:13px;font-weight:600;display:block;color:var(--pv-ink)}
+#mod-feed-plaza .pv-brand small{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:8.5px;
+  color:var(--pv-ink3);letter-spacing:.14em;display:block;margin-top:3px}
+#mod-feed-plaza .pv-nav{flex:1;overflow-y:auto;scrollbar-width:none;min-height:0}
+#mod-feed-plaza .pv-nav::-webkit-scrollbar{display:none}
+#mod-feed-plaza .pv-ng{margin-bottom:18px}
+#mod-feed-plaza .pv-ng h5{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:8.5px;
+  letter-spacing:.18em;color:var(--pv-ink3);margin:0 0 6px;padding:0 18px}
+#mod-feed-plaza .pv-ni{display:flex;align-items:center;gap:9px;height:30px;padding:0 18px;font-size:12px;
+  color:var(--pv-ink2);cursor:pointer;position:relative;transition:.14s;user-select:none}
+#mod-feed-plaza .pv-ni:hover{background:var(--pv-panel2);color:var(--pv-ink)}
+#mod-feed-plaza .pv-ni svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.6;
+  stroke-linecap:round;stroke-linejoin:round;flex:0 0 14px;opacity:.8}
+#mod-feed-plaza .pv-ni.active{background:linear-gradient(90deg,var(--pv-dim),transparent);
+  color:var(--pv-acid-ink);font-weight:600}
+#mod-feed-plaza .pv-ni.active::before{content:"";position:absolute;left:0;top:5px;bottom:5px;width:2px;
+  background:var(--pv-acid-ink);box-shadow:var(--pv-glow)}
+#mod-feed-plaza .pv-sidebox{margin:0 13px;padding:12px;border:1px solid var(--pv-line);border-radius:8px;
+  background:var(--pv-panel2)}
+#mod-feed-plaza .pv-sb-t{display:flex;justify-content:space-between;align-items:center;font-size:10px;color:var(--pv-ink2)}
+#mod-feed-plaza .pv-sb-t b{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--pv-acid-ink);font-size:11px}
+#mod-feed-plaza .pv-sidebox small{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:8.5px;color:var(--pv-ink3)}
+/* 右侧主区 */
+#mod-feed-plaza .pv-main{flex:1;min-width:0}
+#mod-feed-plaza .pv-topbar{height:54px;border-bottom:1px solid var(--pv-line);display:flex;align-items:center;
+  justify-content:space-between;padding:0 30px;gap:14px;flex-wrap:wrap}
+#mod-feed-plaza .pv-crumb{display:flex;align-items:center;gap:10px}
+#mod-feed-plaza .pv-crumb b{font-size:12px;font-weight:600}
+#mod-feed-plaza .pv-slash{color:var(--pv-ink3);font-size:11px}
+#mod-feed-plaza .pv-cur{color:var(--pv-acid-ink)}
+#mod-feed-plaza .pv-live{display:flex;align-items:center;gap:6px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+  font-size:9px;color:var(--pv-acid-ink);border:1px solid var(--pv-aline);padding:3px 7px;border-radius:3px;
+  letter-spacing:.1em;background:var(--pv-dim)}
+#mod-feed-plaza .pv-live i{width:5px;height:5px;background:var(--pv-acid-ink);border-radius:50%;
+  box-shadow:var(--pv-glow);animation:pvBlink 1.8s infinite}
+@keyframes pvBlink{50%{opacity:.25}}
+#mod-feed-plaza .pv-cmd{display:flex;align-items:center;gap:8px;height:30px;min-width:220px;padding:0 9px;
+  background:var(--pv-cmdbg);border:1px solid var(--pv-line2);border-radius:6px;transition:.15s}
+#mod-feed-plaza .pv-cmd:focus-within{border-color:var(--pv-acid-ink);box-shadow:0 0 0 3px var(--pv-dim)}
+#mod-feed-plaza .pv-cmd svg{width:13px;height:13px;stroke:var(--pv-ink3);fill:none;stroke-width:1.6;flex:0 0 13px}
+#mod-feed-plaza .pv-cmd input{border:0;outline:0;background:none;color:var(--pv-ink);font-size:11px;width:100%;font-family:inherit}
+#mod-feed-plaza .pv-cmd input::placeholder{color:var(--pv-ink3)}
+#mod-feed-plaza .pv-content{padding:30px 30px 60px;max-width:1680px}
+#mod-feed-plaza .pv-hero{display:flex;justify-content:space-between;align-items:flex-end;gap:26px;
+  margin-bottom:26px;flex-wrap:wrap}
+#mod-feed-plaza .pv-eyebrow{display:flex;align-items:center;gap:8px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+  font-size:9px;color:var(--pv-ink3);letter-spacing:.16em;margin-bottom:12px}
+#mod-feed-plaza .pv-eyebrow::before{content:"";width:16px;height:1px;background:var(--pv-acid-ink)}
+#mod-feed-plaza .pv-hero h1{font-size:48px;line-height:1;letter-spacing:-.045em;font-weight:600;margin:0 0 10px;color:var(--pv-ink)}
+#mod-feed-plaza .pv-hero h1 em{font-style:normal;color:var(--pv-acid-ink);text-shadow:var(--pv-glow)}
+#mod-feed-plaza .pv-hero p{font-size:12px;color:var(--pv-ink2);margin:0;line-height:1.6}
+#mod-feed-plaza .pv-stats{display:flex}
+#mod-feed-plaza .pv-stat{padding:0 18px;border-left:1px solid var(--pv-line);text-align:right}
+#mod-feed-plaza .pv-stat:first-child{border-left:0;padding-left:0}
+#mod-feed-plaza .pv-stat b{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:24px;font-weight:500;
+  letter-spacing:-.04em;color:var(--pv-ink);display:block;line-height:1}
+#mod-feed-plaza .pv-stat.pv-acidstat b{color:var(--pv-acid-ink);text-shadow:var(--pv-glow)}
+#mod-feed-plaza .pv-stat span{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:8.5px;
+  color:var(--pv-ink3);letter-spacing:.1em;display:block;margin-top:7px}
+#mod-feed-plaza .pv-deck{border:1px solid var(--pv-line);background:var(--pv-panel);border-radius:10px;
+  padding:11px 13px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:22px}
+#mod-feed-plaza .pv-grp{display:flex;align-items:center;gap:7px}
+#mod-feed-plaza .pv-grp-label{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:8.5px;
+  color:var(--pv-ink3);letter-spacing:.12em}
+#mod-feed-plaza .pv-chip{height:26px;padding:0 10px;border:1px solid var(--pv-line2);background:var(--pv-panel2);
+  color:var(--pv-ink2);border-radius:5px;font-size:10.5px;cursor:pointer;transition:.14s;display:flex;
+  align-items:center;gap:6px;font-family:inherit}
+#mod-feed-plaza .pv-chip:hover{border-color:var(--pv-acid-ink);color:var(--pv-ink)}
+#mod-feed-plaza .pv-chip.on{border-color:var(--pv-acid-ink);background:var(--pv-dim);color:var(--pv-acid-ink);font-weight:600}
+#mod-feed-plaza .pv-chip i{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:9px;
+  color:var(--pv-ink3);font-style:normal}
+#mod-feed-plaza .pv-chip.on i{color:var(--pv-acid-ink)}
+#mod-feed-plaza .pv-select{height:26px;background:var(--pv-panel2);border:1px solid var(--pv-line2);
+  color:var(--pv-ink2);border-radius:5px;font-size:10.5px;padding:0 8px;font-family:inherit;outline:0;cursor:pointer}
+#mod-feed-plaza .pv-select:focus{border-color:var(--pv-acid-ink)}
+#mod-feed-plaza .pv-range{display:flex;align-items:center;gap:7px}
+#mod-feed-plaza .pv-range input{width:74px;height:3px;accent-color:var(--pv-acid-ink);cursor:pointer}
+#mod-feed-plaza .pv-range span{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:9px;color:var(--pv-ink3)}
+#mod-feed-plaza .pv-toggle{display:flex;align-items:center;gap:7px;cursor:pointer;user-select:none}
+#mod-feed-plaza .pv-switch{width:30px;height:17px;border-radius:9px;background:var(--pv-panel3);
+  border:1px solid var(--pv-line2);position:relative;transition:.18s}
+#mod-feed-plaza .pv-switch::after{content:"";position:absolute;left:2px;top:2px;width:11px;height:11px;
+  border-radius:50%;background:var(--pv-ink3);transition:.18s}
+#mod-feed-plaza .pv-toggle.on .pv-switch{background:var(--pv-acid);border-color:var(--pv-acid);box-shadow:var(--pv-glow)}
+#mod-feed-plaza .pv-toggle.on .pv-switch::after{left:15px;background:#000}
+#mod-feed-plaza .pv-toggle span{font-size:10.5px;color:var(--pv-ink2)}
+#mod-feed-plaza .pv-toggle.on span{color:var(--pv-acid-ink)}
+#mod-feed-plaza .pv-status{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:8.5px;
+  color:var(--pv-ink3);display:flex;align-items:center;gap:6px}
+#mod-feed-plaza .pv-status i{width:4px;height:4px;background:var(--pv-acid-ink);border-radius:50%;box-shadow:var(--pv-glow)}
+#mod-feed-plaza .pv-spacer{flex:1}
+/* 瀑布流 */
+#mod-feed-plaza .pv-masonry{column-count:4;column-gap:16px}
+#mod-feed-plaza .pv-card{break-inside:avoid;margin:0 0 18px;background:var(--pv-panel);border:1px solid var(--pv-line);
+  border-radius:8px;overflow:hidden;cursor:pointer;transition:.18s;position:relative}
+#mod-feed-plaza .pv-card:hover{border-color:var(--pv-acid-ink);box-shadow:var(--pv-glow),var(--pv-shadow);transform:translateY(-2px)}
+#mod-feed-plaza .pv-shot{position:relative;background:var(--pv-panel3);line-height:0;min-height:64px}
+#mod-feed-plaza .pv-ph{position:absolute;inset:0;display:grid;place-items:center;font-size:10px;
+  color:var(--pv-ink3);font-family:ui-monospace,SFMono-Regular,Menlo,monospace;line-height:1.4}
+#mod-feed-plaza .pv-shot img{width:100%;height:auto;display:block;position:relative}
+#mod-feed-plaza .pv-tag{position:absolute;left:9px;top:9px;height:19px;padding:0 7px;background:var(--pv-tagbg);
+  backdrop-filter:blur(6px);border:1px solid var(--pv-aline);border-radius:4px;color:var(--pv-acid-ink);
+  font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:9px;display:inline-flex;align-items:center;
+  letter-spacing:.08em;line-height:1;z-index:2}
+#mod-feed-plaza .pv-seq{position:absolute;right:9px;top:9px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+  font-size:9px;color:#fff;background:var(--pv-seqbg);padding:3px 6px;border-radius:3px;line-height:1;z-index:2}
+#mod-feed-plaza .pv-cbody{padding:11px 12px 12px}
+#mod-feed-plaza .pv-cbody h3{font-size:12.5px;line-height:1.5;font-weight:500;margin:0;color:var(--pv-ink);
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:38px}
+#mod-feed-plaza .pv-card:hover h3{color:var(--pv-acid2)}
+#mod-feed-plaza .pv-meta{display:flex;align-items:center;gap:6px;margin-top:9px;font-size:10px;color:var(--pv-ink3)}
+#mod-feed-plaza .pv-u{color:var(--pv-ink2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#mod-feed-plaza .pv-sepdot{width:2px;height:2px;background:var(--pv-ink3);border-radius:50%;flex:0 0 2px}
+#mod-feed-plaza .pv-rd{margin-left:auto;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+  color:var(--pv-acid-ink);font-weight:600;white-space:nowrap}
+#mod-feed-plaza .pv-acts{display:flex;gap:5px;margin-top:10px;padding-top:9px;border-top:1px solid var(--pv-line);
+  opacity:0;max-height:0;overflow:hidden;transition:.2s}
+#mod-feed-plaza .pv-card:hover .pv-acts{opacity:1;max-height:44px}
+#mod-feed-plaza .pv-act{flex:1;height:23px;border:1px solid var(--pv-line2);background:var(--pv-panel2);
+  color:var(--pv-ink2);border-radius:4px;font-size:9.5px;cursor:pointer;display:flex;align-items:center;
+  justify-content:center;gap:4px;font-family:inherit;padding:0 4px;white-space:nowrap}
+#mod-feed-plaza .pv-act:hover{border-color:var(--pv-acid-ink);color:var(--pv-acid-ink)}
+#mod-feed-plaza .pv-act.pv-pri{background:var(--pv-acid);border-color:var(--pv-acid);color:#000;font-weight:600}
+#mod-feed-plaza .pv-empty{padding:40px 0;text-align:center;font-size:12px;color:var(--pv-ink3)}
+#mod-feed-plaza .pv-tail{margin-top:26px;border-top:1px solid var(--pv-line);padding-top:14px;display:flex;
+  justify-content:space-between;align-items:center}
+#mod-feed-plaza .pv-tail>span{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:9px;
+  color:var(--pv-ink3);letter-spacing:.1em}
+#mod-feed-plaza .pv-load{height:28px;padding:0 14px;background:var(--pv-panel);border:1px solid var(--pv-line2);
+  color:var(--pv-ink2);border-radius:5px;font-size:10.5px;cursor:pointer;font-family:inherit}
+#mod-feed-plaza .pv-load:hover{border-color:var(--pv-acid-ink);color:var(--pv-acid-ink)}
+/* 账号榜分区（v4 稿未画，原功能保留移到瀑布流下方） */
+#mod-feed-plaza .pv-sec-head{display:flex;align-items:baseline;gap:12px;margin:34px 0 12px;padding-top:18px;
+  border-top:1px solid var(--pv-line)}
+#mod-feed-plaza .pv-sec-head b{font-size:14px;color:var(--pv-ink)}
+#mod-feed-plaza .pv-sec-head span{font-size:10px;color:var(--pv-ink3);font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+@media(max-width:1279px){#mod-feed-plaza .pv-masonry{column-count:3}}
+@media(max-width:999px){#mod-feed-plaza .pv-masonry{column-count:2}
+  #mod-feed-plaza .pv-side{width:190px;flex-basis:190px}
+  #mod-feed-plaza .pv-content{padding:22px 18px 50px}
+  #mod-feed-plaza .pv-topbar{padding:0 18px}
+  #mod-feed-plaza .pv-hero h1{font-size:38px}
+  #mod-feed-plaza .pv-stat{padding:0 12px}}
+@media(max-width:680px){#mod-feed-plaza .pv-side{display:none}
+  #mod-feed-plaza .pv-masonry{column-count:1}
+  #mod-feed-plaza .pv-hero{flex-direction:column;align-items:flex-start}
+  #mod-feed-plaza .pv-stats{flex-wrap:wrap}
+  #mod-feed-plaza .pv-cmd{min-width:140px}}
 .feed-grid{display:block;column-count:var(--feed-cols,4);column-gap:13px}
 .feed-grid>.feed-card{break-inside:avoid;-webkit-column-break-inside:avoid;page-break-inside:avoid;
   display:block;width:100%;margin:0 0 13px}
@@ -19651,8 +19874,186 @@ document.addEventListener('click', async function(e){
           :(_h10ShowAll&&list.length>18?'<div class="feed-more"><button class="feed-btn" data-h10-act="less">收起 ↑</button></div>':''))
       +'</div>';
   }
+  /* ═══ v4 热点广场渲染器（2026-11-27 第一期）═══════════════════════════
+     数据源 = 同一份 _h10Items 库存（loadHot10Board 喂入）；按 form 归类出
+     全部/长文/贴图/原创四个 chip（11-23 拍板：一份库存按 form 筛选，不物理拆分）。
+     卡片动作沿用 data-h10-act（detail/remix/regen），委托处理器零改动。
+     密度/原图比例存 localStorage（buhuo_plaza_cols / buhuo_plaza_ar）。 */
+  let _pvKind='all', _pvQ='', _pvSort='date', _pvCols=4, _pvRatio=true, _pvShown=24, _pvDeleg=false;
+  const PV_PAGE=24;
+  const PV_NAV=[
+    {g:'01 / OVERVIEW',items:[['cockpit','账号体检','','<rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/>']]},
+    {g:'02 / INTELLIGENCE',items:[
+      ['inspiration','灵感库','','<path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.6.5.9 1.1 1 1.6h5c.1-.5.4-1.1 1-1.6A6 6 0 0 0 12 3Z"/>'],
+      ['feed-plaza','热点广场','','<path d="M12 22c4 0 7-2.7 7-6.5 0-2.4-1.2-4.3-3-6.2-.7 1-1.3 1.6-2 1.9.2-2.4-.7-4.6-2-6-.2 2.2-1.4 3.7-2.7 5C8 11.6 5 13.5 5 16c0 3.6 3.1 6 7 6Z"/>'],
+      ['hot-topics','P0 选题','','<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/>']]},
+    {g:'03 / PRODUCTION',items:[
+      ['pipeline','一键流水线','','<path d="M4 7h11M4 12h16M4 17h11"/><circle cx="19" cy="7" r="2"/><circle cx="19" cy="17" r="2"/>'],
+      ['ai-write','AI 写作','','<path d="m4 20 4.5-1 10-10a2 2 0 0 0-3-3l-10 10L4 20Z"/>'],
+      ['rewrite','二创改写','','<rect x="3" y="5" width="12" height="12" rx="2"/><path d="M9 19h9a3 3 0 0 0 3-3V8"/>'],
+      ['detox','去 AI 味','','<path d="m4 20 9-9"/><path d="m14 4 .8 2.2L17 7l-2.2.8L14 10l-.8-2.2L11 7l2.2-.8L14 4Z"/>'],
+      ['keywords','长尾词库','','<path d="M3 12V5a2 2 0 0 1 2-2h7l9 9-9 9-9-9Z"/>'],
+      ['image','AI 配图','','<rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9" r="1.5"/><path d="m4 17 5-5 4 4 3-2 4 4"/>'],
+      ['typeset','公众号排版','','<path d="M4 6h16M4 11h11M4 16h16M4 21h8"/>']]},
+    {g:'04 / VISUAL',items:[
+      ['sticker','贴图工坊','','<rect x="3" y="3" width="18" height="18" rx="4"/><path d="M14 3v5a3 3 0 0 0 3 3h4"/>'],
+      ['sticker-cover','封面工坊','','<rect x="4" y="3" width="16" height="18" rx="2"/><circle cx="12" cy="10" r="3"/>'],
+      ['sticker-suite','整套出图','','<rect x="3" y="4" width="8" height="7" rx="1"/><rect x="13" y="4" width="8" height="7" rx="1"/><rect x="3" y="13" width="8" height="7" rx="1"/><rect x="13" y="13" width="8" height="7" rx="1"/>'],
+      ['comic-topic','漫画工坊','','<path d="M4 4h16v12H8l-4 4V4Z"/><path d="M8 9h8"/>']]},
+    {g:'05 / SYSTEM',items:[
+      ['settings','设置','','<circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/>'],
+      ['tutorial','使用教程','','<path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5v-16Z"/>']]}
+  ];
+  function pvIsInc(x){ try{ return typeof feedIsIncomplete==='function' && feedIsIncomplete(x); }catch(e){ return false; } }
+  function pvEnsure(){
+    if(_pvDeleg) return; _pvDeleg=true;
+    /* 左栏导航：入口走 window.v2.open（🔴 不是 openModule） */
+    const nav=document.getElementById('pv-nav');
+    if(nav){
+      nav.innerHTML=PV_NAV.map(function(g){
+        return '<div class="pv-ng"><h5>'+g.g+'</h5>'+g.items.map(function(it){
+          const on=it[0]==='feed-plaza';
+          return '<div class="pv-ni'+(on?' active':'')+'" data-pv-act="nav" data-mod="'+it[0]+'" title="'+it[1]+'">'
+            +'<svg viewBox="0 0 24 24">'+it[3]+'</svg><span>'+it[1]+'</span>'
+            +(it[2]?'<i class="pv-nb">'+it[2]+'</i>':'')+'</div>';
+        }).join('')+'</div>';
+      }).join('');
+    }
+    /* 云端积分与顶栏 💰 同步（MutationObserver，不轮询） */
+    try{
+      const wc=document.getElementById('ws-credit'), pc=document.getElementById('pv-credit');
+      if(wc&&pc){
+        const sync=function(){ pc.textContent=wc.textContent||'—'; };
+        sync();
+        new MutationObserver(sync).observe(wc,{childList:true,characterData:true,subtree:true});
+      }
+    }catch(e){}
+    try{ _pvCols=parseInt(localStorage.getItem('buhuo_plaza_cols')||'4',10)||4; }catch(e){}
+    try{ _pvRatio=localStorage.getItem('buhuo_plaza_ar')!=='0'; }catch(e){}
+    const dens=document.getElementById('pv-density'), dv=document.getElementById('pv-dv'), rt=document.getElementById('pv-ratio');
+    if(dens) dens.value=String(_pvCols);
+    if(dv) dv.textContent=_pvCols+' COL';
+    if(rt) rt.classList.toggle('on',_pvRatio);
+    document.addEventListener('click',function(ev){
+      const b=ev.target.closest('[data-pv-act]'); if(!b) return;
+      const act=b.dataset.pvAct;
+      if(act==='kind'){ _pvKind=b.dataset.kind||'all'; _pvShown=PV_PAGE;
+        document.querySelectorAll('#mod-feed-plaza .pv-chip[data-kind]').forEach(function(x){ x.classList.toggle('on',x===b); });
+        pvRender(); return; }
+      if(act==='more'){ _pvShown+=PV_PAGE; pvRender(); return; }
+      if(act==='nav'){ const m=b.dataset.mod||''; if(m&&m!=='feed-plaza'){ try{ window.v2.open(m); }catch(e){} } return; }
+    });
+    document.addEventListener('input',function(ev){
+      if(ev.target&&ev.target.id==='pv-q'){ _pvQ=String(ev.target.value||'').trim().toLowerCase(); _pvShown=PV_PAGE; pvRender(); return; }
+      if(ev.target&&ev.target.id==='pv-density'){
+        _pvCols=parseInt(ev.target.value,10)||4;
+        try{ localStorage.setItem('buhuo_plaza_cols',String(_pvCols)); }catch(e){}
+        const dv2=document.getElementById('pv-dv'); if(dv2) dv2.textContent=_pvCols+' COL';
+        pvApplyCols(); return; }
+    });
+    document.addEventListener('change',function(ev){
+      if(ev.target&&ev.target.id==='pv-sort'){ _pvSort=ev.target.value||'date'; _pvShown=PV_PAGE; pvRender(); return; }
+    });
+    document.addEventListener('click',function(ev){
+      const t=ev.target.closest('#pv-ratio'); if(!t) return;
+      _pvRatio=!_pvRatio; t.classList.toggle('on',_pvRatio);
+      try{ localStorage.setItem('buhuo_plaza_ar',_pvRatio?'1':'0'); }catch(e){}
+      pvApplyRatio();
+    });
+  }
+  function pvBaseList(){
+    const all=_h10Items||[];
+    return all.filter(function(x){ return feedFormOf(x)!=='comic'; });   // 🔴 漫画不进广场（11-25 胜元拍板）
+  }
+  function pvFilter(base){
+    return base.filter(function(x){
+      const f=feedFormOf(x);
+      if(_pvKind==='article') return f==='article'||f==='unknown';       // unknown 两边可见（11-23 拍板）
+      if(_pvKind==='sticker') return f==='sticker'&&!pvIsInc(x);         // 残缺条目不冒充贴图（1.0.76 规则）
+      if(_pvKind==='ori') return String(x.mode||'').indexOf('原创')>=0;
+      if(f==='sticker'&&pvIsInc(x)) return false;                        // 全部视图同样排除残缺贴图
+      return true;
+    });
+  }
+  function pvApplyCols(){
+    const grid=document.getElementById('pv-grid');
+    if(grid) grid.style.columnCount=String(_pvCols);
+  }
+  function pvApplyRatio(){
+    const grid=document.getElementById('pv-grid'); if(!grid) return;
+    grid.querySelectorAll('.pv-shot img').forEach(function(i){
+      i.style.height=_pvRatio?'auto':'150px';
+      i.style.objectFit=_pvRatio?'none':'cover';
+    });
+  }
+  function pvCardHTML(x,ix){
+    const cover=feedHttps(x.coverUrl||x.thumbnail);
+    const f=feedFormOf(x);
+    const url=/^https?:\/\//i.test(String(x.oriUrl||''))?feedAttr(x.oriUrl):'';
+    const trk=feedAttr(String(x.track||''));
+    const dt=feedAttr(String(x.dataDate||''));
+    const acct=feedAttr(String(x.userName||x.author||'原作者'));
+    const ti=feedAttr(String(x.title||'（无标题）'));
+    const id=feedAttr(String(x.id||''));
+    const orig=Number(x.originalFlag||0)===1?'<span class="pv-tag" style="color:#c2691c;border-color:#ffdcc0;background:#fff7ed">原创</span>':'';
+    const kind=f==='sticker'?'贴图':(f==='article'?'长文':'情报');
+    const _rv=(x.clicksCount==null||String(x.clicksCount)==='')?'':String(x.clicksCount);
+    const ph=cover?'<div class="pv-ph">封面载入中…</div>':'<div class="pv-ph">文字情报</div>';
+    const img=cover?'<img src="/api/feed/img?u='+encodeURIComponent(cover)+'&w=360" referrerpolicy="no-referrer" loading="lazy" alt="" onerror="this.style.display=\'none\'">':'';
+    return '<article class="pv-card" data-h10-act="regen" data-id="'+id+'" title="点封面或卡片空白处 = 参考这张封面重绘贴图同款；「详情」看竖版大图与全文、「一键同款」进二创工作台">'
+      +'<div class="pv-shot">'+ph+img
+        +'<span class="pv-tag">'+kind+'</span>'+orig+'<span class="pv-seq">'+('0'+(ix+1)).slice(-2)+'</span>'
+      +'</div>'
+      +'<div class="pv-cbody">'
+        +'<h3 title="'+ti+'">'+ti+'</h3>'
+        +'<div class="pv-meta"><span class="pv-u">'+acct+'</span>'
+          +(trk?'<span class="pv-sepdot"></span><span>'+trk+'</span>':'')
+          +(dt?'<span class="pv-sepdot"></span><span>'+dt+'</span>':'')
+          +(_rv?'<span class="pv-rd">'+feedAttr(_rv)+' 阅读</span>':'')
+        +'</div>'
+        +'<div class="pv-acts">'
+          +'<button class="pv-act" data-h10-act="detail" data-id="'+id+'" title="竖版详情：整块读本地缓存，0 积分">📄 详情</button>'
+          +'<button class="pv-act pv-pri" data-h10-act="remix" data-id="'+id+'" title="进入二创工作台：爆款拆解 + 轻度改写 / AI 重构 + 3 套复刻模板">✨ 一键同款</button>'
+          +(url?'<a class="pv-act" href="'+url+'" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">原文 ↗</a>':'')
+        +'</div>'
+      +'</div>'
+    +'</article>';
+  }
+  function pvRender(){
+    const grid=document.getElementById('pv-grid'); if(!grid) return;
+    const base=pvBaseList();
+    /* hero 统计：全部条数 / 赛道数 / 最新数据日期（全从真实数据算，不造假数） */
+    const latest=base.reduce(function(m,x){ return String(x.dataDate||'')>m?String(x.dataDate||''):m; },'');
+    const trkSet={}; base.forEach(function(x){ const t=String(x.track||'').trim(); if(t) trkSet[t]=1; });
+    const stT=document.getElementById('pv-st-total'), stK=document.getElementById('pv-st-tracks'), stL=document.getElementById('pv-st-latest');
+    if(stT) stT.textContent=String(base.length);
+    if(stK) stK.textContent=String(Object.keys(trkSet).length);
+    if(stL) stL.textContent=latest?latest.slice(5).replace('-','/'):'—';
+    /* chip 计数 */
+    const cA=base.length;
+    const cArt=base.filter(function(x){ const f=feedFormOf(x); return f==='article'||f==='unknown'; }).length;
+    const cStk=base.filter(function(x){ return feedFormOf(x)==='sticker'; }).length;
+    const cOri=base.filter(function(x){ return String(x.mode||'').indexOf('原创')>=0; }).length;
+    const set=function(k,v){ const el=document.getElementById('pv-c-'+k); if(el) el.textContent=String(v); };
+    set('all',cA); set('article',cArt); set('sticker',cStk); set('ori',cOri);
+    /* 搜索（标题 / 账号 / 赛道） */
+    let list=pvFilter(base);
+    if(_pvQ) list=list.filter(function(x){
+      return (String(x.title||'')+' '+String(x.userName||x.author||'')+' '+String(x.track||'')).toLowerCase().indexOf(_pvQ)>=0;
+    });
+    /* 🔴 与 1.0.76/1.0.78 同一铁律：先全量排序再截断，新抓内容绝不沉底 */
+    if(_pvSort==='reads') list.sort(function(a,b){ return feedNum(b.clicksCount)-feedNum(a.clicksCount)||String(b.dataDate||'').localeCompare(String(a.dataDate||'')); });
+    else list.sort(function(a,b){ return String(b.dataDate||'').localeCompare(String(a.dataDate||''))||feedNum(b.clicksCount)-feedNum(a.clicksCount); });
+    const total=list.length;
+    const shown=list.slice(0,_pvShown);
+    grid.innerHTML=total?shown.map(pvCardHTML).join(''):'<div class="pv-empty">没有符合条件的内容，换个筛选条件试试</div>';
+    pvApplyCols(); pvApplyRatio();
+    const more=document.getElementById('pv-more'), txt=document.getElementById('pv-tail-txt');
+    if(more) more.style.display=total>shown.length?'':'none';
+    if(txt) txt.textContent='END OF FEED · '+shown.length+' / '+total+' LOADED';
+  }
   async function loadHot10Board(){
-    const host=document.getElementById('hot10-board'); if(!host) return;
+    const host=document.getElementById('pv-grid')||document.getElementById('hot10-board'); if(!host) return;
     feedEnsureDelegate(); h10EnsureDelegate();
     let d=null, lib=null;
     try{ const r=await fetch('/static/feed_seed.json',{cache:'no-store'}); if(r.ok) d=await r.json(); }catch(e){}
@@ -19661,7 +20062,9 @@ document.addEventListener('click', async function(e){
     const seedItems=(d&&Array.isArray(d.items))?d.items:[];
     /* 🔴 2026-11-20：有库存就只显示库存，静态 seed 仅空库兜底（同长文板块，解决新旧混显） */
     _h10Items=runtime.length?runtime.slice():seedItems.slice();
-    h10Render();
+    /* 2026-11-27 v4：热点广场面板有 pv-grid 就走 v4 渲染器；旧 #hot10-board 保留兜底 */
+    if(document.getElementById('pv-grid')){ pvEnsure(); pvRender(); }
+    else h10Render();
   }
 
   /* ── 1.0.15 公众号平台榜单（账号榜）：看榜 → 选账号 → 抓它家作品 → 二创改写 ── */
