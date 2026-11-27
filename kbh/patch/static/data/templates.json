@@ -1,0 +1,8179 @@
+{
+ "first": [
+  {
+   "file": "首图/人文历史/1 (1).webp",
+   "name": "地图信息图 · 北京城市导览",
+   "style": "信息图风",
+   "keywords": [
+    {
+     "key": "数据主题",
+     "hint": "如：中国哪里最凉快"
+    },
+    {
+     "key": "要点列表",
+     "hint": "逗号分隔，如：南方,北方,东北"
+    }
+   ],
+   "fixed": "北京手绘地图版式 + 标注点位",
+   "role": "info",
+   "hname": "H1 信息图",
+   "rule": "次图扛信息：地图/数据，每行≤8字；禁信息卡/数据模块/二维码",
+   "family": "flat",
+   "family_name": "扁平矢量"
+  },
+  {
+   "file": "首图/人文历史/书法大字剪影.png",
+   "name": "古人问答海报 · 卷了一辈子",
+   "style": "古风漫画",
+   "keywords": [
+    {
+     "key": "人物/主题",
+     "hint": "如：李清照"
+    },
+    {
+     "key": "切入点",
+     "hint": "如：她的双面人生"
+    }
+   ],
+   "fixed": "古人群像 + 卷轴问答题版",
+   "role": "cover",
+   "hname": "H2 书法剪影",
+   "rule": "首图只放标题：大字2-3行+剪影+印章，禁信息卡/数据/二维码",
+   "family": "guofeng",
+   "family_name": "国风"
+  },
+  {
+   "file": "首图/人文历史/人物主图.jpg",
+   "name": "古人朋友圈 · 苏轼一生",
+   "style": "创意海报风",
+   "keywords": [
+    {
+     "key": "人物/主题",
+     "hint": "如：李清照"
+    },
+    {
+     "key": "切入点",
+     "hint": "如：她的双面人生"
+    }
+   ],
+   "fixed": "朋友圈界面仿作 + 古人头像",
+   "role": "cover",
+   "hname": "H2 首图",
+   "rule": "首图只放标题醒目：大字+副标+剪影+印章，禁信息卡",
+   "family": "minimal",
+   "family_name": "极简排版"
+  },
+  {
+   "file": "首图/人文历史/剪纸风.jpg",
+   "name": "古风人物 · 历史人文",
+   "style": "古风插画",
+   "keywords": [
+    {
+     "key": "主题词",
+     "hint": "这张图的主题"
+    }
+   ],
+   "fixed": "古风人物立绘 + 竖排标题",
+   "role": "cover",
+   "hname": "H2 首图",
+   "rule": "首图只放标题醒目：大字+副标+剪影+印章，禁信息卡",
+   "family": "guofeng",
+   "family_name": "国风"
+  },
+  {
+   "file": "首图/人文历史/古人生活工笔导览.webp",
+   "name": "古风攻略 · 古人出门",
+   "style": "古风漫画",
+   "keywords": [
+    {
+     "key": "数据主题",
+     "hint": "如：中国哪里最凉快"
+    },
+    {
+     "key": "要点列表",
+     "hint": "逗号分隔，如：南方,北方,东北"
+    }
+   ],
+   "fixed": "古风地图 + 攻略路线",
+   "role": "info",
+   "hname": "H1 工笔导览",
+   "rule": "次图扛信息：三扇圆窗导览，每窗注解≤8字；禁信息卡/数据模块/二维码",
+   "family": "guofeng",
+   "family_name": "国风"
+  },
+  {
+   "file": "首图/人文历史/图01.webp",
+   "name": "地图数据 · 中国哪里最凉快",
+   "style": "信息图风",
+   "keywords": [
+    {
+     "key": "数据主题",
+     "hint": "如：中国哪里最凉快"
+    },
+    {
+     "key": "要点列表",
+     "hint": "逗号分隔，如：南方,北方,东北"
+    }
+   ],
+   "fixed": "中国地图热力/标注版式",
+   "role": "info",
+   "hname": "H1 信息图",
+   "rule": "次图扛信息，每行≤8字；禁信息卡/数据模块/二维码",
+   "family": "flat",
+   "family_name": "扁平矢量"
+  },
+  {
+   "file": "首图/人文历史/图02.webp",
+   "name": "漫画分格 · 大女主李清照",
+   "style": "漫画分格风",
+   "keywords": [
+    {
+     "key": "人物/主题",
+     "hint": "如：李清照"
+    },
+    {
+     "key": "切入点",
+     "hint": "如：她的双面人生"
+    }
+   ],
+   "fixed": "四格漫画 + 人物Q版",
+   "role": "cover",
+   "hname": "H2 首图",
+   "rule": "首图只放标题醒目：大字+副标+剪影+印章，禁信息卡",
+   "family": "handdrawn",
+   "family_name": "手绘插画"
+  },
+  {
+   "file": "首图/人文历史/图06.webp",
+   "name": "大字报 · 电视剧大女主",
+   "style": "大字报风",
+   "keywords": [
+    {
+     "key": "主题词",
+     "hint": "如：终身不得糖尿病"
+    },
+    {
+     "key": "副标题",
+     "hint": "如：为了终身不得糖尿病，我现在坚持以下5点"
+    }
+   ],
+   "fixed": "黑底黄字大字报 + 人物剪影",
+   "role": "cover",
+   "hname": "H2 大字报",
+   "rule": "首图只放标题，禁塞信息卡",
+   "family": "minimal",
+   "family_name": "极简排版"
+  },
+  {
+   "file": "首图/人文历史/对比知识海报.png",
+   "name": "冷知识对比海报",
+   "style": "信息图风",
+   "keywords": [
+    {
+     "key": "数据主题",
+     "hint": "如：中国哪里最凉快"
+    },
+    {
+     "key": "要点列表",
+     "hint": "逗号分隔，如：南方,北方,东北"
+    }
+   ],
+   "fixed": "左右对比 + VS 版式",
+   "role": "info",
+   "hname": "H4 对比海报",
+   "rule": "次图扛信息：高密度标签，每行≤8字/标签≤5；禁信息卡/数据模块/二维码",
+   "family": "flat",
+   "family_name": "扁平矢量"
+  },
+  {
+   "file": "首图/人文历史/知识海报.webp",
+   "name": "对比漫画 · 古代武侠VS现代",
+   "style": "漫画分格风",
+   "keywords": [
+    {
+     "key": "人物/主题",
+     "hint": "如：李清照"
+    },
+    {
+     "key": "切入点",
+     "hint": "如：她的双面人生"
+    }
+   ],
+   "fixed": "左右分栏对比漫画",
+   "role": "info",
+   "hname": "H4 对比海报",
+   "rule": "次图扛信息，每行≤8字；禁信息卡/数据模块/二维码",
+   "family": "handdrawn",
+   "family_name": "手绘插画"
+  },
+  {
+   "file": "首图/人文历史/纠错对比卡.webp",
+   "name": "古风拼贴 · 真实的历史",
+   "style": "古风拼贴",
+   "keywords": [
+    {
+     "key": "主题词",
+     "hint": "这张图的主题"
+    }
+   ],
+   "fixed": "古画拼贴 + 做旧纸纹",
+   "role": "info",
+   "hname": "H3 纠错对比",
+   "rule": "次图扛信息：你以为vs古书，每行≤8字；禁信息卡/数据模块/二维码",
+   "family": "guofeng",
+   "family_name": "国风"
+  },
+  {
+   "file": "首图/人文历史/课本风.jpg",
+   "name": "古书竖排 · 胸有方略",
+   "style": "书卷风",
+   "keywords": [
+    {
+     "key": "金句主标",
+     "hint": "如：人一定要学会自渡"
+    },
+    {
+     "key": "落款",
+     "hint": "如：孔不惑AIko"
+    }
+   ],
+   "fixed": "古籍竖排 + 朱批批注",
+   "role": "cover",
+   "hname": "H2 书卷大字",
+   "rule": "首图只放标题；禁信息卡/数据模块/二维码",
+   "family": "guofeng",
+   "family_name": "国风"
+  },
+  {
+   "file": "首图/人文历史/金句对仗.jpg",
+   "name": "古书竖排 · 胸小无一字",
+   "style": "书卷风",
+   "keywords": [
+    {
+     "key": "金句主标",
+     "hint": "如：人一定要学会自渡"
+    },
+    {
+     "key": "落款",
+     "hint": "如：孔不惑AIko"
+    }
+   ],
+   "fixed": "古籍竖排 + 做旧底",
+   "role": "end",
+   "hname": "H5 金句对仗",
+   "rule": "末图：对仗两行+开放问，桥回落点；禁信息卡/数据模块/二维码",
+   "family": "guofeng",
+   "family_name": "国风"
+  },
+  {
+   "file": "首图/健康养生/大健康 (1).jpg",
+   "name": "健康大字报 · 终身不得糖尿病",
+   "style": "大字报风",
+   "keywords": [
+    {
+     "key": "主题词",
+     "hint": "如：终身不得糖尿病"
+    },
+    {
+     "key": "副标题",
+     "hint": "如：为了终身不得糖尿病，我现在坚持以下5点"
+    }
+   ],
+   "fixed": "蓝底 + 卡通人物 + 大字标题",
+   "role": "cover",
+   "hname": "H2 首图",
+   "rule": "首图只放标题醒目：大字+副标+剪影+印章，禁信息卡",
+   "family": "minimal",
+   "family_name": "极简排版"
+  },
+  {
+   "file": "首图/健康养生/大健康 (1).png",
+   "name": "暖拍实景 · 一碗汤面",
+   "style": "暖拍实景风",
+   "keywords": [
+    {
+     "key": "金句主标",
+     "hint": "如：人一定要学会自渡"
+    },
+    {
+     "key": "落款",
+     "hint": "如：孔不惑AIko"
+    }
+   ],
+   "fixed": "暖光实拍 + 顶部金句",
+   "role": "cover",
+   "hname": "H2 首图",
+   "rule": "首图只放标题醒目：大字+副标+剪影+印章，禁信息卡",
+   "family": "photo",
+   "family_name": "写实摄影"
+  },
+  {
+   "file": "首图/健康养生/大健康 (2).jpg",
+   "name": "食材信息图 · 苹果黄芪水",
+   "style": "信息图风",
+   "keywords": [
+    {
+     "key": "食谱名",
+     "hint": "如：苹果黄芪水"
+    },
+    {
+     "key": "食材",
+     "hint": "逗号分隔"
+    }
+   ],
+   "fixed": "食材俯拍拼贴 + 功效标注",
+   "role": "cover",
+   "hname": "H2 首图",
+   "rule": "首图只放标题醒目：大字+副标+剪影+印章，禁信息卡",
+   "family": "flat",
+   "family_name": "扁平矢量"
+  },
+  {
+   "file": "首图/情绪疗愈/35-45岁，人生下半场，开场即翻盘🔥_1_遇见木槿_来自小红书网页版_高清.jpg",
+   "name": "金句大字报 · 请好好经营35-45岁",
+   "style": "大字报风",
+   "keywords": [
+    {
+     "key": "金句主标",
+     "hint": "如：人一定要学会自渡"
+    },
+    {
+     "key": "落款",
+     "hint": "如：孔不惑AIko"
+    }
+   ],
+   "fixed": "蓝底白字金句 + 底部小字",
+   "role": "cover",
+   "hname": "H2 首图",
+   "rule": "首图只放标题醒目：大字+副标+剪影+印章，禁信息卡",
+   "family": "minimal",
+   "family_name": "极简排版"
+  },
+  {
+   "file": "首图/情绪疗愈/40+才悟透：闭嘴，装傻，隐身。_1_沐容成长_来自小红书网页版_高清.jpg",
+   "name": "暖拍实景 · 闭嘴装傻隐身",
+   "style": "暖拍实景风",
+   "keywords": [
+    {
+     "key": "金句主标",
+     "hint": "如：人一定要学会自渡"
+    },
+    {
+     "key": "落款",
+     "hint": "如：孔不惑AIko"
+    }
+   ],
+   "fixed": "暖木桌实拍 + 居中金句",
+   "role": "cover",
+   "hname": "H2 首图",
+   "rule": "首图只放标题醒目：大字+副标+剪影+印章，禁信息卡",
+   "family": "photo",
+   "family_name": "写实摄影"
+  },
+  {
+   "file": "首图/情绪疗愈/“人，一定要学会自渡……”_1_遇见木槿_来自小红书网页版_高清.jpg",
+   "name": "暗调书籍 · 学会自渡",
+   "style": "暗调书籍风",
+   "keywords": [
+    {
+     "key": "金句主标",
+     "hint": "如：人一定要学会自渡"
+    },
+    {
+     "key": "落款",
+     "hint": "如：孔不惑AIko"
+    }
+   ],
+   "fixed": "暗调书页 + 顶部金句",
+   "role": "cover",
+   "hname": "H2 首图",
+   "rule": "首图只放标题醒目：大字+副标+剪影+印章，禁信息卡",
+   "family": "photo",
+   "family_name": "写实摄影"
+  },
+  {
+   "file": "首图/情绪疗愈/书籍金句 (1).jpg",
+   "name": "暖拍实景 · 窗边书本",
+   "style": "暖拍实景风",
+   "keywords": [
+    {
+     "key": "金句主标",
+     "hint": "如：人一定要学会自渡"
+    },
+    {
+     "key": "落款",
+     "hint": "如：孔不惑AIko"
+    }
+   ],
+   "fixed": "窗边自然光 + 书本静物",
+   "role": "cover",
+   "hname": "H2 首图",
+   "rule": "首图只放标题醒目：大字+副标+剪影+印章，禁信息卡",
+   "family": "photo",
+   "family_name": "写实摄影"
+  },
+  {
+   "file": "首图/情绪疗愈/书籍金句 (1).png",
+   "name": "暖拍实景 · 书与咖啡",
+   "style": "暖拍实景风",
+   "keywords": [
+    {
+     "key": "金句主标",
+     "hint": "如：人一定要学会自渡"
+    },
+    {
+     "key": "落款",
+     "hint": "如：孔不惑AIko"
+    }
+   ],
+   "fixed": "书+咖啡俯拍 + 金句",
+   "role": "cover",
+   "hname": "H2 首图",
+   "rule": "首图只放标题醒目：大字+副标+剪影+印章，禁信息卡",
+   "family": "photo",
+   "family_name": "写实摄影"
+  },
+  {
+   "file": "首图/情绪疗愈/情绪 (1).jpg",
+   "name": "自然系插画 · Spring",
+   "style": "自然系插画",
+   "keywords": [
+    {
+     "key": "金句主标",
+     "hint": "如：人一定要学会自渡"
+    },
+    {
+     "key": "落款",
+     "hint": "如：孔不惑AIko"
+    }
+   ],
+   "fixed": "森林绿插画 + 英文主题词",
+   "role": "cover",
+   "hname": "H2 首图",
+   "rule": "首图只放标题醒目：大字+副标+剪影+印章，禁信息卡",
+   "family": "warmdraw",
+   "family_name": "暖调写实插画"
+  },
+  {
+   "file": "首图/情绪疗愈/情绪 (2).jpg",
+   "name": "暖黄卡通 · 人生捷径早睡",
+   "style": "暖黄卡通风",
+   "keywords": [
+    {
+     "key": "主题词",
+     "hint": "如：终身不得糖尿病"
+    },
+    {
+     "key": "副标题",
+     "hint": "如：为了终身不得糖尿病，我现在坚持以下5点"
+    }
+   ],
+   "fixed": "暖黄底 + 卡通人物 + 分点文字",
+   "role": "cover",
+   "hname": "H2 首图",
+   "rule": "首图只放标题醒目：大字+副标+剪影+印章，禁信息卡",
+   "family": "handdrawn",
+   "family_name": "手绘插画"
+  },
+  {
+   "file": "首图/情绪疗愈/疗愈.png",
+   "name": "暖光插画 · 想辞不敢辞",
+   "style": "暖光插画风",
+   "keywords": [
+    {
+     "key": "金句主标",
+     "hint": "如：人一定要学会自渡"
+    },
+    {
+     "key": "落款",
+     "hint": "如：孔不惑AIko"
+    }
+   ],
+   "fixed": "暖光房间插画 + 居中金句",
+   "role": "cover",
+   "hname": "H2 首图",
+   "rule": "首图只放标题醒目：大字+副标+剪影+印章，禁信息卡",
+   "family": "warmdraw",
+   "family_name": "暖调写实插画"
+  },
+  {
+   "file": "首图/知识科普/1 (1).jpg",
+   "name": "大字报 · 豆包文案",
+   "style": "大字报风",
+   "keywords": [
+    {
+     "key": "主题词",
+     "hint": "如：终身不得糖尿病"
+    },
+    {
+     "key": "副标题",
+     "hint": "如：为了终身不得糖尿病，我现在坚持以下5点"
+    }
+   ],
+   "fixed": "浅色底 + 黑大字 + 效果数字",
+   "role": "cover",
+   "hname": "H2 首图",
+   "rule": "首图只放标题醒目：大字+副标+剪影+印章，禁信息卡",
+   "family": "minimal",
+   "family_name": "极简排版"
+  },
+  {
+   "file": "首图/知识科普/1 (1).png",
+   "name": "真人截图 · 别再手动清理",
+   "style": "真人截图风",
+   "keywords": [
+    {
+     "key": "产品/主题",
+     "hint": "如：DeepSeek Harness"
+    },
+    {
+     "key": "核心结论",
+     "hint": "如：3分钟装完"
+    }
+   ],
+   "fixed": "左侧真人 + 右侧屏幕截图",
+   "role": "cover",
+   "hname": "H2 首图",
+   "rule": "首图只放标题醒目：大字+副标+剪影+印章，禁信息卡",
+   "family": "photo",
+   "family_name": "写实摄影"
+  },
+  {
+   "file": "首图/知识科普/1 (2).jpg",
+   "name": "深色科技 · 逐帧拆解",
+   "style": "深色科技风",
+   "keywords": [
+    {
+     "key": "产品/主题",
+     "hint": "如：DeepSeek Harness"
+    },
+    {
+     "key": "核心结论",
+     "hint": "如：3分钟装完"
+    }
+   ],
+   "fixed": "深色底 + 荧光绿强调 + 网格",
+   "role": "cover",
+   "hname": "H2 首图",
+   "rule": "首图只放标题醒目：大字+副标+剪影+印章，禁信息卡",
+   "family": "flat",
+   "family_name": "扁平矢量"
+  },
+  {
+   "file": "首图/知识科普/1 (2).png",
+   "name": "浅色信息图 · WorkBuddy换肤",
+   "style": "信息图风",
+   "keywords": [
+    {
+     "key": "主题词",
+     "hint": "如：终身不得糖尿病"
+    },
+    {
+     "key": "副标题",
+     "hint": "如：为了终身不得糖尿病，我现在坚持以下5点"
+    }
+   ],
+   "fixed": "浅色底 + 绿色胶囊标签 + 产品阵列",
+   "role": "cover",
+   "hname": "H2 首图",
+   "rule": "首图只放标题醒目：大字+副标+剪影+印章，禁信息卡",
+   "family": "flat",
+   "family_name": "扁平矢量"
+  },
+  {
+   "file": "首图/知识科普/1 (2).webp",
+   "name": "插画海报 · 把海洋切开",
+   "style": "插画风",
+   "keywords": [
+    {
+     "key": "主题词",
+     "hint": "这张图的主题"
+    }
+   ],
+   "fixed": "深蓝插画 + 大字标题",
+   "role": "cover",
+   "hname": "H2 首图",
+   "rule": "首图只放标题醒目：大字+副标+剪影+印章，禁信息卡",
+   "family": "handdrawn",
+   "family_name": "手绘插画"
+  },
+  {
+   "file": "首图/知识科普/1 (3).jpg",
+   "name": "深色产品 · DeepSeek Harness",
+   "style": "深色科技风",
+   "keywords": [
+    {
+     "key": "产品/主题",
+     "hint": "如：DeepSeek Harness"
+    },
+    {
+     "key": "核心结论",
+     "hint": "如：3分钟装完"
+    }
+   ],
+   "fixed": "深色产品海报 + 卖点列表",
+   "role": "cover",
+   "hname": "H2 首图",
+   "rule": "首图只放标题醒目：大字+副标+剪影+印章，禁信息卡",
+   "family": "flat",
+   "family_name": "扁平矢量"
+  },
+  {
+   "file": "首图/知识科普/1 (3).png",
+   "name": "书籍封面 · 人生指南",
+   "style": "书籍封面风",
+   "keywords": [
+    {
+     "key": "主题词",
+     "hint": "如：终身不得糖尿病"
+    },
+    {
+     "key": "副标题",
+     "hint": "如：为了终身不得糖尿病，我现在坚持以下5点"
+    }
+   ],
+   "fixed": "书籍封面仿作 + 字号层级",
+   "role": "cover",
+   "hname": "H2 首图",
+   "rule": "首图只放标题醒目：大字+副标+剪影+印章，禁信息卡",
+   "family": "minimal",
+   "family_name": "极简排版"
+  },
+  {
+   "file": "首图/知识科普/1 (3).webp",
+   "name": "暖色拼贴 · 给阿嬷的书",
+   "style": "暖色拼贴风",
+   "keywords": [
+    {
+     "key": "主题词",
+     "hint": "这张图的主题"
+    }
+   ],
+   "fixed": "暖色物品拼贴 + 序号标注",
+   "role": "cover",
+   "hname": "H2 首图",
+   "rule": "首图只放标题醒目：大字+副标+剪影+印章，禁信息卡",
+   "family": "warmdraw",
+   "family_name": "暖调写实插画"
+  },
+  {
+   "file": "首图/知识科普/1 (4).jpg",
+   "name": "漫画流程 · 写周报",
+   "style": "漫画流程风",
+   "keywords": [
+    {
+     "key": "主题词",
+     "hint": "这张图的主题"
+    }
+   ],
+   "fixed": "四步流程漫画 + 箭头",
+   "role": "cover",
+   "hname": "H2 首图",
+   "rule": "首图只放标题醒目：大字+副标+剪影+印章，禁信息卡",
+   "family": "handdrawn",
+   "family_name": "手绘插画"
+  },
+  {
+   "file": "首图/知识科普/1 (4).png",
+   "name": "深色大字报 · Muse登顶",
+   "style": "大字报风",
+   "keywords": [
+    {
+     "key": "主题词",
+     "hint": "如：终身不得糖尿病"
+    },
+    {
+     "key": "副标题",
+     "hint": "如：为了终身不得糖尿病，我现在坚持以下5点"
+    }
+   ],
+   "fixed": "深色底 + 大字 + 光效",
+   "role": "cover",
+   "hname": "H2 首图",
+   "rule": "首图只放标题醒目：大字+副标+剪影+印章，禁信息卡",
+   "family": "minimal",
+   "family_name": "极简排版"
+  },
+  {
+   "file": "首图/知识科普/1 (5).jpg",
+   "name": "真人截图 · DeepSeek保姆教程",
+   "style": "真人截图风",
+   "keywords": [
+    {
+     "key": "产品/主题",
+     "hint": "如：DeepSeek Harness"
+    },
+    {
+     "key": "核心结论",
+     "hint": "如：3分钟装完"
+    }
+   ],
+   "fixed": "左侧真人 + 右侧界面截图",
+   "role": "cover",
+   "hname": "H2 首图",
+   "rule": "首图只放标题醒目：大字+副标+剪影+印章，禁信息卡",
+   "family": "photo",
+   "family_name": "写实摄影"
+  },
+  {
+   "file": "首图/知识科普/1 (5).png",
+   "name": "真人截图 · 把规矩立住",
+   "style": "真人截图风",
+   "keywords": [
+    {
+     "key": "产品/主题",
+     "hint": "如：DeepSeek Harness"
+    },
+    {
+     "key": "核心结论",
+     "hint": "如：3分钟装完"
+    }
+   ],
+   "fixed": "真人 + 便签纸元素",
+   "role": "cover",
+   "hname": "H2 首图",
+   "rule": "首图只放标题醒目：大字+副标+剪影+印章，禁信息卡",
+   "family": "photo",
+   "family_name": "写实摄影"
+  },
+  {
+   "file": "首图/知识科普/1 (6).png",
+   "name": "真人图表 · 万字计划",
+   "style": "真人截图风",
+   "keywords": [
+    {
+     "key": "产品/主题",
+     "hint": "如：DeepSeek Harness"
+    },
+    {
+     "key": "核心结论",
+     "hint": "如：3分钟装完"
+    }
+   ],
+   "fixed": "真人 + 数据图表",
+   "role": "cover",
+   "hname": "H2 首图",
+   "rule": "首图只放标题醒目：大字+副标+剪影+印章，禁信息卡",
+   "family": "photo",
+   "family_name": "写实摄影"
+  },
+  {
+   "file": "首图/知识科普/1 (7).jpg",
+   "name": "大字报 · 人生复利系统",
+   "style": "大字报风",
+   "keywords": [
+    {
+     "key": "主题词",
+     "hint": "如：终身不得糖尿病"
+    },
+    {
+     "key": "副标题",
+     "hint": "如：为了终身不得糖尿病，我现在坚持以下5点"
+    }
+   ],
+   "fixed": "紫底大字报 + 系统分点",
+   "role": "cover",
+   "hname": "H2 首图",
+   "rule": "首图只放标题醒目：大字+副标+剪影+印章，禁信息卡",
+   "family": "minimal",
+   "family_name": "极简排版"
+  },
+  {
+   "file": "首图/知识科普/1 (8).png",
+   "name": "真人截图 · Codex安装",
+   "style": "真人截图风",
+   "keywords": [
+    {
+     "key": "产品/主题",
+     "hint": "如：DeepSeek Harness"
+    },
+    {
+     "key": "核心结论",
+     "hint": "如：3分钟装完"
+    }
+   ],
+   "fixed": "真人 + 终端截图",
+   "role": "cover",
+   "hname": "H2 首图",
+   "rule": "首图只放标题醒目：大字+副标+剪影+印章，禁信息卡",
+   "family": "photo",
+   "family_name": "写实摄影"
+  },
+  {
+   "file": "图库/su-comic/su-comic_001.webp",
+   "name": "四格漫画 · 样张01",
+   "style": "四格漫画",
+   "hname": "涂鸦撞色 · 贴图",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "段子、反差、剧情四格",
+   "family": "doodle",
+   "family_name": "涂鸦撞色",
+   "suite": "su-comic",
+   "suite_name": "四格漫画",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-comic/su-comic_002.webp",
+   "name": "四格漫画 · 样张02",
+   "style": "四格漫画",
+   "hname": "涂鸦撞色 · 贴图",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "段子、反差、剧情四格",
+   "family": "doodle",
+   "family_name": "涂鸦撞色",
+   "suite": "su-comic",
+   "suite_name": "四格漫画",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-comic/su-comic_003.webp",
+   "name": "四格漫画 · 样张03",
+   "style": "四格漫画",
+   "hname": "涂鸦撞色 · 贴图",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "段子、反差、剧情四格",
+   "family": "doodle",
+   "family_name": "涂鸦撞色",
+   "suite": "su-comic",
+   "suite_name": "四格漫画",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-aitool/su-aitool_001.webp",
+   "name": "AI工具横评 · 样张01",
+   "style": "AI工具横评",
+   "hname": "扁平矢量 · 图谱",
+   "fixed": "按该套视觉基因出同款：米白底 #F5F2EC + 钴蓝 #1E4FD8 超粗黑体 + 黑细线框 + 参数对比卡 + 档位指示线",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "工具横评、参数对比、产品发布",
+   "family": "flat",
+   "family_name": "扁平矢量",
+   "suite": "su-aitool",
+   "suite_name": "AI工具横评",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-aitool/su-aitool_002.webp",
+   "name": "AI工具横评 · 样张02",
+   "style": "AI工具横评",
+   "hname": "扁平矢量 · 图谱",
+   "fixed": "按该套视觉基因出同款：米白底 #F5F2EC + 钴蓝 #1E4FD8 超粗黑体 + 黑细线框 + 参数对比卡 + 档位指示线",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "工具横评、参数对比、产品发布",
+   "family": "flat",
+   "family_name": "扁平矢量",
+   "suite": "su-aitool",
+   "suite_name": "AI工具横评",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-aitool/su-aitool_003.webp",
+   "name": "AI工具横评 · 样张03",
+   "style": "AI工具横评",
+   "hname": "扁平矢量 · 图谱",
+   "fixed": "按该套视觉基因出同款：米白底 #F5F2EC + 钴蓝 #1E4FD8 超粗黑体 + 黑细线框 + 参数对比卡 + 档位指示线",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "工具横评、参数对比、产品发布",
+   "family": "flat",
+   "family_name": "扁平矢量",
+   "suite": "su-aitool",
+   "suite_name": "AI工具横评",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-aitool/su-aitool_004.webp",
+   "name": "AI工具横评 · 样张04",
+   "style": "AI工具横评",
+   "hname": "扁平矢量 · 图谱",
+   "fixed": "按该套视觉基因出同款：米白底 #F5F2EC + 钴蓝 #1E4FD8 超粗黑体 + 黑细线框 + 参数对比卡 + 档位指示线",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "工具横评、参数对比、产品发布",
+   "family": "flat",
+   "family_name": "扁平矢量",
+   "suite": "su-aitool",
+   "suite_name": "AI工具横评",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-aitool/su-aitool_005.webp",
+   "name": "AI工具横评 · 样张05",
+   "style": "AI工具横评",
+   "hname": "扁平矢量 · 图谱",
+   "fixed": "按该套视觉基因出同款：米白底 #F5F2EC + 钴蓝 #1E4FD8 超粗黑体 + 黑细线框 + 参数对比卡 + 档位指示线",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "工具横评、参数对比、产品发布",
+   "family": "flat",
+   "family_name": "扁平矢量",
+   "suite": "su-aitool",
+   "suite_name": "AI工具横评",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-aitool/su-aitool_006.webp",
+   "name": "AI工具横评 · 样张06",
+   "style": "AI工具横评",
+   "hname": "扁平矢量 · 图谱",
+   "fixed": "按该套视觉基因出同款：米白底 #F5F2EC + 钴蓝 #1E4FD8 超粗黑体 + 黑细线框 + 参数对比卡 + 档位指示线",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "工具横评、参数对比、产品发布",
+   "family": "flat",
+   "family_name": "扁平矢量",
+   "suite": "su-aitool",
+   "suite_name": "AI工具横评",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-aitool/su-aitool_007.webp",
+   "name": "AI工具横评 · 样张07",
+   "style": "AI工具横评",
+   "hname": "扁平矢量 · 图谱",
+   "fixed": "按该套视觉基因出同款：米白底 #F5F2EC + 钴蓝 #1E4FD8 超粗黑体 + 黑细线框 + 参数对比卡 + 档位指示线",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "工具横评、参数对比、产品发布",
+   "family": "flat",
+   "family_name": "扁平矢量",
+   "suite": "su-aitool",
+   "suite_name": "AI工具横评",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-aitool/su-aitool_008.webp",
+   "name": "AI工具横评 · 样张08",
+   "style": "AI工具横评",
+   "hname": "扁平矢量 · 图谱",
+   "fixed": "按该套视觉基因出同款：米白底 #F5F2EC + 钴蓝 #1E4FD8 超粗黑体 + 黑细线框 + 参数对比卡 + 档位指示线",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "工具横评、参数对比、产品发布",
+   "family": "flat",
+   "family_name": "扁平矢量",
+   "suite": "su-aitool",
+   "suite_name": "AI工具横评",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-aitool/su-aitool_009.webp",
+   "name": "AI工具横评 · 样张09",
+   "style": "AI工具横评",
+   "hname": "扁平矢量 · 图谱",
+   "fixed": "按该套视觉基因出同款：米白底 #F5F2EC + 钴蓝 #1E4FD8 超粗黑体 + 黑细线框 + 参数对比卡 + 档位指示线",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "工具横评、参数对比、产品发布",
+   "family": "flat",
+   "family_name": "扁平矢量",
+   "suite": "su-aitool",
+   "suite_name": "AI工具横评",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-aitool/su-aitool_010.webp",
+   "name": "AI工具横评 · 样张10",
+   "style": "AI工具横评",
+   "hname": "扁平矢量 · 图谱",
+   "fixed": "按该套视觉基因出同款：米白底 #F5F2EC + 钴蓝 #1E4FD8 超粗黑体 + 黑细线框 + 参数对比卡 + 档位指示线",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "工具横评、参数对比、产品发布",
+   "family": "flat",
+   "family_name": "扁平矢量",
+   "suite": "su-aitool",
+   "suite_name": "AI工具横评",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-aitool2/su-aitool2_001.webp",
+   "name": "AI工具增补 · 样张01",
+   "style": "AI工具增补",
+   "hname": "扁平矢量 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "工具横评补充样例",
+   "family": "flat",
+   "family_name": "扁平矢量",
+   "suite": "su-aitool2",
+   "suite_name": "AI工具增补",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-aitool2/su-aitool2_002.webp",
+   "name": "AI工具增补 · 样张02",
+   "style": "AI工具增补",
+   "hname": "扁平矢量 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "工具横评补充样例",
+   "family": "flat",
+   "family_name": "扁平矢量",
+   "suite": "su-aitool2",
+   "suite_name": "AI工具增补",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-aitool2/su-aitool2_003.webp",
+   "name": "AI工具增补 · 样张03",
+   "style": "AI工具增补",
+   "hname": "扁平矢量 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "工具横评补充样例",
+   "family": "flat",
+   "family_name": "扁平矢量",
+   "suite": "su-aitool2",
+   "suite_name": "AI工具增补",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-aitool2/su-aitool2_004.webp",
+   "name": "AI工具增补 · 样张04",
+   "style": "AI工具增补",
+   "hname": "扁平矢量 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "工具横评补充样例",
+   "family": "flat",
+   "family_name": "扁平矢量",
+   "suite": "su-aitool2",
+   "suite_name": "AI工具增补",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-aitool2/su-aitool2_005.webp",
+   "name": "AI工具增补 · 样张05",
+   "style": "AI工具增补",
+   "hname": "扁平矢量 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "工具横评补充样例",
+   "family": "flat",
+   "family_name": "扁平矢量",
+   "suite": "su-aitool2",
+   "suite_name": "AI工具增补",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-darktech/su-darktech_001.webp",
+   "name": "黑底科技 · 样张01",
+   "style": "黑底科技",
+   "hname": "科技风 · 贴图",
+   "fixed": "按该套视觉基因出同款：纯黑 + 荧光绿 #7CF49F + 等宽字体 + 巨型数字 + 编号步骤条",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "工作流、SOP、极客向",
+   "family": "tech",
+   "family_name": "科技风",
+   "suite": "su-darktech",
+   "suite_name": "黑底科技",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-darktech/su-darktech_002.webp",
+   "name": "黑底科技 · 样张02",
+   "style": "黑底科技",
+   "hname": "科技风 · 贴图",
+   "fixed": "按该套视觉基因出同款：纯黑 + 荧光绿 #7CF49F + 等宽字体 + 巨型数字 + 编号步骤条",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "工作流、SOP、极客向",
+   "family": "tech",
+   "family_name": "科技风",
+   "suite": "su-darktech",
+   "suite_name": "黑底科技",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-darktech/su-darktech_003.webp",
+   "name": "黑底科技 · 样张03",
+   "style": "黑底科技",
+   "hname": "科技风 · 贴图",
+   "fixed": "按该套视觉基因出同款：纯黑 + 荧光绿 #7CF49F + 等宽字体 + 巨型数字 + 编号步骤条",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "工作流、SOP、极客向",
+   "family": "tech",
+   "family_name": "科技风",
+   "suite": "su-darktech",
+   "suite_name": "黑底科技",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-darktech/su-darktech_004.webp",
+   "name": "黑底科技 · 样张04",
+   "style": "黑底科技",
+   "hname": "科技风 · 贴图",
+   "fixed": "按该套视觉基因出同款：纯黑 + 荧光绿 #7CF49F + 等宽字体 + 巨型数字 + 编号步骤条",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "工作流、SOP、极客向",
+   "family": "tech",
+   "family_name": "科技风",
+   "suite": "su-darktech",
+   "suite_name": "黑底科技",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-darktech/su-darktech_005.webp",
+   "name": "黑底科技 · 样张05",
+   "style": "黑底科技",
+   "hname": "科技风 · 贴图",
+   "fixed": "按该套视觉基因出同款：纯黑 + 荧光绿 #7CF49F + 等宽字体 + 巨型数字 + 编号步骤条",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "工作流、SOP、极客向",
+   "family": "tech",
+   "family_name": "科技风",
+   "suite": "su-darktech",
+   "suite_name": "黑底科技",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-darktech/su-darktech_006.webp",
+   "name": "黑底科技 · 样张06",
+   "style": "黑底科技",
+   "hname": "科技风 · 贴图",
+   "fixed": "按该套视觉基因出同款：纯黑 + 荧光绿 #7CF49F + 等宽字体 + 巨型数字 + 编号步骤条",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "工作流、SOP、极客向",
+   "family": "tech",
+   "family_name": "科技风",
+   "suite": "su-darktech",
+   "suite_name": "黑底科技",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-darktech/su-darktech_007.webp",
+   "name": "黑底科技 · 样张07",
+   "style": "黑底科技",
+   "hname": "科技风 · 贴图",
+   "fixed": "按该套视觉基因出同款：纯黑 + 荧光绿 #7CF49F + 等宽字体 + 巨型数字 + 编号步骤条",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "工作流、SOP、极客向",
+   "family": "tech",
+   "family_name": "科技风",
+   "suite": "su-darktech",
+   "suite_name": "黑底科技",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-darktech/su-darktech_008.webp",
+   "name": "黑底科技 · 样张08",
+   "style": "黑底科技",
+   "hname": "科技风 · 贴图",
+   "fixed": "按该套视觉基因出同款：纯黑 + 荧光绿 #7CF49F + 等宽字体 + 巨型数字 + 编号步骤条",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "工作流、SOP、极客向",
+   "family": "tech",
+   "family_name": "科技风",
+   "suite": "su-darktech",
+   "suite_name": "黑底科技",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-darktech/su-darktech_009.webp",
+   "name": "黑底科技 · 样张09",
+   "style": "黑底科技",
+   "hname": "科技风 · 贴图",
+   "fixed": "按该套视觉基因出同款：纯黑 + 荧光绿 #7CF49F + 等宽字体 + 巨型数字 + 编号步骤条",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "工作流、SOP、极客向",
+   "family": "tech",
+   "family_name": "科技风",
+   "suite": "su-darktech",
+   "suite_name": "黑底科技",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-aiknow/su-aiknow_001.webp",
+   "name": "手绘知识条 · 样张01",
+   "style": "手绘知识条",
+   "hname": "手绘插画 · 贴图",
+   "fixed": "按该套视觉基因出同款：米黄纸 + 纸胶带 + 回形针 + 锁/钥匙/星星贴纸 + 马克笔大字 + 打勾清单",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "低门槛快科普、引流封面",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-aiknow",
+   "suite_name": "手绘知识条",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-aiknow/su-aiknow_002.webp",
+   "name": "手绘知识条 · 样张02",
+   "style": "手绘知识条",
+   "hname": "手绘插画 · 贴图",
+   "fixed": "按该套视觉基因出同款：米黄纸 + 纸胶带 + 回形针 + 锁/钥匙/星星贴纸 + 马克笔大字 + 打勾清单",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "低门槛快科普、引流封面",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-aiknow",
+   "suite_name": "手绘知识条",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-aiknow/su-aiknow_003.webp",
+   "name": "手绘知识条 · 样张03",
+   "style": "手绘知识条",
+   "hname": "手绘插画 · 贴图",
+   "fixed": "按该套视觉基因出同款：米黄纸 + 纸胶带 + 回形针 + 锁/钥匙/星星贴纸 + 马克笔大字 + 打勾清单",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "低门槛快科普、引流封面",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-aiknow",
+   "suite_name": "手绘知识条",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-aiknow/su-aiknow_004.webp",
+   "name": "手绘知识条 · 样张04",
+   "style": "手绘知识条",
+   "hname": "手绘插画 · 贴图",
+   "fixed": "按该套视觉基因出同款：米黄纸 + 纸胶带 + 回形针 + 锁/钥匙/星星贴纸 + 马克笔大字 + 打勾清单",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "低门槛快科普、引流封面",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-aiknow",
+   "suite_name": "手绘知识条",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-aiknow/su-aiknow_005.webp",
+   "name": "手绘知识条 · 样张05",
+   "style": "手绘知识条",
+   "hname": "手绘插画 · 贴图",
+   "fixed": "按该套视觉基因出同款：米黄纸 + 纸胶带 + 回形针 + 锁/钥匙/星星贴纸 + 马克笔大字 + 打勾清单",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "低门槛快科普、引流封面",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-aiknow",
+   "suite_name": "手绘知识条",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-aiknow/su-aiknow_006.webp",
+   "name": "手绘知识条 · 样张06",
+   "style": "手绘知识条",
+   "hname": "手绘插画 · 贴图",
+   "fixed": "按该套视觉基因出同款：米黄纸 + 纸胶带 + 回形针 + 锁/钥匙/星星贴纸 + 马克笔大字 + 打勾清单",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "低门槛快科普、引流封面",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-aiknow",
+   "suite_name": "手绘知识条",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-aiknow/su-aiknow_007.webp",
+   "name": "手绘知识条 · 样张07",
+   "style": "手绘知识条",
+   "hname": "手绘插画 · 贴图",
+   "fixed": "按该套视觉基因出同款：米黄纸 + 纸胶带 + 回形针 + 锁/钥匙/星星贴纸 + 马克笔大字 + 打勾清单",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "低门槛快科普、引流封面",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-aiknow",
+   "suite_name": "手绘知识条",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-aiknow/su-aiknow_008.webp",
+   "name": "手绘知识条 · 样张08",
+   "style": "手绘知识条",
+   "hname": "手绘插画 · 贴图",
+   "fixed": "按该套视觉基因出同款：米黄纸 + 纸胶带 + 回形针 + 锁/钥匙/星星贴纸 + 马克笔大字 + 打勾清单",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "低门槛快科普、引流封面",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-aiknow",
+   "suite_name": "手绘知识条",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-aiknow/su-aiknow_009.webp",
+   "name": "手绘知识条 · 样张09",
+   "style": "手绘知识条",
+   "hname": "手绘插画 · 贴图",
+   "fixed": "按该套视觉基因出同款：米黄纸 + 纸胶带 + 回形针 + 锁/钥匙/星星贴纸 + 马克笔大字 + 打勾清单",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "低门槛快科普、引流封面",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-aiknow",
+   "suite_name": "手绘知识条",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-github/su-github_001.webp",
+   "name": "GitHub极简 · 样张01",
+   "style": "GitHub极简",
+   "hname": "扁平矢量 · 贴图",
+   "fixed": "按该套视觉基因出同款：纯白底 + 黑色终端窗（红黄绿三灯）+ 等宽字体 + 胶囊按钮",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "命令行、软件单点教程",
+   "family": "flat",
+   "family_name": "扁平矢量",
+   "suite": "su-github",
+   "suite_name": "GitHub极简",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-github/su-github_002.webp",
+   "name": "GitHub极简 · 样张02",
+   "style": "GitHub极简",
+   "hname": "扁平矢量 · 贴图",
+   "fixed": "按该套视觉基因出同款：纯白底 + 黑色终端窗（红黄绿三灯）+ 等宽字体 + 胶囊按钮",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "命令行、软件单点教程",
+   "family": "flat",
+   "family_name": "扁平矢量",
+   "suite": "su-github",
+   "suite_name": "GitHub极简",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-github/su-github_003.webp",
+   "name": "GitHub极简 · 样张03",
+   "style": "GitHub极简",
+   "hname": "扁平矢量 · 贴图",
+   "fixed": "按该套视觉基因出同款：纯白底 + 黑色终端窗（红黄绿三灯）+ 等宽字体 + 胶囊按钮",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "命令行、软件单点教程",
+   "family": "flat",
+   "family_name": "扁平矢量",
+   "suite": "su-github",
+   "suite_name": "GitHub极简",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-github/su-github_004.webp",
+   "name": "GitHub极简 · 样张04",
+   "style": "GitHub极简",
+   "hname": "扁平矢量 · 贴图",
+   "fixed": "按该套视觉基因出同款：纯白底 + 黑色终端窗（红黄绿三灯）+ 等宽字体 + 胶囊按钮",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "命令行、软件单点教程",
+   "family": "flat",
+   "family_name": "扁平矢量",
+   "suite": "su-github",
+   "suite_name": "GitHub极简",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-github/su-github_005.webp",
+   "name": "GitHub极简 · 样张05",
+   "style": "GitHub极简",
+   "hname": "扁平矢量 · 贴图",
+   "fixed": "按该套视觉基因出同款：纯白底 + 黑色终端窗（红黄绿三灯）+ 等宽字体 + 胶囊按钮",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "命令行、软件单点教程",
+   "family": "flat",
+   "family_name": "扁平矢量",
+   "suite": "su-github",
+   "suite_name": "GitHub极简",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-github/su-github_006.webp",
+   "name": "GitHub极简 · 样张06",
+   "style": "GitHub极简",
+   "hname": "扁平矢量 · 贴图",
+   "fixed": "按该套视觉基因出同款：纯白底 + 黑色终端窗（红黄绿三灯）+ 等宽字体 + 胶囊按钮",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "命令行、软件单点教程",
+   "family": "flat",
+   "family_name": "扁平矢量",
+   "suite": "su-github",
+   "suite_name": "GitHub极简",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-github/su-github_007.webp",
+   "name": "GitHub极简 · 样张07",
+   "style": "GitHub极简",
+   "hname": "扁平矢量 · 贴图",
+   "fixed": "按该套视觉基因出同款：纯白底 + 黑色终端窗（红黄绿三灯）+ 等宽字体 + 胶囊按钮",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "命令行、软件单点教程",
+   "family": "flat",
+   "family_name": "扁平矢量",
+   "suite": "su-github",
+   "suite_name": "GitHub极简",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-github/su-github_008.webp",
+   "name": "GitHub极简 · 样张08",
+   "style": "GitHub极简",
+   "hname": "扁平矢量 · 贴图",
+   "fixed": "按该套视觉基因出同款：纯白底 + 黑色终端窗（红黄绿三灯）+ 等宽字体 + 胶囊按钮",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "命令行、软件单点教程",
+   "family": "flat",
+   "family_name": "扁平矢量",
+   "suite": "su-github",
+   "suite_name": "GitHub极简",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-github/su-github_009.webp",
+   "name": "GitHub极简 · 样张09",
+   "style": "GitHub极简",
+   "hname": "扁平矢量 · 贴图",
+   "fixed": "按该套视觉基因出同款：纯白底 + 黑色终端窗（红黄绿三灯）+ 等宽字体 + 胶囊按钮",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "命令行、软件单点教程",
+   "family": "flat",
+   "family_name": "扁平矢量",
+   "suite": "su-github",
+   "suite_name": "GitHub极简",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-health/su-health_001.webp",
+   "name": "健康科普 · 样张01",
+   "style": "健康科普",
+   "hname": "手绘插画 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "养生、身体机制、习惯纠正",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-health",
+   "suite_name": "健康科普",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-health/su-health_002.webp",
+   "name": "健康科普 · 样张02",
+   "style": "健康科普",
+   "hname": "手绘插画 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "养生、身体机制、习惯纠正",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-health",
+   "suite_name": "健康科普",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-health/su-health_003.webp",
+   "name": "健康科普 · 样张03",
+   "style": "健康科普",
+   "hname": "手绘插画 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "养生、身体机制、习惯纠正",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-health",
+   "suite_name": "健康科普",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-health/su-health_004.webp",
+   "name": "健康科普 · 样张04",
+   "style": "健康科普",
+   "hname": "手绘插画 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "养生、身体机制、习惯纠正",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-health",
+   "suite_name": "健康科普",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-health/su-health_005.webp",
+   "name": "健康科普 · 样张05",
+   "style": "健康科普",
+   "hname": "手绘插画 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "养生、身体机制、习惯纠正",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-health",
+   "suite_name": "健康科普",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-health/su-health_006.webp",
+   "name": "健康科普 · 样张06",
+   "style": "健康科普",
+   "hname": "手绘插画 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "养生、身体机制、习惯纠正",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-health",
+   "suite_name": "健康科普",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-health/su-health_007.webp",
+   "name": "健康科普 · 样张07",
+   "style": "健康科普",
+   "hname": "手绘插画 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "养生、身体机制、习惯纠正",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-health",
+   "suite_name": "健康科普",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-health/su-health_008.webp",
+   "name": "健康科普 · 样张08",
+   "style": "健康科普",
+   "hname": "手绘插画 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "养生、身体机制、习惯纠正",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-health",
+   "suite_name": "健康科普",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-history/su-history_001.webp",
+   "name": "绘本故事 · 样张01",
+   "style": "绘本故事",
+   "hname": "手绘插画 · 贴图",
+   "fixed": "按该套视觉基因出同款：奶油纸底 #FEFCE8 + 海军蓝 #1E3A8A + 金星星 + 马克笔字 + 圆形 C 位小人 + 「全6张」",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "历史人文、人物故事、IP化",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-history",
+   "suite_name": "绘本故事",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-history/su-history_002.webp",
+   "name": "绘本故事 · 样张02",
+   "style": "绘本故事",
+   "hname": "手绘插画 · 贴图",
+   "fixed": "按该套视觉基因出同款：奶油纸底 #FEFCE8 + 海军蓝 #1E3A8A + 金星星 + 马克笔字 + 圆形 C 位小人 + 「全6张」",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "历史人文、人物故事、IP化",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-history",
+   "suite_name": "绘本故事",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-history/su-history_003.webp",
+   "name": "绘本故事 · 样张03",
+   "style": "绘本故事",
+   "hname": "手绘插画 · 贴图",
+   "fixed": "按该套视觉基因出同款：奶油纸底 #FEFCE8 + 海军蓝 #1E3A8A + 金星星 + 马克笔字 + 圆形 C 位小人 + 「全6张」",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "历史人文、人物故事、IP化",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-history",
+   "suite_name": "绘本故事",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-history/su-history_004.webp",
+   "name": "绘本故事 · 样张04",
+   "style": "绘本故事",
+   "hname": "手绘插画 · 贴图",
+   "fixed": "按该套视觉基因出同款：奶油纸底 #FEFCE8 + 海军蓝 #1E3A8A + 金星星 + 马克笔字 + 圆形 C 位小人 + 「全6张」",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "历史人文、人物故事、IP化",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-history",
+   "suite_name": "绘本故事",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-history/su-history_005.webp",
+   "name": "绘本故事 · 样张05",
+   "style": "绘本故事",
+   "hname": "手绘插画 · 贴图",
+   "fixed": "按该套视觉基因出同款：奶油纸底 #FEFCE8 + 海军蓝 #1E3A8A + 金星星 + 马克笔字 + 圆形 C 位小人 + 「全6张」",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "历史人文、人物故事、IP化",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-history",
+   "suite_name": "绘本故事",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-history/su-history_006.webp",
+   "name": "绘本故事 · 样张06",
+   "style": "绘本故事",
+   "hname": "手绘插画 · 贴图",
+   "fixed": "按该套视觉基因出同款：奶油纸底 #FEFCE8 + 海军蓝 #1E3A8A + 金星星 + 马克笔字 + 圆形 C 位小人 + 「全6张」",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "历史人文、人物故事、IP化",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-history",
+   "suite_name": "绘本故事",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-history/su-history_007.webp",
+   "name": "绘本故事 · 样张07",
+   "style": "绘本故事",
+   "hname": "手绘插画 · 贴图",
+   "fixed": "按该套视觉基因出同款：奶油纸底 #FEFCE8 + 海军蓝 #1E3A8A + 金星星 + 马克笔字 + 圆形 C 位小人 + 「全6张」",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "历史人文、人物故事、IP化",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-history",
+   "suite_name": "绘本故事",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-history/su-history_008.webp",
+   "name": "绘本故事 · 样张08",
+   "style": "绘本故事",
+   "hname": "手绘插画 · 贴图",
+   "fixed": "按该套视觉基因出同款：奶油纸底 #FEFCE8 + 海军蓝 #1E3A8A + 金星星 + 马克笔字 + 圆形 C 位小人 + 「全6张」",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "历史人文、人物故事、IP化",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-history",
+   "suite_name": "绘本故事",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-history/su-history_009.webp",
+   "name": "绘本故事 · 样张09",
+   "style": "绘本故事",
+   "hname": "手绘插画 · 贴图",
+   "fixed": "按该套视觉基因出同款：奶油纸底 #FEFCE8 + 海军蓝 #1E3A8A + 金星星 + 马克笔字 + 圆形 C 位小人 + 「全6张」",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "历史人文、人物故事、IP化",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-history",
+   "suite_name": "绘本故事",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-history/su-history_010.webp",
+   "name": "绘本故事 · 样张10",
+   "style": "绘本故事",
+   "hname": "手绘插画 · 贴图",
+   "fixed": "按该套视觉基因出同款：奶油纸底 #FEFCE8 + 海军蓝 #1E3A8A + 金星星 + 马克笔字 + 圆形 C 位小人 + 「全6张」",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "历史人文、人物故事、IP化",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-history",
+   "suite_name": "绘本故事",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-history/su-history_011.webp",
+   "name": "绘本故事 · 样张11",
+   "style": "绘本故事",
+   "hname": "手绘插画 · 贴图",
+   "fixed": "按该套视觉基因出同款：奶油纸底 #FEFCE8 + 海军蓝 #1E3A8A + 金星星 + 马克笔字 + 圆形 C 位小人 + 「全6张」",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "历史人文、人物故事、IP化",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-history",
+   "suite_name": "绘本故事",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-history/su-history_012.webp",
+   "name": "绘本故事 · 样张12",
+   "style": "绘本故事",
+   "hname": "手绘插画 · 贴图",
+   "fixed": "按该套视觉基因出同款：奶油纸底 #FEFCE8 + 海军蓝 #1E3A8A + 金星星 + 马克笔字 + 圆形 C 位小人 + 「全6张」",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "历史人文、人物故事、IP化",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-history",
+   "suite_name": "绘本故事",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-history/su-history_013.webp",
+   "name": "绘本故事 · 样张13",
+   "style": "绘本故事",
+   "hname": "手绘插画 · 贴图",
+   "fixed": "按该套视觉基因出同款：奶油纸底 #FEFCE8 + 海军蓝 #1E3A8A + 金星星 + 马克笔字 + 圆形 C 位小人 + 「全6张」",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "历史人文、人物故事、IP化",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-history",
+   "suite_name": "绘本故事",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-history/su-history_014.webp",
+   "name": "绘本故事 · 样张14",
+   "style": "绘本故事",
+   "hname": "手绘插画 · 贴图",
+   "fixed": "按该套视觉基因出同款：奶油纸底 #FEFCE8 + 海军蓝 #1E3A8A + 金星星 + 马克笔字 + 圆形 C 位小人 + 「全6张」",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "历史人文、人物故事、IP化",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-history",
+   "suite_name": "绘本故事",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-history/su-history_015.webp",
+   "name": "绘本故事 · 样张15",
+   "style": "绘本故事",
+   "hname": "手绘插画 · 贴图",
+   "fixed": "按该套视觉基因出同款：奶油纸底 #FEFCE8 + 海军蓝 #1E3A8A + 金星星 + 马克笔字 + 圆形 C 位小人 + 「全6张」",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "历史人文、人物故事、IP化",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-history",
+   "suite_name": "绘本故事",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-history/su-history_016.webp",
+   "name": "绘本故事 · 样张16",
+   "style": "绘本故事",
+   "hname": "手绘插画 · 贴图",
+   "fixed": "按该套视觉基因出同款：奶油纸底 #FEFCE8 + 海军蓝 #1E3A8A + 金星星 + 马克笔字 + 圆形 C 位小人 + 「全6张」",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "历史人文、人物故事、IP化",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-history",
+   "suite_name": "绘本故事",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-history/su-history_017.webp",
+   "name": "绘本故事 · 样张17",
+   "style": "绘本故事",
+   "hname": "手绘插画 · 贴图",
+   "fixed": "按该套视觉基因出同款：奶油纸底 #FEFCE8 + 海军蓝 #1E3A8A + 金星星 + 马克笔字 + 圆形 C 位小人 + 「全6张」",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "历史人文、人物故事、IP化",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-history",
+   "suite_name": "绘本故事",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-dopamine/su-dopamine_001.webp",
+   "name": "多巴胺涂鸦 · 样张01",
+   "style": "多巴胺涂鸦",
+   "hname": "涂鸦撞色 · 图谱",
+   "fixed": "按该套视觉基因出同款：霓虹撞色（品红/亮黄/青）、满幅复杂插画、平台图标、金币上升箭头、粗体",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "涨粉破圈、情绪型干货",
+   "family": "doodle",
+   "family_name": "涂鸦撞色",
+   "suite": "su-dopamine",
+   "suite_name": "多巴胺涂鸦",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-dopamine/su-dopamine_002.webp",
+   "name": "多巴胺涂鸦 · 样张02",
+   "style": "多巴胺涂鸦",
+   "hname": "涂鸦撞色 · 图谱",
+   "fixed": "按该套视觉基因出同款：霓虹撞色（品红/亮黄/青）、满幅复杂插画、平台图标、金币上升箭头、粗体",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "涨粉破圈、情绪型干货",
+   "family": "doodle",
+   "family_name": "涂鸦撞色",
+   "suite": "su-dopamine",
+   "suite_name": "多巴胺涂鸦",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-dopamine/su-dopamine_003.webp",
+   "name": "多巴胺涂鸦 · 样张03",
+   "style": "多巴胺涂鸦",
+   "hname": "涂鸦撞色 · 图谱",
+   "fixed": "按该套视觉基因出同款：霓虹撞色（品红/亮黄/青）、满幅复杂插画、平台图标、金币上升箭头、粗体",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "涨粉破圈、情绪型干货",
+   "family": "doodle",
+   "family_name": "涂鸦撞色",
+   "suite": "su-dopamine",
+   "suite_name": "多巴胺涂鸦",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-dopamine/su-dopamine_004.webp",
+   "name": "多巴胺涂鸦 · 样张04",
+   "style": "多巴胺涂鸦",
+   "hname": "涂鸦撞色 · 图谱",
+   "fixed": "按该套视觉基因出同款：霓虹撞色（品红/亮黄/青）、满幅复杂插画、平台图标、金币上升箭头、粗体",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "涨粉破圈、情绪型干货",
+   "family": "doodle",
+   "family_name": "涂鸦撞色",
+   "suite": "su-dopamine",
+   "suite_name": "多巴胺涂鸦",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-dopamine/su-dopamine_005.webp",
+   "name": "多巴胺涂鸦 · 样张05",
+   "style": "多巴胺涂鸦",
+   "hname": "涂鸦撞色 · 图谱",
+   "fixed": "按该套视觉基因出同款：霓虹撞色（品红/亮黄/青）、满幅复杂插画、平台图标、金币上升箭头、粗体",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "涨粉破圈、情绪型干货",
+   "family": "doodle",
+   "family_name": "涂鸦撞色",
+   "suite": "su-dopamine",
+   "suite_name": "多巴胺涂鸦",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-dopamine/su-dopamine_006.webp",
+   "name": "多巴胺涂鸦 · 样张06",
+   "style": "多巴胺涂鸦",
+   "hname": "涂鸦撞色 · 图谱",
+   "fixed": "按该套视觉基因出同款：霓虹撞色（品红/亮黄/青）、满幅复杂插画、平台图标、金币上升箭头、粗体",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "涨粉破圈、情绪型干货",
+   "family": "doodle",
+   "family_name": "涂鸦撞色",
+   "suite": "su-dopamine",
+   "suite_name": "多巴胺涂鸦",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-dopamine/su-dopamine_007.webp",
+   "name": "多巴胺涂鸦 · 样张07",
+   "style": "多巴胺涂鸦",
+   "hname": "涂鸦撞色 · 图谱",
+   "fixed": "按该套视觉基因出同款：霓虹撞色（品红/亮黄/青）、满幅复杂插画、平台图标、金币上升箭头、粗体",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "涨粉破圈、情绪型干货",
+   "family": "doodle",
+   "family_name": "涂鸦撞色",
+   "suite": "su-dopamine",
+   "suite_name": "多巴胺涂鸦",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-dopamine/su-dopamine_008.webp",
+   "name": "多巴胺涂鸦 · 样张08",
+   "style": "多巴胺涂鸦",
+   "hname": "涂鸦撞色 · 图谱",
+   "fixed": "按该套视觉基因出同款：霓虹撞色（品红/亮黄/青）、满幅复杂插画、平台图标、金币上升箭头、粗体",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "涨粉破圈、情绪型干货",
+   "family": "doodle",
+   "family_name": "涂鸦撞色",
+   "suite": "su-dopamine",
+   "suite_name": "多巴胺涂鸦",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-dopamine/su-dopamine_009.webp",
+   "name": "多巴胺涂鸦 · 样张09",
+   "style": "多巴胺涂鸦",
+   "hname": "涂鸦撞色 · 图谱",
+   "fixed": "按该套视觉基因出同款：霓虹撞色（品红/亮黄/青）、满幅复杂插画、平台图标、金币上升箭头、粗体",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "涨粉破圈、情绪型干货",
+   "family": "doodle",
+   "family_name": "涂鸦撞色",
+   "suite": "su-dopamine",
+   "suite_name": "多巴胺涂鸦",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-dopamine/su-dopamine_010.webp",
+   "name": "多巴胺涂鸦 · 样张10",
+   "style": "多巴胺涂鸦",
+   "hname": "涂鸦撞色 · 图谱",
+   "fixed": "按该套视觉基因出同款：霓虹撞色（品红/亮黄/青）、满幅复杂插画、平台图标、金币上升箭头、粗体",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "涨粉破圈、情绪型干货",
+   "family": "doodle",
+   "family_name": "涂鸦撞色",
+   "suite": "su-dopamine",
+   "suite_name": "多巴胺涂鸦",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-dopamine/su-dopamine_011.webp",
+   "name": "多巴胺涂鸦 · 样张11",
+   "style": "多巴胺涂鸦",
+   "hname": "涂鸦撞色 · 图谱",
+   "fixed": "按该套视觉基因出同款：霓虹撞色（品红/亮黄/青）、满幅复杂插画、平台图标、金币上升箭头、粗体",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "涨粉破圈、情绪型干货",
+   "family": "doodle",
+   "family_name": "涂鸦撞色",
+   "suite": "su-dopamine",
+   "suite_name": "多巴胺涂鸦",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-dopamine/su-dopamine_012.webp",
+   "name": "多巴胺涂鸦 · 样张12",
+   "style": "多巴胺涂鸦",
+   "hname": "涂鸦撞色 · 图谱",
+   "fixed": "按该套视觉基因出同款：霓虹撞色（品红/亮黄/青）、满幅复杂插画、平台图标、金币上升箭头、粗体",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "涨粉破圈、情绪型干货",
+   "family": "doodle",
+   "family_name": "涂鸦撞色",
+   "suite": "su-dopamine",
+   "suite_name": "多巴胺涂鸦",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-dopamine/su-dopamine_013.webp",
+   "name": "多巴胺涂鸦 · 样张13",
+   "style": "多巴胺涂鸦",
+   "hname": "涂鸦撞色 · 图谱",
+   "fixed": "按该套视觉基因出同款：霓虹撞色（品红/亮黄/青）、满幅复杂插画、平台图标、金币上升箭头、粗体",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "涨粉破圈、情绪型干货",
+   "family": "doodle",
+   "family_name": "涂鸦撞色",
+   "suite": "su-dopamine",
+   "suite_name": "多巴胺涂鸦",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-dopamine/su-dopamine_014.webp",
+   "name": "多巴胺涂鸦 · 样张14",
+   "style": "多巴胺涂鸦",
+   "hname": "涂鸦撞色 · 图谱",
+   "fixed": "按该套视觉基因出同款：霓虹撞色（品红/亮黄/青）、满幅复杂插画、平台图标、金币上升箭头、粗体",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "涨粉破圈、情绪型干货",
+   "family": "doodle",
+   "family_name": "涂鸦撞色",
+   "suite": "su-dopamine",
+   "suite_name": "多巴胺涂鸦",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-dopamine/su-dopamine_015.webp",
+   "name": "多巴胺涂鸦 · 样张15",
+   "style": "多巴胺涂鸦",
+   "hname": "涂鸦撞色 · 图谱",
+   "fixed": "按该套视觉基因出同款：霓虹撞色（品红/亮黄/青）、满幅复杂插画、平台图标、金币上升箭头、粗体",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "涨粉破圈、情绪型干货",
+   "family": "doodle",
+   "family_name": "涂鸦撞色",
+   "suite": "su-dopamine",
+   "suite_name": "多巴胺涂鸦",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-dopamine/su-dopamine_016.webp",
+   "name": "多巴胺涂鸦 · 样张16",
+   "style": "多巴胺涂鸦",
+   "hname": "涂鸦撞色 · 图谱",
+   "fixed": "按该套视觉基因出同款：霓虹撞色（品红/亮黄/青）、满幅复杂插画、平台图标、金币上升箭头、粗体",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "涨粉破圈、情绪型干货",
+   "family": "doodle",
+   "family_name": "涂鸦撞色",
+   "suite": "su-dopamine",
+   "suite_name": "多巴胺涂鸦",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-dopamine/su-dopamine_017.webp",
+   "name": "多巴胺涂鸦 · 样张17",
+   "style": "多巴胺涂鸦",
+   "hname": "涂鸦撞色 · 图谱",
+   "fixed": "按该套视觉基因出同款：霓虹撞色（品红/亮黄/青）、满幅复杂插画、平台图标、金币上升箭头、粗体",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "涨粉破圈、情绪型干货",
+   "family": "doodle",
+   "family_name": "涂鸦撞色",
+   "suite": "su-dopamine",
+   "suite_name": "多巴胺涂鸦",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-bigtype/su-bigtype_001.webp",
+   "name": "大字报 · 样张01",
+   "style": "大字报",
+   "hname": "极简排版 · 图谱",
+   "fixed": "按该套视觉基因出同款：白底 + 橙 #FF6B35 + 黑数据卡 + 超大数字 + 涨跌线 + 刊号 VOL.48",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "商业观察、进账复盘、行业调查",
+   "family": "minimal",
+   "family_name": "极简排版",
+   "suite": "su-bigtype",
+   "suite_name": "大字报",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-bigtype/su-bigtype_002.webp",
+   "name": "大字报 · 样张02",
+   "style": "大字报",
+   "hname": "极简排版 · 图谱",
+   "fixed": "按该套视觉基因出同款：白底 + 橙 #FF6B35 + 黑数据卡 + 超大数字 + 涨跌线 + 刊号 VOL.48",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "商业观察、进账复盘、行业调查",
+   "family": "minimal",
+   "family_name": "极简排版",
+   "suite": "su-bigtype",
+   "suite_name": "大字报",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-bigtype/su-bigtype_003.webp",
+   "name": "大字报 · 样张03",
+   "style": "大字报",
+   "hname": "极简排版 · 图谱",
+   "fixed": "按该套视觉基因出同款：白底 + 橙 #FF6B35 + 黑数据卡 + 超大数字 + 涨跌线 + 刊号 VOL.48",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "商业观察、进账复盘、行业调查",
+   "family": "minimal",
+   "family_name": "极简排版",
+   "suite": "su-bigtype",
+   "suite_name": "大字报",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-bigtype/su-bigtype_004.webp",
+   "name": "大字报 · 样张04",
+   "style": "大字报",
+   "hname": "极简排版 · 图谱",
+   "fixed": "按该套视觉基因出同款：白底 + 橙 #FF6B35 + 黑数据卡 + 超大数字 + 涨跌线 + 刊号 VOL.48",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "商业观察、进账复盘、行业调查",
+   "family": "minimal",
+   "family_name": "极简排版",
+   "suite": "su-bigtype",
+   "suite_name": "大字报",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-bigtype/su-bigtype_005.webp",
+   "name": "大字报 · 样张05",
+   "style": "大字报",
+   "hname": "极简排版 · 图谱",
+   "fixed": "按该套视觉基因出同款：白底 + 橙 #FF6B35 + 黑数据卡 + 超大数字 + 涨跌线 + 刊号 VOL.48",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "商业观察、进账复盘、行业调查",
+   "family": "minimal",
+   "family_name": "极简排版",
+   "suite": "su-bigtype",
+   "suite_name": "大字报",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-mind/su-mind_001.webp",
+   "name": "心理机制 · 样张01",
+   "style": "心理机制",
+   "hname": "手绘插画 · 图谱",
+   "fixed": "按该套视觉基因出同款：蓝墨线稿 + 简洁分区 + 中心人物剪影 + 编号「01/04」+ 虚线框",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "概念拆解、心理机制科普",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-mind",
+   "suite_name": "心理机制",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-mind/su-mind_002.webp",
+   "name": "心理机制 · 样张02",
+   "style": "心理机制",
+   "hname": "手绘插画 · 图谱",
+   "fixed": "按该套视觉基因出同款：蓝墨线稿 + 简洁分区 + 中心人物剪影 + 编号「01/04」+ 虚线框",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "概念拆解、心理机制科普",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-mind",
+   "suite_name": "心理机制",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-mind/su-mind_003.webp",
+   "name": "心理机制 · 样张03",
+   "style": "心理机制",
+   "hname": "手绘插画 · 图谱",
+   "fixed": "按该套视觉基因出同款：蓝墨线稿 + 简洁分区 + 中心人物剪影 + 编号「01/04」+ 虚线框",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "概念拆解、心理机制科普",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-mind",
+   "suite_name": "心理机制",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-mind/su-mind_004.webp",
+   "name": "心理机制 · 样张04",
+   "style": "心理机制",
+   "hname": "手绘插画 · 图谱",
+   "fixed": "按该套视觉基因出同款：蓝墨线稿 + 简洁分区 + 中心人物剪影 + 编号「01/04」+ 虚线框",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "概念拆解、心理机制科普",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-mind",
+   "suite_name": "心理机制",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-emotion/su-emotion_001.webp",
+   "name": "情绪卡片 · 样张01",
+   "style": "情绪卡片",
+   "hname": "扁平矢量 · 图谱",
+   "fixed": "按该套视觉基因出同款：柔和粉蓝 + 情绪人物（雨云/流泪）+ 虚线卡片分区 + 「图1/8」",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "心理成长、疗愈、对号入座",
+   "family": "flat",
+   "family_name": "扁平矢量",
+   "suite": "su-emotion",
+   "suite_name": "情绪卡片",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-emotion/su-emotion_002.webp",
+   "name": "情绪卡片 · 样张02",
+   "style": "情绪卡片",
+   "hname": "扁平矢量 · 图谱",
+   "fixed": "按该套视觉基因出同款：柔和粉蓝 + 情绪人物（雨云/流泪）+ 虚线卡片分区 + 「图1/8」",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "心理成长、疗愈、对号入座",
+   "family": "flat",
+   "family_name": "扁平矢量",
+   "suite": "su-emotion",
+   "suite_name": "情绪卡片",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-emotion/su-emotion_003.webp",
+   "name": "情绪卡片 · 样张03",
+   "style": "情绪卡片",
+   "hname": "扁平矢量 · 图谱",
+   "fixed": "按该套视觉基因出同款：柔和粉蓝 + 情绪人物（雨云/流泪）+ 虚线卡片分区 + 「图1/8」",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "心理成长、疗愈、对号入座",
+   "family": "flat",
+   "family_name": "扁平矢量",
+   "suite": "su-emotion",
+   "suite_name": "情绪卡片",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-emotion/su-emotion_004.webp",
+   "name": "情绪卡片 · 样张04",
+   "style": "情绪卡片",
+   "hname": "扁平矢量 · 图谱",
+   "fixed": "按该套视觉基因出同款：柔和粉蓝 + 情绪人物（雨云/流泪）+ 虚线卡片分区 + 「图1/8」",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "心理成长、疗愈、对号入座",
+   "family": "flat",
+   "family_name": "扁平矢量",
+   "suite": "su-emotion",
+   "suite_name": "情绪卡片",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-emotion/su-emotion_005.webp",
+   "name": "情绪卡片 · 样张05",
+   "style": "情绪卡片",
+   "hname": "扁平矢量 · 图谱",
+   "fixed": "按该套视觉基因出同款：柔和粉蓝 + 情绪人物（雨云/流泪）+ 虚线卡片分区 + 「图1/8」",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "心理成长、疗愈、对号入座",
+   "family": "flat",
+   "family_name": "扁平矢量",
+   "suite": "su-emotion",
+   "suite_name": "情绪卡片",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-emotion/su-emotion_006.webp",
+   "name": "情绪卡片 · 样张06",
+   "style": "情绪卡片",
+   "hname": "扁平矢量 · 图谱",
+   "fixed": "按该套视觉基因出同款：柔和粉蓝 + 情绪人物（雨云/流泪）+ 虚线卡片分区 + 「图1/8」",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "心理成长、疗愈、对号入座",
+   "family": "flat",
+   "family_name": "扁平矢量",
+   "suite": "su-emotion",
+   "suite_name": "情绪卡片",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-emotion/su-emotion_007.webp",
+   "name": "情绪卡片 · 样张07",
+   "style": "情绪卡片",
+   "hname": "扁平矢量 · 图谱",
+   "fixed": "按该套视觉基因出同款：柔和粉蓝 + 情绪人物（雨云/流泪）+ 虚线卡片分区 + 「图1/8」",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "心理成长、疗愈、对号入座",
+   "family": "flat",
+   "family_name": "扁平矢量",
+   "suite": "su-emotion",
+   "suite_name": "情绪卡片",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-emotion/su-emotion_008.webp",
+   "name": "情绪卡片 · 样张08",
+   "style": "情绪卡片",
+   "hname": "扁平矢量 · 图谱",
+   "fixed": "按该套视觉基因出同款：柔和粉蓝 + 情绪人物（雨云/流泪）+ 虚线卡片分区 + 「图1/8」",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "心理成长、疗愈、对号入座",
+   "family": "flat",
+   "family_name": "扁平矢量",
+   "suite": "su-emotion",
+   "suite_name": "情绪卡片",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-emotion/su-emotion_009.webp",
+   "name": "情绪卡片 · 样张09",
+   "style": "情绪卡片",
+   "hname": "扁平矢量 · 图谱",
+   "fixed": "按该套视觉基因出同款：柔和粉蓝 + 情绪人物（雨云/流泪）+ 虚线卡片分区 + 「图1/8」",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "心理成长、疗愈、对号入座",
+   "family": "flat",
+   "family_name": "扁平矢量",
+   "suite": "su-emotion",
+   "suite_name": "情绪卡片",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-emotion/su-emotion_010.webp",
+   "name": "情绪卡片 · 样张10",
+   "style": "情绪卡片",
+   "hname": "扁平矢量 · 图谱",
+   "fixed": "按该套视觉基因出同款：柔和粉蓝 + 情绪人物（雨云/流泪）+ 虚线卡片分区 + 「图1/8」",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "心理成长、疗愈、对号入座",
+   "family": "flat",
+   "family_name": "扁平矢量",
+   "suite": "su-emotion",
+   "suite_name": "情绪卡片",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-emotion/su-emotion_011.webp",
+   "name": "情绪卡片 · 样张11",
+   "style": "情绪卡片",
+   "hname": "扁平矢量 · 图谱",
+   "fixed": "按该套视觉基因出同款：柔和粉蓝 + 情绪人物（雨云/流泪）+ 虚线卡片分区 + 「图1/8」",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "心理成长、疗愈、对号入座",
+   "family": "flat",
+   "family_name": "扁平矢量",
+   "suite": "su-emotion",
+   "suite_name": "情绪卡片",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-emotion/su-emotion_012.webp",
+   "name": "情绪卡片 · 样张12",
+   "style": "情绪卡片",
+   "hname": "扁平矢量 · 图谱",
+   "fixed": "按该套视觉基因出同款：柔和粉蓝 + 情绪人物（雨云/流泪）+ 虚线卡片分区 + 「图1/8」",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "心理成长、疗愈、对号入座",
+   "family": "flat",
+   "family_name": "扁平矢量",
+   "suite": "su-emotion",
+   "suite_name": "情绪卡片",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-emotion/su-emotion_013.webp",
+   "name": "情绪卡片 · 样张13",
+   "style": "情绪卡片",
+   "hname": "扁平矢量 · 图谱",
+   "fixed": "按该套视觉基因出同款：柔和粉蓝 + 情绪人物（雨云/流泪）+ 虚线卡片分区 + 「图1/8」",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "心理成长、疗愈、对号入座",
+   "family": "flat",
+   "family_name": "扁平矢量",
+   "suite": "su-emotion",
+   "suite_name": "情绪卡片",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-emotion/su-emotion_014.webp",
+   "name": "情绪卡片 · 样张14",
+   "style": "情绪卡片",
+   "hname": "扁平矢量 · 图谱",
+   "fixed": "按该套视觉基因出同款：柔和粉蓝 + 情绪人物（雨云/流泪）+ 虚线卡片分区 + 「图1/8」",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "心理成长、疗愈、对号入座",
+   "family": "flat",
+   "family_name": "扁平矢量",
+   "suite": "su-emotion",
+   "suite_name": "情绪卡片",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-cartoon/su-cartoon_001.webp",
+   "name": "卡通学科 · 样张01",
+   "style": "卡通学科",
+   "hname": "扁平矢量 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "学科知识、教学图解",
+   "family": "flat",
+   "family_name": "扁平矢量",
+   "suite": "su-cartoon",
+   "suite_name": "卡通学科",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-cartoon/su-cartoon_002.webp",
+   "name": "卡通学科 · 样张02",
+   "style": "卡通学科",
+   "hname": "扁平矢量 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "学科知识、教学图解",
+   "family": "flat",
+   "family_name": "扁平矢量",
+   "suite": "su-cartoon",
+   "suite_name": "卡通学科",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-cartoon/su-cartoon_003.webp",
+   "name": "卡通学科 · 样张03",
+   "style": "卡通学科",
+   "hname": "扁平矢量 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "学科知识、教学图解",
+   "family": "flat",
+   "family_name": "扁平矢量",
+   "suite": "su-cartoon",
+   "suite_name": "卡通学科",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-cartoon/su-cartoon_004.webp",
+   "name": "卡通学科 · 样张04",
+   "style": "卡通学科",
+   "hname": "扁平矢量 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "学科知识、教学图解",
+   "family": "flat",
+   "family_name": "扁平矢量",
+   "suite": "su-cartoon",
+   "suite_name": "卡通学科",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-flattut/su-flattut_001.webp",
+   "name": "扁平教程 · 样张01",
+   "style": "扁平教程",
+   "hname": "扁平矢量 · 图谱",
+   "fixed": "按该套视觉基因出同款：绿白 + 手机 UI 截图 + 横向步骤条 + 圆角胶囊 + 绿色横幅",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "保姆级教程、手帐风",
+   "family": "flat",
+   "family_name": "扁平矢量",
+   "suite": "su-flattut",
+   "suite_name": "扁平教程",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-flattut/su-flattut_002.webp",
+   "name": "扁平教程 · 样张02",
+   "style": "扁平教程",
+   "hname": "扁平矢量 · 图谱",
+   "fixed": "按该套视觉基因出同款：绿白 + 手机 UI 截图 + 横向步骤条 + 圆角胶囊 + 绿色横幅",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "保姆级教程、手帐风",
+   "family": "flat",
+   "family_name": "扁平矢量",
+   "suite": "su-flattut",
+   "suite_name": "扁平教程",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-flattut/su-flattut_003.webp",
+   "name": "扁平教程 · 样张03",
+   "style": "扁平教程",
+   "hname": "扁平矢量 · 图谱",
+   "fixed": "按该套视觉基因出同款：绿白 + 手机 UI 截图 + 横向步骤条 + 圆角胶囊 + 绿色横幅",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "保姆级教程、手帐风",
+   "family": "flat",
+   "family_name": "扁平矢量",
+   "suite": "su-flattut",
+   "suite_name": "扁平教程",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-flattut/su-flattut_004.webp",
+   "name": "扁平教程 · 样张04",
+   "style": "扁平教程",
+   "hname": "扁平矢量 · 图谱",
+   "fixed": "按该套视觉基因出同款：绿白 + 手机 UI 截图 + 横向步骤条 + 圆角胶囊 + 绿色横幅",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "保姆级教程、手帐风",
+   "family": "flat",
+   "family_name": "扁平矢量",
+   "suite": "su-flattut",
+   "suite_name": "扁平教程",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-flattut/su-flattut_005.webp",
+   "name": "扁平教程 · 样张05",
+   "style": "扁平教程",
+   "hname": "扁平矢量 · 图谱",
+   "fixed": "按该套视觉基因出同款：绿白 + 手机 UI 截图 + 横向步骤条 + 圆角胶囊 + 绿色横幅",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "保姆级教程、手帐风",
+   "family": "flat",
+   "family_name": "扁平矢量",
+   "suite": "su-flattut",
+   "suite_name": "扁平教程",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-flattut/su-flattut_006.webp",
+   "name": "扁平教程 · 样张06",
+   "style": "扁平教程",
+   "hname": "扁平矢量 · 图谱",
+   "fixed": "按该套视觉基因出同款：绿白 + 手机 UI 截图 + 横向步骤条 + 圆角胶囊 + 绿色横幅",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "保姆级教程、手帐风",
+   "family": "flat",
+   "family_name": "扁平矢量",
+   "suite": "su-flattut",
+   "suite_name": "扁平教程",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-flattut/su-flattut_007.webp",
+   "name": "扁平教程 · 样张07",
+   "style": "扁平教程",
+   "hname": "扁平矢量 · 图谱",
+   "fixed": "按该套视觉基因出同款：绿白 + 手机 UI 截图 + 横向步骤条 + 圆角胶囊 + 绿色横幅",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "保姆级教程、手帐风",
+   "family": "flat",
+   "family_name": "扁平矢量",
+   "suite": "su-flattut",
+   "suite_name": "扁平教程",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-flattut/su-flattut_008.webp",
+   "name": "扁平教程 · 样张08",
+   "style": "扁平教程",
+   "hname": "扁平矢量 · 图谱",
+   "fixed": "按该套视觉基因出同款：绿白 + 手机 UI 截图 + 横向步骤条 + 圆角胶囊 + 绿色横幅",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "保姆级教程、手帐风",
+   "family": "flat",
+   "family_name": "扁平矢量",
+   "suite": "su-flattut",
+   "suite_name": "扁平教程",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-flattut/su-flattut_009.webp",
+   "name": "扁平教程 · 样张09",
+   "style": "扁平教程",
+   "hname": "扁平矢量 · 图谱",
+   "fixed": "按该套视觉基因出同款：绿白 + 手机 UI 截图 + 横向步骤条 + 圆角胶囊 + 绿色横幅",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "保姆级教程、手帐风",
+   "family": "flat",
+   "family_name": "扁平矢量",
+   "suite": "su-flattut",
+   "suite_name": "扁平教程",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-hddeep/su-hddeep_001.webp",
+   "name": "手绘深度图 · 样张01",
+   "style": "手绘深度图",
+   "hname": "手绘插画 · 图谱",
+   "fixed": "按该套视觉基因出同款：深蓝 + 淡彩晕染 + 冰山隐喻（水面上下分层）+ 虚线框",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "疗法结构、深度模型总览",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hddeep",
+   "suite_name": "手绘深度图",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-hddeep/su-hddeep_002.webp",
+   "name": "手绘深度图 · 样张02",
+   "style": "手绘深度图",
+   "hname": "手绘插画 · 图谱",
+   "fixed": "按该套视觉基因出同款：深蓝 + 淡彩晕染 + 冰山隐喻（水面上下分层）+ 虚线框",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "疗法结构、深度模型总览",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hddeep",
+   "suite_name": "手绘深度图",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-hddeep/su-hddeep_003.webp",
+   "name": "手绘深度图 · 样张03",
+   "style": "手绘深度图",
+   "hname": "手绘插画 · 图谱",
+   "fixed": "按该套视觉基因出同款：深蓝 + 淡彩晕染 + 冰山隐喻（水面上下分层）+ 虚线框",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "疗法结构、深度模型总览",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hddeep",
+   "suite_name": "手绘深度图",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-hddeep/su-hddeep_004.webp",
+   "name": "手绘深度图 · 样张04",
+   "style": "手绘深度图",
+   "hname": "手绘插画 · 图谱",
+   "fixed": "按该套视觉基因出同款：深蓝 + 淡彩晕染 + 冰山隐喻（水面上下分层）+ 虚线框",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "疗法结构、深度模型总览",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hddeep",
+   "suite_name": "手绘深度图",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-hddeep/su-hddeep_005.webp",
+   "name": "手绘深度图 · 样张05",
+   "style": "手绘深度图",
+   "hname": "手绘插画 · 图谱",
+   "fixed": "按该套视觉基因出同款：深蓝 + 淡彩晕染 + 冰山隐喻（水面上下分层）+ 虚线框",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "疗法结构、深度模型总览",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hddeep",
+   "suite_name": "手绘深度图",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-hddeep/su-hddeep_006.webp",
+   "name": "手绘深度图 · 样张06",
+   "style": "手绘深度图",
+   "hname": "手绘插画 · 图谱",
+   "fixed": "按该套视觉基因出同款：深蓝 + 淡彩晕染 + 冰山隐喻（水面上下分层）+ 虚线框",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "疗法结构、深度模型总览",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hddeep",
+   "suite_name": "手绘深度图",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-hddeep/su-hddeep_007.webp",
+   "name": "手绘深度图 · 样张07",
+   "style": "手绘深度图",
+   "hname": "手绘插画 · 图谱",
+   "fixed": "按该套视觉基因出同款：深蓝 + 淡彩晕染 + 冰山隐喻（水面上下分层）+ 虚线框",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "疗法结构、深度模型总览",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hddeep",
+   "suite_name": "手绘深度图",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-hddeep/su-hddeep_008.webp",
+   "name": "手绘深度图 · 样张08",
+   "style": "手绘深度图",
+   "hname": "手绘插画 · 图谱",
+   "fixed": "按该套视觉基因出同款：深蓝 + 淡彩晕染 + 冰山隐喻（水面上下分层）+ 虚线框",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "疗法结构、深度模型总览",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hddeep",
+   "suite_name": "手绘深度图",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-hddeep/su-hddeep_009.webp",
+   "name": "手绘深度图 · 样张09",
+   "style": "手绘深度图",
+   "hname": "手绘插画 · 图谱",
+   "fixed": "按该套视觉基因出同款：深蓝 + 淡彩晕染 + 冰山隐喻（水面上下分层）+ 虚线框",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "疗法结构、深度模型总览",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hddeep",
+   "suite_name": "手绘深度图",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-hddeep/su-hddeep_010.webp",
+   "name": "手绘深度图 · 样张10",
+   "style": "手绘深度图",
+   "hname": "手绘插画 · 图谱",
+   "fixed": "按该套视觉基因出同款：深蓝 + 淡彩晕染 + 冰山隐喻（水面上下分层）+ 虚线框",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "疗法结构、深度模型总览",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hddeep",
+   "suite_name": "手绘深度图",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-hddeep/su-hddeep_011.webp",
+   "name": "手绘深度图 · 样张11",
+   "style": "手绘深度图",
+   "hname": "手绘插画 · 图谱",
+   "fixed": "按该套视觉基因出同款：深蓝 + 淡彩晕染 + 冰山隐喻（水面上下分层）+ 虚线框",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "疗法结构、深度模型总览",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hddeep",
+   "suite_name": "手绘深度图",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-hddeep/su-hddeep_012.webp",
+   "name": "手绘深度图 · 样张12",
+   "style": "手绘深度图",
+   "hname": "手绘插画 · 图谱",
+   "fixed": "按该套视觉基因出同款：深蓝 + 淡彩晕染 + 冰山隐喻（水面上下分层）+ 虚线框",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "疗法结构、深度模型总览",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hddeep",
+   "suite_name": "手绘深度图",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-hddeep/su-hddeep_013.webp",
+   "name": "手绘深度图 · 样张13",
+   "style": "手绘深度图",
+   "hname": "手绘插画 · 图谱",
+   "fixed": "按该套视觉基因出同款：深蓝 + 淡彩晕染 + 冰山隐喻（水面上下分层）+ 虚线框",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "疗法结构、深度模型总览",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hddeep",
+   "suite_name": "手绘深度图",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-hddeep/su-hddeep_014.webp",
+   "name": "手绘深度图 · 样张14",
+   "style": "手绘深度图",
+   "hname": "手绘插画 · 图谱",
+   "fixed": "按该套视觉基因出同款：深蓝 + 淡彩晕染 + 冰山隐喻（水面上下分层）+ 虚线框",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "疗法结构、深度模型总览",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hddeep",
+   "suite_name": "手绘深度图",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-hddeep/su-hddeep_015.webp",
+   "name": "手绘深度图 · 样张15",
+   "style": "手绘深度图",
+   "hname": "手绘插画 · 图谱",
+   "fixed": "按该套视觉基因出同款：深蓝 + 淡彩晕染 + 冰山隐喻（水面上下分层）+ 虚线框",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "疗法结构、深度模型总览",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hddeep",
+   "suite_name": "手绘深度图",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-hddeep/su-hddeep_016.webp",
+   "name": "手绘深度图 · 样张16",
+   "style": "手绘深度图",
+   "hname": "手绘插画 · 图谱",
+   "fixed": "按该套视觉基因出同款：深蓝 + 淡彩晕染 + 冰山隐喻（水面上下分层）+ 虚线框",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "疗法结构、深度模型总览",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hddeep",
+   "suite_name": "手绘深度图",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-hdbook/su-hdbook_001.webp",
+   "name": "手绘书籍 · 样张01",
+   "style": "手绘书籍",
+   "hname": "手绘插画 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "读书笔记、书单、金句",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hdbook",
+   "suite_name": "手绘书籍",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-hdbook/su-hdbook_002.webp",
+   "name": "手绘书籍 · 样张02",
+   "style": "手绘书籍",
+   "hname": "手绘插画 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "读书笔记、书单、金句",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hdbook",
+   "suite_name": "手绘书籍",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-hdbook/su-hdbook_003.webp",
+   "name": "手绘书籍 · 样张03",
+   "style": "手绘书籍",
+   "hname": "手绘插画 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "读书笔记、书单、金句",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hdbook",
+   "suite_name": "手绘书籍",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-hdbook/su-hdbook_004.webp",
+   "name": "手绘书籍 · 样张04",
+   "style": "手绘书籍",
+   "hname": "手绘插画 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "读书笔记、书单、金句",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hdbook",
+   "suite_name": "手绘书籍",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-hdbook/su-hdbook_005.webp",
+   "name": "手绘书籍 · 样张05",
+   "style": "手绘书籍",
+   "hname": "手绘插画 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "读书笔记、书单、金句",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hdbook",
+   "suite_name": "手绘书籍",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-hdbook/su-hdbook_006.webp",
+   "name": "手绘书籍 · 样张06",
+   "style": "手绘书籍",
+   "hname": "手绘插画 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "读书笔记、书单、金句",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hdbook",
+   "suite_name": "手绘书籍",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-hdbook/su-hdbook_007.webp",
+   "name": "手绘书籍 · 样张07",
+   "style": "手绘书籍",
+   "hname": "手绘插画 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "读书笔记、书单、金句",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hdbook",
+   "suite_name": "手绘书籍",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-hdchem/su-hdchem_001.webp",
+   "name": "手绘化学 · 样张01",
+   "style": "手绘化学",
+   "hname": "手绘插画 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "化学式、反应原理",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hdchem",
+   "suite_name": "手绘化学",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-hdchem/su-hdchem_002.webp",
+   "name": "手绘化学 · 样张02",
+   "style": "手绘化学",
+   "hname": "手绘插画 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "化学式、反应原理",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hdchem",
+   "suite_name": "手绘化学",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-hdchem/su-hdchem_003.webp",
+   "name": "手绘化学 · 样张03",
+   "style": "手绘化学",
+   "hname": "手绘插画 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "化学式、反应原理",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hdchem",
+   "suite_name": "手绘化学",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-hdchem/su-hdchem_004.webp",
+   "name": "手绘化学 · 样张04",
+   "style": "手绘化学",
+   "hname": "手绘插画 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "化学式、反应原理",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hdchem",
+   "suite_name": "手绘化学",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-hdchem/su-hdchem_005.webp",
+   "name": "手绘化学 · 样张05",
+   "style": "手绘化学",
+   "hname": "手绘插画 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "化学式、反应原理",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hdchem",
+   "suite_name": "手绘化学",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-hdchem/su-hdchem_006.webp",
+   "name": "手绘化学 · 样张06",
+   "style": "手绘化学",
+   "hname": "手绘插画 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "化学式、反应原理",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hdchem",
+   "suite_name": "手绘化学",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-hdchem/su-hdchem_007.webp",
+   "name": "手绘化学 · 样张07",
+   "style": "手绘化学",
+   "hname": "手绘插画 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "化学式、反应原理",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hdchem",
+   "suite_name": "手绘化学",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-hdchem/su-hdchem_008.webp",
+   "name": "手绘化学 · 样张08",
+   "style": "手绘化学",
+   "hname": "手绘插画 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "化学式、反应原理",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hdchem",
+   "suite_name": "手绘化学",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-hdchem/su-hdchem_009.webp",
+   "name": "手绘化学 · 样张09",
+   "style": "手绘化学",
+   "hname": "手绘插画 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "化学式、反应原理",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hdchem",
+   "suite_name": "手绘化学",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-hdchem/su-hdchem_010.webp",
+   "name": "手绘化学 · 样张10",
+   "style": "手绘化学",
+   "hname": "手绘插画 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "化学式、反应原理",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hdchem",
+   "suite_name": "手绘化学",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-hdcute/su-hdcute_001.webp",
+   "name": "可爱清单 · 样张01",
+   "style": "可爱清单",
+   "hname": "手绘插画 · 贴图",
+   "fixed": "按该套视觉基因出同款：浅蓝底 + 深色大标题框 + 便签 + 插画人物场景 + 打勾清单",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "工具体验、清单型轻量内容",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hdcute",
+   "suite_name": "可爱清单",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-hdcute/su-hdcute_002.webp",
+   "name": "可爱清单 · 样张02",
+   "style": "可爱清单",
+   "hname": "手绘插画 · 贴图",
+   "fixed": "按该套视觉基因出同款：浅蓝底 + 深色大标题框 + 便签 + 插画人物场景 + 打勾清单",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "工具体验、清单型轻量内容",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hdcute",
+   "suite_name": "可爱清单",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-hdcute/su-hdcute_003.webp",
+   "name": "可爱清单 · 样张03",
+   "style": "可爱清单",
+   "hname": "手绘插画 · 贴图",
+   "fixed": "按该套视觉基因出同款：浅蓝底 + 深色大标题框 + 便签 + 插画人物场景 + 打勾清单",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "工具体验、清单型轻量内容",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hdcute",
+   "suite_name": "可爱清单",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-hdcute/su-hdcute_004.webp",
+   "name": "可爱清单 · 样张04",
+   "style": "可爱清单",
+   "hname": "手绘插画 · 贴图",
+   "fixed": "按该套视觉基因出同款：浅蓝底 + 深色大标题框 + 便签 + 插画人物场景 + 打勾清单",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "工具体验、清单型轻量内容",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hdcute",
+   "suite_name": "可爱清单",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-hdcute/su-hdcute_005.webp",
+   "name": "可爱清单 · 样张05",
+   "style": "可爱清单",
+   "hname": "手绘插画 · 贴图",
+   "fixed": "按该套视觉基因出同款：浅蓝底 + 深色大标题框 + 便签 + 插画人物场景 + 打勾清单",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "工具体验、清单型轻量内容",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hdcute",
+   "suite_name": "可爱清单",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-hdcute/su-hdcute_006.webp",
+   "name": "可爱清单 · 样张06",
+   "style": "可爱清单",
+   "hname": "手绘插画 · 贴图",
+   "fixed": "按该套视觉基因出同款：浅蓝底 + 深色大标题框 + 便签 + 插画人物场景 + 打勾清单",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "工具体验、清单型轻量内容",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hdcute",
+   "suite_name": "可爱清单",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-hdcute/su-hdcute_007.webp",
+   "name": "可爱清单 · 样张07",
+   "style": "可爱清单",
+   "hname": "手绘插画 · 贴图",
+   "fixed": "按该套视觉基因出同款：浅蓝底 + 深色大标题框 + 便签 + 插画人物场景 + 打勾清单",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "工具体验、清单型轻量内容",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hdcute",
+   "suite_name": "可爱清单",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-hdstory/su-hdstory_001.webp",
+   "name": "手绘故事 · 样张01",
+   "style": "手绘故事",
+   "hname": "手绘插画 · 贴图",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "叙事、经历、故事型内容",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hdstory",
+   "suite_name": "手绘故事",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-hdstory/su-hdstory_002.webp",
+   "name": "手绘故事 · 样张02",
+   "style": "手绘故事",
+   "hname": "手绘插画 · 贴图",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "叙事、经历、故事型内容",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hdstory",
+   "suite_name": "手绘故事",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-hdstory/su-hdstory_003.webp",
+   "name": "手绘故事 · 样张03",
+   "style": "手绘故事",
+   "hname": "手绘插画 · 贴图",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "叙事、经历、故事型内容",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hdstory",
+   "suite_name": "手绘故事",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-hdstory/su-hdstory_004.webp",
+   "name": "手绘故事 · 样张04",
+   "style": "手绘故事",
+   "hname": "手绘插画 · 贴图",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "叙事、经历、故事型内容",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hdstory",
+   "suite_name": "手绘故事",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-hdstory/su-hdstory_005.webp",
+   "name": "手绘故事 · 样张05",
+   "style": "手绘故事",
+   "hname": "手绘插画 · 贴图",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "叙事、经历、故事型内容",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hdstory",
+   "suite_name": "手绘故事",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-hdstory/su-hdstory_006.webp",
+   "name": "手绘故事 · 样张06",
+   "style": "手绘故事",
+   "hname": "手绘插画 · 贴图",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "叙事、经历、故事型内容",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hdstory",
+   "suite_name": "手绘故事",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-hdstory/su-hdstory_007.webp",
+   "name": "手绘故事 · 样张07",
+   "style": "手绘故事",
+   "hname": "手绘插画 · 贴图",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "叙事、经历、故事型内容",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hdstory",
+   "suite_name": "手绘故事",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-hdknow/su-hdknow_001.webp",
+   "name": "手绘结论 · 样张01",
+   "style": "手绘结论",
+   "hname": "手绘插画 · 贴图",
+   "fixed": "按该套视觉基因出同款：简笔小人 + 橙衣 + 大弧线箭头 + 阶梯递进 + 四角星星 + 深蓝金句条",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "研究结论转译、反常识观点",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hdknow",
+   "suite_name": "手绘结论",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-hdknow/su-hdknow_002.webp",
+   "name": "手绘结论 · 样张02",
+   "style": "手绘结论",
+   "hname": "手绘插画 · 贴图",
+   "fixed": "按该套视觉基因出同款：简笔小人 + 橙衣 + 大弧线箭头 + 阶梯递进 + 四角星星 + 深蓝金句条",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "研究结论转译、反常识观点",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hdknow",
+   "suite_name": "手绘结论",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-hdknow/su-hdknow_003.webp",
+   "name": "手绘结论 · 样张03",
+   "style": "手绘结论",
+   "hname": "手绘插画 · 贴图",
+   "fixed": "按该套视觉基因出同款：简笔小人 + 橙衣 + 大弧线箭头 + 阶梯递进 + 四角星星 + 深蓝金句条",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "研究结论转译、反常识观点",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hdknow",
+   "suite_name": "手绘结论",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-hdknow/su-hdknow_004.webp",
+   "name": "手绘结论 · 样张04",
+   "style": "手绘结论",
+   "hname": "手绘插画 · 贴图",
+   "fixed": "按该套视觉基因出同款：简笔小人 + 橙衣 + 大弧线箭头 + 阶梯递进 + 四角星星 + 深蓝金句条",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "研究结论转译、反常识观点",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hdknow",
+   "suite_name": "手绘结论",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-hdknow/su-hdknow_005.webp",
+   "name": "手绘结论 · 样张05",
+   "style": "手绘结论",
+   "hname": "手绘插画 · 贴图",
+   "fixed": "按该套视觉基因出同款：简笔小人 + 橙衣 + 大弧线箭头 + 阶梯递进 + 四角星星 + 深蓝金句条",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "研究结论转译、反常识观点",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hdknow",
+   "suite_name": "手绘结论",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-hdknow/su-hdknow_006.webp",
+   "name": "手绘结论 · 样张06",
+   "style": "手绘结论",
+   "hname": "手绘插画 · 贴图",
+   "fixed": "按该套视觉基因出同款：简笔小人 + 橙衣 + 大弧线箭头 + 阶梯递进 + 四角星星 + 深蓝金句条",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "研究结论转译、反常识观点",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hdknow",
+   "suite_name": "手绘结论",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-hdview/su-hdview_001.webp",
+   "name": "手绘观点 · 样张01",
+   "style": "手绘观点",
+   "hname": "印刷杂志 · 贴图",
+   "fixed": "按该套视觉基因出同款：牛皮纸 + 粗黑大字 + 橙色强调词 + 单幅插画（放大镜+指纹）+ 印章感",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "观点评论、情绪单点输出",
+   "family": "print",
+   "family_name": "印刷杂志",
+   "suite": "su-hdview",
+   "suite_name": "手绘观点",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-hdview/su-hdview_002.webp",
+   "name": "手绘观点 · 样张02",
+   "style": "手绘观点",
+   "hname": "印刷杂志 · 贴图",
+   "fixed": "按该套视觉基因出同款：牛皮纸 + 粗黑大字 + 橙色强调词 + 单幅插画（放大镜+指纹）+ 印章感",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "观点评论、情绪单点输出",
+   "family": "print",
+   "family_name": "印刷杂志",
+   "suite": "su-hdview",
+   "suite_name": "手绘观点",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-hdview/su-hdview_003.webp",
+   "name": "手绘观点 · 样张03",
+   "style": "手绘观点",
+   "hname": "印刷杂志 · 贴图",
+   "fixed": "按该套视觉基因出同款：牛皮纸 + 粗黑大字 + 橙色强调词 + 单幅插画（放大镜+指纹）+ 印章感",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "观点评论、情绪单点输出",
+   "family": "print",
+   "family_name": "印刷杂志",
+   "suite": "su-hdview",
+   "suite_name": "手绘观点",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-hdview/su-hdview_004.webp",
+   "name": "手绘观点 · 样张04",
+   "style": "手绘观点",
+   "hname": "印刷杂志 · 贴图",
+   "fixed": "按该套视觉基因出同款：牛皮纸 + 粗黑大字 + 橙色强调词 + 单幅插画（放大镜+指纹）+ 印章感",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "观点评论、情绪单点输出",
+   "family": "print",
+   "family_name": "印刷杂志",
+   "suite": "su-hdview",
+   "suite_name": "手绘观点",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-hdview/su-hdview_005.webp",
+   "name": "手绘观点 · 样张05",
+   "style": "手绘观点",
+   "hname": "印刷杂志 · 贴图",
+   "fixed": "按该套视觉基因出同款：牛皮纸 + 粗黑大字 + 橙色强调词 + 单幅插画（放大镜+指纹）+ 印章感",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "观点评论、情绪单点输出",
+   "family": "print",
+   "family_name": "印刷杂志",
+   "suite": "su-hdview",
+   "suite_name": "手绘观点",
+   "density": "贴图"
+  },
+  {
+   "file": "图库/su-hdsci/su-hdsci_001.webp",
+   "name": "手绘科普 · 样张01",
+   "style": "手绘科普",
+   "hname": "手绘插画 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "通用科普、原理解读",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hdsci",
+   "suite_name": "手绘科普",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-hdsci/su-hdsci_002.webp",
+   "name": "手绘科普 · 样张02",
+   "style": "手绘科普",
+   "hname": "手绘插画 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "通用科普、原理解读",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hdsci",
+   "suite_name": "手绘科普",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-hdsci/su-hdsci_003.webp",
+   "name": "手绘科普 · 样张03",
+   "style": "手绘科普",
+   "hname": "手绘插画 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "通用科普、原理解读",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hdsci",
+   "suite_name": "手绘科普",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-hdsci/su-hdsci_004.webp",
+   "name": "手绘科普 · 样张04",
+   "style": "手绘科普",
+   "hname": "手绘插画 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "通用科普、原理解读",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hdsci",
+   "suite_name": "手绘科普",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-hdsci/su-hdsci_005.webp",
+   "name": "手绘科普 · 样张05",
+   "style": "手绘科普",
+   "hname": "手绘插画 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "通用科普、原理解读",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hdsci",
+   "suite_name": "手绘科普",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-hdsci/su-hdsci_006.webp",
+   "name": "手绘科普 · 样张06",
+   "style": "手绘科普",
+   "hname": "手绘插画 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "通用科普、原理解读",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hdsci",
+   "suite_name": "手绘科普",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-hdsci/su-hdsci_007.webp",
+   "name": "手绘科普 · 样张07",
+   "style": "手绘科普",
+   "hname": "手绘插画 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "通用科普、原理解读",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hdsci",
+   "suite_name": "手绘科普",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-hdsci/su-hdsci_008.webp",
+   "name": "手绘科普 · 样张08",
+   "style": "手绘科普",
+   "hname": "手绘插画 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "通用科普、原理解读",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-hdsci",
+   "suite_name": "手绘科普",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-magazine/su-magazine_001.webp",
+   "name": "杂志栏目 · 样张01",
+   "style": "杂志栏目",
+   "hname": "印刷杂志 · 图谱",
+   "fixed": "按该套视觉基因出同款：单色蓝印、做旧纸纹、版画质感、衬线粗字、斜体英文大标题、放大镜压流程图、期号「1/7」",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "概念解读、栏目化系列",
+   "family": "print",
+   "family_name": "印刷杂志",
+   "suite": "su-magazine",
+   "suite_name": "杂志栏目",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-magazine/su-magazine_002.webp",
+   "name": "杂志栏目 · 样张02",
+   "style": "杂志栏目",
+   "hname": "印刷杂志 · 图谱",
+   "fixed": "按该套视觉基因出同款：单色蓝印、做旧纸纹、版画质感、衬线粗字、斜体英文大标题、放大镜压流程图、期号「1/7」",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "概念解读、栏目化系列",
+   "family": "print",
+   "family_name": "印刷杂志",
+   "suite": "su-magazine",
+   "suite_name": "杂志栏目",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-magazine/su-magazine_003.webp",
+   "name": "杂志栏目 · 样张03",
+   "style": "杂志栏目",
+   "hname": "印刷杂志 · 图谱",
+   "fixed": "按该套视觉基因出同款：单色蓝印、做旧纸纹、版画质感、衬线粗字、斜体英文大标题、放大镜压流程图、期号「1/7」",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "概念解读、栏目化系列",
+   "family": "print",
+   "family_name": "印刷杂志",
+   "suite": "su-magazine",
+   "suite_name": "杂志栏目",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-magazine/su-magazine_004.webp",
+   "name": "杂志栏目 · 样张04",
+   "style": "杂志栏目",
+   "hname": "印刷杂志 · 图谱",
+   "fixed": "按该套视觉基因出同款：单色蓝印、做旧纸纹、版画质感、衬线粗字、斜体英文大标题、放大镜压流程图、期号「1/7」",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "概念解读、栏目化系列",
+   "family": "print",
+   "family_name": "印刷杂志",
+   "suite": "su-magazine",
+   "suite_name": "杂志栏目",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-magazine/su-magazine_005.webp",
+   "name": "杂志栏目 · 样张05",
+   "style": "杂志栏目",
+   "hname": "印刷杂志 · 图谱",
+   "fixed": "按该套视觉基因出同款：单色蓝印、做旧纸纹、版画质感、衬线粗字、斜体英文大标题、放大镜压流程图、期号「1/7」",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "概念解读、栏目化系列",
+   "family": "print",
+   "family_name": "印刷杂志",
+   "suite": "su-magazine",
+   "suite_name": "杂志栏目",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-industry/su-industry_001.webp",
+   "name": "写实行业 · 样张01",
+   "style": "写实行业",
+   "hname": "写实摄影 · 图谱",
+   "fixed": "按该套视觉基因出同款：白底 + 实拍图 + VS 对比 + 引线标注 + 系列号「01/03」",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "汽车机械硬件等真实产品科普",
+   "family": "photo",
+   "family_name": "写实摄影",
+   "suite": "su-industry",
+   "suite_name": "写实行业",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-industry/su-industry_002.webp",
+   "name": "写实行业 · 样张02",
+   "style": "写实行业",
+   "hname": "写实摄影 · 图谱",
+   "fixed": "按该套视觉基因出同款：白底 + 实拍图 + VS 对比 + 引线标注 + 系列号「01/03」",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "汽车机械硬件等真实产品科普",
+   "family": "photo",
+   "family_name": "写实摄影",
+   "suite": "su-industry",
+   "suite_name": "写实行业",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-industry/su-industry_003.webp",
+   "name": "写实行业 · 样张03",
+   "style": "写实行业",
+   "hname": "写实摄影 · 图谱",
+   "fixed": "按该套视觉基因出同款：白底 + 实拍图 + VS 对比 + 引线标注 + 系列号「01/03」",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "汽车机械硬件等真实产品科普",
+   "family": "photo",
+   "family_name": "写实摄影",
+   "suite": "su-industry",
+   "suite_name": "写实行业",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-sciphy/su-sciphy_001.webp",
+   "name": "写实科普 · 样张01",
+   "style": "写实科普",
+   "hname": "写实摄影 · 图谱",
+   "fixed": "按该套视觉基因出同款：暖白底 + 精确科学线 + 柔和明暗 + 低饱和分区上色 + 四角引线标注",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "生物医学、人体结构、精确图解",
+   "family": "photo",
+   "family_name": "写实摄影",
+   "suite": "su-sciphy",
+   "suite_name": "写实科普",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-sciphy/su-sciphy_002.webp",
+   "name": "写实科普 · 样张02",
+   "style": "写实科普",
+   "hname": "写实摄影 · 图谱",
+   "fixed": "按该套视觉基因出同款：暖白底 + 精确科学线 + 柔和明暗 + 低饱和分区上色 + 四角引线标注",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "生物医学、人体结构、精确图解",
+   "family": "photo",
+   "family_name": "写实摄影",
+   "suite": "su-sciphy",
+   "suite_name": "写实科普",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-sciphy/su-sciphy_003.webp",
+   "name": "写实科普 · 样张03",
+   "style": "写实科普",
+   "hname": "写实摄影 · 图谱",
+   "fixed": "按该套视觉基因出同款：暖白底 + 精确科学线 + 柔和明暗 + 低饱和分区上色 + 四角引线标注",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "生物医学、人体结构、精确图解",
+   "family": "photo",
+   "family_name": "写实摄影",
+   "suite": "su-sciphy",
+   "suite_name": "写实科普",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-sciphy/su-sciphy_004.webp",
+   "name": "写实科普 · 样张04",
+   "style": "写实科普",
+   "hname": "写实摄影 · 图谱",
+   "fixed": "按该套视觉基因出同款：暖白底 + 精确科学线 + 柔和明暗 + 低饱和分区上色 + 四角引线标注",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "生物医学、人体结构、精确图解",
+   "family": "photo",
+   "family_name": "写实摄影",
+   "suite": "su-sciphy",
+   "suite_name": "写实科普",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-sciphy/su-sciphy_005.webp",
+   "name": "写实科普 · 样张05",
+   "style": "写实科普",
+   "hname": "写实摄影 · 图谱",
+   "fixed": "按该套视觉基因出同款：暖白底 + 精确科学线 + 柔和明暗 + 低饱和分区上色 + 四角引线标注",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "生物医学、人体结构、精确图解",
+   "family": "photo",
+   "family_name": "写实摄影",
+   "suite": "su-sciphy",
+   "suite_name": "写实科普",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-sciphy/su-sciphy_006.webp",
+   "name": "写实科普 · 样张06",
+   "style": "写实科普",
+   "hname": "写实摄影 · 图谱",
+   "fixed": "按该套视觉基因出同款：暖白底 + 精确科学线 + 柔和明暗 + 低饱和分区上色 + 四角引线标注",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "生物医学、人体结构、精确图解",
+   "family": "photo",
+   "family_name": "写实摄影",
+   "suite": "su-sciphy",
+   "suite_name": "写实科普",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-sciphy/su-sciphy_007.webp",
+   "name": "写实科普 · 样张07",
+   "style": "写实科普",
+   "hname": "写实摄影 · 图谱",
+   "fixed": "按该套视觉基因出同款：暖白底 + 精确科学线 + 柔和明暗 + 低饱和分区上色 + 四角引线标注",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "生物医学、人体结构、精确图解",
+   "family": "photo",
+   "family_name": "写实摄影",
+   "suite": "su-sciphy",
+   "suite_name": "写实科普",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-sciphy/su-sciphy_008.webp",
+   "name": "写实科普 · 样张08",
+   "style": "写实科普",
+   "hname": "写实摄影 · 图谱",
+   "fixed": "按该套视觉基因出同款：暖白底 + 精确科学线 + 柔和明暗 + 低饱和分区上色 + 四角引线标注",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "生物医学、人体结构、精确图解",
+   "family": "photo",
+   "family_name": "写实摄影",
+   "suite": "su-sciphy",
+   "suite_name": "写实科普",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-sciphy/su-sciphy_009.webp",
+   "name": "写实科普 · 样张09",
+   "style": "写实科普",
+   "hname": "写实摄影 · 图谱",
+   "fixed": "按该套视觉基因出同款：暖白底 + 精确科学线 + 柔和明暗 + 低饱和分区上色 + 四角引线标注",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "生物医学、人体结构、精确图解",
+   "family": "photo",
+   "family_name": "写实摄影",
+   "suite": "su-sciphy",
+   "suite_name": "写实科普",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-sciphy/su-sciphy_010.webp",
+   "name": "写实科普 · 样张10",
+   "style": "写实科普",
+   "hname": "写实摄影 · 图谱",
+   "fixed": "按该套视觉基因出同款：暖白底 + 精确科学线 + 柔和明暗 + 低饱和分区上色 + 四角引线标注",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "生物医学、人体结构、精确图解",
+   "family": "photo",
+   "family_name": "写实摄影",
+   "suite": "su-sciphy",
+   "suite_name": "写实科普",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-solar/su-solar_001.webp",
+   "name": "节气国风 · 样张01",
+   "style": "节气国风",
+   "hname": "国风 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "二十四节气、时令、传统节庆",
+   "family": "guofeng",
+   "family_name": "国风",
+   "suite": "su-solar",
+   "suite_name": "节气国风",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-solar/su-solar_002.webp",
+   "name": "节气国风 · 样张02",
+   "style": "节气国风",
+   "hname": "国风 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "二十四节气、时令、传统节庆",
+   "family": "guofeng",
+   "family_name": "国风",
+   "suite": "su-solar",
+   "suite_name": "节气国风",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-solar/su-solar_003.webp",
+   "name": "节气国风 · 样张03",
+   "style": "节气国风",
+   "hname": "国风 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "二十四节气、时令、传统节庆",
+   "family": "guofeng",
+   "family_name": "国风",
+   "suite": "su-solar",
+   "suite_name": "节气国风",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-solar/su-solar_004.webp",
+   "name": "节气国风 · 样张04",
+   "style": "节气国风",
+   "hname": "国风 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "二十四节气、时令、传统节庆",
+   "family": "guofeng",
+   "family_name": "国风",
+   "suite": "su-solar",
+   "suite_name": "节气国风",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-nutrition/su-nutrition_001.webp",
+   "name": "营养科普 · 样张01",
+   "style": "营养科普",
+   "hname": "手绘插画 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "食材营养、搭配、饮食建议",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-nutrition",
+   "suite_name": "营养科普",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-nutrition/su-nutrition_002.webp",
+   "name": "营养科普 · 样张02",
+   "style": "营养科普",
+   "hname": "手绘插画 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "食材营养、搭配、饮食建议",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-nutrition",
+   "suite_name": "营养科普",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-nutrition/su-nutrition_003.webp",
+   "name": "营养科普 · 样张03",
+   "style": "营养科普",
+   "hname": "手绘插画 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "食材营养、搭配、饮食建议",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-nutrition",
+   "suite_name": "营养科普",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-nutrition/su-nutrition_004.webp",
+   "name": "营养科普 · 样张04",
+   "style": "营养科普",
+   "hname": "手绘插画 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "食材营养、搭配、饮食建议",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "suite": "su-nutrition",
+   "suite_name": "营养科普",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-poem/su-poem_001.webp",
+   "name": "诗词国风 · 样张01",
+   "style": "诗词国风",
+   "hname": "国风 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "古诗词、文人故事、意境解读",
+   "family": "guofeng",
+   "family_name": "国风",
+   "suite": "su-poem",
+   "suite_name": "诗词国风",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-poem/su-poem_002.webp",
+   "name": "诗词国风 · 样张02",
+   "style": "诗词国风",
+   "hname": "国风 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "古诗词、文人故事、意境解读",
+   "family": "guofeng",
+   "family_name": "国风",
+   "suite": "su-poem",
+   "suite_name": "诗词国风",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-poem/su-poem_003.webp",
+   "name": "诗词国风 · 样张03",
+   "style": "诗词国风",
+   "hname": "国风 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "古诗词、文人故事、意境解读",
+   "family": "guofeng",
+   "family_name": "国风",
+   "suite": "su-poem",
+   "suite_name": "诗词国风",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-poem/su-poem_004.webp",
+   "name": "诗词国风 · 样张04",
+   "style": "诗词国风",
+   "hname": "国风 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "古诗词、文人故事、意境解读",
+   "family": "guofeng",
+   "family_name": "国风",
+   "suite": "su-poem",
+   "suite_name": "诗词国风",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-poem/su-poem_005.webp",
+   "name": "诗词国风 · 样张05",
+   "style": "诗词国风",
+   "hname": "国风 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "古诗词、文人故事、意境解读",
+   "family": "guofeng",
+   "family_name": "国风",
+   "suite": "su-poem",
+   "suite_name": "诗词国风",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-poem/su-poem_006.webp",
+   "name": "诗词国风 · 样张06",
+   "style": "诗词国风",
+   "hname": "国风 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "古诗词、文人故事、意境解读",
+   "family": "guofeng",
+   "family_name": "国风",
+   "suite": "su-poem",
+   "suite_name": "诗词国风",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-poem/su-poem_007.webp",
+   "name": "诗词国风 · 样张07",
+   "style": "诗词国风",
+   "hname": "国风 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "古诗词、文人故事、意境解读",
+   "family": "guofeng",
+   "family_name": "国风",
+   "suite": "su-poem",
+   "suite_name": "诗词国风",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-poem/su-poem_008.webp",
+   "name": "诗词国风 · 样张08",
+   "style": "诗词国风",
+   "hname": "国风 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "古诗词、文人故事、意境解读",
+   "family": "guofeng",
+   "family_name": "国风",
+   "suite": "su-poem",
+   "suite_name": "诗词国风",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-food/su-food_001.webp",
+   "name": "食物拆解 · 样张01",
+   "style": "食物拆解",
+   "hname": "写实摄影 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "食物成分、热量、结构拆解",
+   "family": "photo",
+   "family_name": "写实摄影",
+   "suite": "su-food",
+   "suite_name": "食物拆解",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-food/su-food_002.webp",
+   "name": "食物拆解 · 样张02",
+   "style": "食物拆解",
+   "hname": "写实摄影 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "食物成分、热量、结构拆解",
+   "family": "photo",
+   "family_name": "写实摄影",
+   "suite": "su-food",
+   "suite_name": "食物拆解",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-food/su-food_003.webp",
+   "name": "食物拆解 · 样张03",
+   "style": "食物拆解",
+   "hname": "写实摄影 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "食物成分、热量、结构拆解",
+   "family": "photo",
+   "family_name": "写实摄影",
+   "suite": "su-food",
+   "suite_name": "食物拆解",
+   "density": "图谱"
+  },
+  {
+   "file": "图库/su-food/su-food_004.webp",
+   "name": "食物拆解 · 样张04",
+   "style": "食物拆解",
+   "hname": "写实摄影 · 图谱",
+   "fixed": "按该套视觉基因出同款：沿用参考图配色与版式",
+   "keywords": [
+    {
+     "key": "大字标题",
+     "hint": "封面最醒目那句，≤15 字"
+    },
+    {
+     "key": "副标题",
+     "hint": "一句补充，≤20 字"
+    },
+    {
+     "key": "要点内容",
+     "hint": "逗号分隔 3-5 个要点"
+    }
+   ],
+   "role": "cover",
+   "rule": "食物成分、热量、结构拆解",
+   "family": "photo",
+   "family_name": "写实摄影",
+   "suite": "su-food",
+   "suite_name": "食物拆解",
+   "density": "图谱"
+  }
+ ],
+ "second": [
+  {
+   "file": "次图/1.webp",
+   "name": "国潮风信息图 · 2025国潮新风",
+   "style": "国潮风",
+   "keywords": [
+    {
+     "key": "数据主题",
+     "hint": "如：中国哪里最凉快"
+    },
+    {
+     "key": "要点列表",
+     "hint": "逗号分隔，如：南方,北方,东北"
+    }
+   ],
+   "fixed": "国潮插画 + 印章元素",
+   "role": "info",
+   "hname": "次图",
+   "rule": "次图承载信息：每行≤8字、标签≤5、每条≤4字",
+   "family": "guofeng",
+   "family_name": "国风"
+  },
+  {
+   "file": "次图/2.webp",
+   "name": "本草风信息图 · 四神汤",
+   "style": "本草风",
+   "keywords": [
+    {
+     "key": "数据主题",
+     "hint": "如：中国哪里最凉快"
+    },
+    {
+     "key": "要点列表",
+     "hint": "逗号分隔，如：南方,北方,东北"
+    }
+   ],
+   "fixed": "本草纲目版式 + 药材插画",
+   "role": "info",
+   "hname": "次图",
+   "rule": "次图承载信息：每行≤8字、标签≤5、每条≤4字",
+   "family": "guofeng",
+   "family_name": "国风"
+  },
+  {
+   "file": "次图/3.webp",
+   "name": "古风漫画 · 李清照双面人生",
+   "style": "古风漫画",
+   "keywords": [
+    {
+     "key": "人物/主题",
+     "hint": "如：李清照"
+    },
+    {
+     "key": "切入点",
+     "hint": "如：她的双面人生"
+    }
+   ],
+   "fixed": "古风漫画分格",
+   "role": "info",
+   "hname": "次图",
+   "rule": "次图承载信息：每行≤8字、标签≤5、每条≤4字",
+   "family": "guofeng",
+   "family_name": "国风"
+  },
+  {
+   "file": "次图/4.webp",
+   "name": "古风漫画 · 古人对话",
+   "style": "古风漫画",
+   "keywords": [
+    {
+     "key": "人物/主题",
+     "hint": "如：李清照"
+    },
+    {
+     "key": "切入点",
+     "hint": "如：她的双面人生"
+    }
+   ],
+   "fixed": "古人对话漫画",
+   "role": "info",
+   "hname": "次图",
+   "rule": "次图承载信息：每行≤8字、标签≤5、每条≤4字",
+   "family": "guofeng",
+   "family_name": "国风"
+  },
+  {
+   "file": "次图/5.webp",
+   "name": "古风漫画 · 古人对话二",
+   "style": "古风漫画",
+   "keywords": [
+    {
+     "key": "人物/主题",
+     "hint": "如：李清照"
+    },
+    {
+     "key": "切入点",
+     "hint": "如：她的双面人生"
+    }
+   ],
+   "fixed": "古人对话漫画",
+   "role": "info",
+   "hname": "次图",
+   "rule": "次图承载信息：每行≤8字、标签≤5、每条≤4字",
+   "family": "guofeng",
+   "family_name": "国风"
+  },
+  {
+   "file": "次图/6.webp",
+   "name": "课本风图文",
+   "style": "课本风",
+   "keywords": [
+    {
+     "key": "数据主题",
+     "hint": "如：中国哪里最凉快"
+    },
+    {
+     "key": "要点列表",
+     "hint": "逗号分隔，如：南方,北方,东北"
+    }
+   ],
+   "fixed": "课本版式 + 知识分点",
+   "role": "info",
+   "hname": "次图",
+   "rule": "次图承载信息：每行≤8字、标签≤5、每条≤4字",
+   "family": "guofeng",
+   "family_name": "国风"
+  },
+  {
+   "file": "次图/7ab36f2f2cde09a7344b086ff940cc18.png",
+   "name": "复古纸品 · 改回词",
+   "style": "复古纸品风",
+   "keywords": [
+    {
+     "key": "主题词",
+     "hint": "这张图的主题"
+    }
+   ],
+   "fixed": "做旧纸品 + 手写字",
+   "role": "info",
+   "hname": "次图",
+   "rule": "次图承载信息：每行≤8字、标签≤5、每条≤4字",
+   "family": "guofeng",
+   "family_name": "国风"
+  },
+  {
+   "file": "次图/IP形象+信息图 (1).jpg",
+   "name": "数据看板 · 全平台数据",
+   "style": "数据看板风",
+   "keywords": [
+    {
+     "key": "数据主题",
+     "hint": "如：中国哪里最凉快"
+    },
+    {
+     "key": "要点列表",
+     "hint": "逗号分隔，如：南方,北方,东北"
+    }
+   ],
+   "fixed": "深色看板 + KPI 卡片",
+   "role": "info",
+   "hname": "次图",
+   "rule": "次图承载信息：每行≤8字、标签≤5、每条≤4字",
+   "family": "flat",
+   "family_name": "扁平矢量"
+  },
+  {
+   "file": "次图/IP形象+信息图 (2).jpg",
+   "name": "截图结论 · AI那事复盘",
+   "style": "截图结论风",
+   "keywords": [
+    {
+     "key": "数据主题",
+     "hint": "如：中国哪里最凉快"
+    },
+    {
+     "key": "要点列表",
+     "hint": "逗号分隔，如：南方,北方,东北"
+    }
+   ],
+   "fixed": "截图拼贴 + 结论标签",
+   "role": "info",
+   "hname": "次图",
+   "rule": "次图承载信息：每行≤8字、标签≤5、每条≤4字",
+   "family": "flat",
+   "family_name": "扁平矢量"
+  },
+  {
+   "file": "次图/bce0464795984c702da1c521f7c8ab29.png",
+   "name": "产品展示 · SKII配件",
+   "style": "产品展示风",
+   "keywords": [
+    {
+     "key": "主题词",
+     "hint": "这张图的主题"
+    }
+   ],
+   "fixed": "白底产品陈列 + 标注线",
+   "role": "info",
+   "hname": "次图",
+   "rule": "次图承载信息：每行≤8字、标签≤5、每条≤4字",
+   "family": "photo",
+   "family_name": "写实摄影"
+  },
+  {
+   "file": "次图/bf311aee4fec2d588b5c1c77899d5ddd.jpg",
+   "name": "古风海报 · 孔老夫子",
+   "style": "古风海报",
+   "keywords": [
+    {
+     "key": "金句主标",
+     "hint": "如：人一定要学会自渡"
+    },
+    {
+     "key": "落款",
+     "hint": "如：孔不惑AIko"
+    }
+   ],
+   "fixed": "古风人物海报 + 竖排标题",
+   "role": "info",
+   "hname": "次图",
+   "rule": "次图承载信息：每行≤8字、标签≤5、每条≤4字",
+   "family": "guofeng",
+   "family_name": "国风"
+  },
+  {
+   "file": "次图/信息图.png",
+   "name": "浅色信息图 · 10款皮肤",
+   "style": "信息图风",
+   "keywords": [
+    {
+     "key": "主题词",
+     "hint": "如：终身不得糖尿病"
+    },
+    {
+     "key": "副标题",
+     "hint": "如：为了终身不得糖尿病，我现在坚持以下5点"
+    }
+   ],
+   "fixed": "浅色底 + 绿色标签 + 阵列展示",
+   "role": "info",
+   "hname": "次图",
+   "rule": "次图承载信息：每行≤8字、标签≤5、每条≤4字",
+   "family": "flat",
+   "family_name": "扁平矢量"
+  },
+  {
+   "file": "次图/图03.webp",
+   "name": "海报拼贴 · 一图看三十年",
+   "style": "海报拼贴风",
+   "keywords": [
+    {
+     "key": "主题词",
+     "hint": "这张图的主题"
+    }
+   ],
+   "fixed": "多海报拼贴 + 居中大标题",
+   "role": "info",
+   "hname": "次图",
+   "rule": "次图承载信息：每行≤8字、标签≤5、每条≤4字",
+   "family": "minimal",
+   "family_name": "极简排版"
+  },
+  {
+   "file": "次图/图04.webp",
+   "name": "古风海报 · 孔子三十岁",
+   "style": "古风海报",
+   "keywords": [
+    {
+     "key": "金句主标",
+     "hint": "如：人一定要学会自渡"
+    },
+    {
+     "key": "落款",
+     "hint": "如：孔不惑AIko"
+    }
+   ],
+   "fixed": "古风海报 + 竖排文字",
+   "role": "info",
+   "hname": "次图",
+   "rule": "次图承载信息：每行≤8字、标签≤5、每条≤4字",
+   "family": "guofeng",
+   "family_name": "国风"
+  },
+  {
+   "file": "次图/小红书封面设计 (28).png",
+   "name": "古风拼贴 · 古人日常",
+   "style": "古风拼贴",
+   "keywords": [
+    {
+     "key": "主题词",
+     "hint": "这张图的主题"
+    }
+   ],
+   "fixed": "古画拼贴 + 标题",
+   "role": "info",
+   "hname": "次图",
+   "rule": "次图承载信息：每行≤8字、标签≤5、每条≤4字",
+   "family": "guofeng",
+   "family_name": "国风"
+  },
+  {
+   "file": "次图/小红书封面设计 (34).png",
+   "name": "课本风图文 · 凿野侏课",
+   "style": "课本风",
+   "keywords": [
+    {
+     "key": "数据主题",
+     "hint": "如：中国哪里最凉快"
+    },
+    {
+     "key": "要点列表",
+     "hint": "逗号分隔，如：南方,北方,东北"
+    }
+   ],
+   "fixed": "课本版式 + 人物对话",
+   "role": "info",
+   "hname": "次图",
+   "rule": "次图承载信息：每行≤8字、标签≤5、每条≤4字",
+   "family": "guofeng",
+   "family_name": "国风"
+  },
+  {
+   "file": "次图/纯背景+文字 (1).png",
+   "name": "暖拍实景 · 书本静物",
+   "style": "暖拍实景风",
+   "keywords": [
+    {
+     "key": "金句主标",
+     "hint": "如：人一定要学会自渡"
+    },
+    {
+     "key": "落款",
+     "hint": "如：孔不惑AIko"
+    }
+   ],
+   "fixed": "暖光书本实拍 + 留白文字",
+   "role": "info",
+   "hname": "次图",
+   "rule": "次图承载信息：每行≤8字、标签≤5、每条≤4字",
+   "family": "photo",
+   "family_name": "写实摄影"
+  }
+ ],
+ "_note": "不惑万物写作工坊 · 贴图模板库 v1（2026-10-15 命名：配图风格+配图类型）",
+ "_sop": {
+  "visual_hammer": "米黄宣纸底 #F0E6CC + 朱砂红 #9E2B25 书法大字 + 黑红渐变剪影 + 朱文印章「孔不惑」；一套底色+一个高亮金红强调色，禁高饱和多色混排",
+  "copy_rule": "一组贴图只配一条总文案（100-300字整段成文）：反差钩→信息点→落点金句→互动问→文章承接，全部融进段落句流；禁按单张图拆文案、禁排点式",
+  "structure": "H2首图(点开) → H3/H1/H4次图×2(信息+互动) → H5末图(落点桥)；四关漏斗：点开←首图｜完读←节奏｜互动←末图结构｜放大←前三关",
+  "interaction": "互动钩只走纯讨论问句（哪个细节你最意外）；禁扣1/打2站队钩（诱导互动红线）",
+  "gen": "gpt-image-2 原生 1080×1440 零后期；全中文 prompt 一次生成，禁后期叠字；书法字逐行核对伪字"
+ },
+ "families": [
+  {
+   "id": "handdrawn",
+   "name": "手绘插画"
+  },
+  {
+   "id": "flat",
+   "name": "扁平矢量"
+  },
+  {
+   "id": "photo",
+   "name": "写实摄影"
+  },
+  {
+   "id": "print",
+   "name": "印刷杂志"
+  },
+  {
+   "id": "guofeng",
+   "name": "国风"
+  },
+  {
+   "id": "doodle",
+   "name": "涂鸦撞色"
+  },
+  {
+   "id": "tech",
+   "name": "科技风"
+  },
+  {
+   "id": "minimal",
+   "name": "极简排版"
+  },
+  {
+   "id": "warmdraw",
+   "name": "暖调写实插画"
+  }
+ ],
+ "_family_note": "画面调性分族。套（suite）= 一套视觉基因，套内所有样张共用配色/版式/插画风格；「同款生成」= 锁这套基因、换本文内容。",
+ "suites": [
+  {
+   "id": "su-comic",
+   "name": "四格漫画",
+   "family": "doodle",
+   "family_name": "涂鸦撞色",
+   "density": "贴图",
+   "best_for": "段子、反差、剧情四格",
+   "palette": [
+    "#C0C0C0",
+    "#C0E0E0",
+    "#A0A0A0",
+    "#E0E0E0"
+   ],
+   "count": 3,
+   "rep": "图库/su-comic/su-comic_001.webp",
+   "identity": "",
+   "layout": [],
+   "src_dir": "4格漫画类"
+  },
+  {
+   "id": "su-aitool",
+   "name": "AI工具横评",
+   "family": "flat",
+   "family_name": "扁平矢量",
+   "density": "图谱",
+   "best_for": "工具横评、参数对比、产品发布",
+   "palette": [
+    "#1E4FD8",
+    "#F5F2EC"
+   ],
+   "count": 10,
+   "rep": "图库/su-aitool/su-aitool_001.webp",
+   "identity": "米白底 #F5F2EC + 钴蓝 #1E4FD8 超粗黑体 + 黑细线框 + 参数对比卡 + 档位指示线",
+   "layout": [
+    "顶栏：IP名 · 内容类别 + 右侧页码 01/07 + 小图标",
+    "超大钴蓝粗体标题（2-3 行，关键词下划线强调）",
+    "3-4 列对比卡：图 + 名称 + 版本/参数",
+    "底部档位指示线：圆点 + 中英标签 + 落款"
+   ],
+   "src_dir": "AI工具类"
+  },
+  {
+   "id": "su-aitool2",
+   "name": "AI工具增补",
+   "family": "flat",
+   "family_name": "扁平矢量",
+   "density": "图谱",
+   "best_for": "工具横评补充样例",
+   "palette": [
+    "#E0E0E0",
+    "#20C060",
+    "#40C060",
+    "#40C080"
+   ],
+   "count": 5,
+   "rep": "图库/su-aitool2/su-aitool2_001.webp",
+   "identity": "",
+   "layout": [],
+   "src_dir": "AI工具类2"
+  },
+  {
+   "id": "su-darktech",
+   "name": "黑底科技",
+   "family": "tech",
+   "family_name": "科技风",
+   "density": "贴图",
+   "best_for": "工作流、SOP、极客向",
+   "palette": [
+    "#7CF49F"
+   ],
+   "count": 9,
+   "rep": "图库/su-darktech/su-darktech_001.webp",
+   "identity": "纯黑 + 荧光绿 #7CF49F + 等宽字体 + 巨型数字 + 编号步骤条",
+   "layout": [
+    "右上系列标（AI 漫剧 · 5步制片工作流）",
+    "巨型荧光绿数字「5」+ 灯泡引导词 + 白大标题",
+    "副题一句 + 步骤卡（图标+编号+→）",
+    "底部编号导航 + 落款"
+   ],
+   "src_dir": "AI教程（黑）"
+  },
+  {
+   "id": "su-aiknow",
+   "name": "手绘知识条",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "density": "贴图",
+   "best_for": "低门槛快科普、引流封面",
+   "palette": [
+    "#E0E0E0",
+    "#E0E0C0",
+    "#E0C0C0",
+    "#808080"
+   ],
+   "count": 9,
+   "rep": "图库/su-aiknow/su-aiknow_001.webp",
+   "identity": "米黄纸 + 纸胶带 + 回形针 + 锁/钥匙/星星贴纸 + 马克笔大字 + 打勾清单",
+   "layout": [
+    "顶部纸胶带 + 回形针 + 星星贴纸",
+    "大红数字「3分钟」+ 黑色大标题 + 黄色下划线",
+    "红色虚线框副题（一张图看懂 X）",
+    "打勾清单三项 + 右下角大钥匙贴纸"
+   ],
+   "src_dir": "AI知识类"
+  },
+  {
+   "id": "su-github",
+   "name": "GitHub极简",
+   "family": "flat",
+   "family_name": "扁平矢量",
+   "density": "贴图",
+   "best_for": "命令行、软件单点教程",
+   "palette": [
+    "#E0E0E0",
+    "#C0C0C0",
+    "#000000",
+    "#202020"
+   ],
+   "count": 9,
+   "rep": "图库/su-github/su-github_001.webp",
+   "identity": "纯白底 + 黑色终端窗（红黄绿三灯）+ 等宽字体 + 胶囊按钮",
+   "layout": [
+    "超大黑体两行标题 + 橙色小标题 + 竖线分隔导航词",
+    "C 位终端窗口：三灯 + $ + 等宽输出 + 主题贴纸",
+    "底部四胶囊按钮（图标+词）",
+    "两行小图标说明 + 底部横幅金句"
+   ],
+   "src_dir": "github类"
+  },
+  {
+   "id": "su-health",
+   "name": "健康科普",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "density": "图谱",
+   "best_for": "养生、身体机制、习惯纠正",
+   "palette": [
+    "#E0E0E0",
+    "#E0E0C0",
+    "#A0C0A0",
+    "#E08060"
+   ],
+   "count": 8,
+   "rep": "图库/su-health/su-health_001.webp",
+   "identity": "",
+   "layout": [],
+   "src_dir": "健康类"
+  },
+  {
+   "id": "su-history",
+   "name": "绘本故事",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "density": "贴图",
+   "best_for": "历史人文、人物故事、IP化",
+   "palette": [
+    "#1E3A8A",
+    "#F59E0B",
+    "#FEFCE8"
+   ],
+   "count": 17,
+   "rep": "图库/su-history/su-history_001.webp",
+   "identity": "奶油纸底 #FEFCE8 + 海军蓝 #1E3A8A + 金星星 + 马克笔字 + 圆形 C 位小人 + 「全6张」",
+   "layout": [
+    "期号条：历史人文手记 · 第01期 · 全6张 + 星星装饰",
+    "超大马克笔标题 + 金色引文（以为终于轮到我 → 其实只是被需要）",
+    "圆形 C 位：Q 版人物 + 场景道具（翰林供奉匾）",
+    "底部双行落版 + 「全6张 · 关注我」引导"
+   ],
+   "src_dir": "历史手绘"
+  },
+  {
+   "id": "su-dopamine",
+   "name": "多巴胺涂鸦",
+   "family": "doodle",
+   "family_name": "涂鸦撞色",
+   "density": "图谱",
+   "best_for": "涨粉破圈、情绪型干货",
+   "palette": [
+    "#E0E0E0",
+    "#E0E0C0",
+    "#A0A0A0",
+    "#606060"
+   ],
+   "count": 17,
+   "rep": "图库/su-dopamine/su-dopamine_001.webp",
+   "identity": "霓虹撞色（品红/亮黄/青）、满幅复杂插画、平台图标、金币上升箭头、粗体",
+   "layout": [
+    "顶栏英文栏目名（AITOEARN / OPEN SOURCE）",
+    "绿色胶囊标签 + 超大黑体标题 + 英文副题",
+    "黑色数据胶囊：OPEN SOURCE · 2.5万+ STAR · MIT",
+    "C 位满幅复杂插画（人物+平台图标+流程元素）",
+    "底部三胶囊总结"
+   ],
+   "src_dir": "多巴胺类"
+  },
+  {
+   "id": "su-bigtype",
+   "name": "大字报",
+   "family": "minimal",
+   "family_name": "极简排版",
+   "density": "图谱",
+   "best_for": "商业观察、进账复盘、行业调查",
+   "palette": [
+    "#FF6B35"
+   ],
+   "count": 5,
+   "rep": "图库/su-bigtype/su-bigtype_001.webp",
+   "identity": "白底 + 橙 #FF6B35 + 黑数据卡 + 超大数字 + 涨跌线 + 刊号 VOL.48",
+   "layout": [
+    "右上角刊号（商业观察调查专题 VOL.48）",
+    "超大标题（橙色超大数字：28万/2块）",
+    "数据总览卡：总收入/总成本/利润 + 较前日涨跌 %",
+    "手绘圈注 + 底部黑标题条 + 四角标签行"
+   ],
+   "src_dir": "大字类"
+  },
+  {
+   "id": "su-mind",
+   "name": "心理机制",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "density": "图谱",
+   "best_for": "概念拆解、心理机制科普",
+   "palette": [
+    "#E0E0E0",
+    "#E0E0C0",
+    "#C0C0C0",
+    "#A0A0A0"
+   ],
+   "count": 4,
+   "rep": "图库/su-mind/su-mind_001.webp",
+   "identity": "蓝墨线稿 + 简洁分区 + 中心人物剪影 + 编号「01/04」+ 虚线框",
+   "layout": [
+    "01/04 页码 + 大标题 + 蓝色副题定义",
+    "虚线框内：中心人物线稿 + 六宫格分区（图标标签+要点）",
+    "底部金句条（你没有想太多，你只是断路了）",
+    "理论来源 + 「下一张」引导"
+   ],
+   "src_dir": "心里类"
+  },
+  {
+   "id": "su-emotion",
+   "name": "情绪卡片",
+   "family": "flat",
+   "family_name": "扁平矢量",
+   "density": "图谱",
+   "best_for": "心理成长、疗愈、对号入座",
+   "palette": [
+    "#E0E0E0",
+    "#C0C0C0",
+    "#E0E0C0",
+    "#A0A0A0"
+   ],
+   "count": 14,
+   "rep": "图库/su-emotion/su-emotion_001.webp",
+   "identity": "柔和粉蓝 + 情绪人物（雨云/流泪）+ 虚线卡片分区 + 「图1/8」",
+   "layout": [
+    "顶部书名 + 图序「图1/8 什么是 CPTSD?」",
+    "蓝色问题条：为什么我总是…？",
+    "双场景人物插画（雨云 + 标签：自我批判/被忽视…）",
+    "中部三栏卡：是什么/主要症状/可以疗愈么",
+    "底部金句条：创伤不是你的错，但疗愈是你的责任"
+   ],
+   "src_dir": "情绪类"
+  },
+  {
+   "id": "su-cartoon",
+   "name": "卡通学科",
+   "family": "flat",
+   "family_name": "扁平矢量",
+   "density": "图谱",
+   "best_for": "学科知识、教学图解",
+   "palette": [
+    "#C0A080",
+    "#C0C0A0",
+    "#E0E0E0",
+    "#C0C0C0"
+   ],
+   "count": 4,
+   "rep": "图库/su-cartoon/su-cartoon_001.webp",
+   "identity": "",
+   "layout": [],
+   "src_dir": "扁平卡通学科类"
+  },
+  {
+   "id": "su-flattut",
+   "name": "扁平教程",
+   "family": "flat",
+   "family_name": "扁平矢量",
+   "density": "图谱",
+   "best_for": "保姆级教程、手帐风",
+   "palette": [
+    "#E0E0E0",
+    "#C0C0C0",
+    "#A0A0A0",
+    "#E0C080"
+   ],
+   "count": 9,
+   "rep": "图库/su-flattut/su-flattut_001.webp",
+   "identity": "绿白 + 手机 UI 截图 + 横向步骤条 + 圆角胶囊 + 绿色横幅",
+   "layout": [
+    "左右角胶囊（0基础也能搭建！/ 1小时搞定）",
+    "三行大标题（绿色工具名强调）",
+    "横向步骤条：需求→规划→搭建→成品展示",
+    "左侧步骤清单 + 右侧手机 UI 截图卡",
+    "底部绿色横幅（建议收藏，跟着一步步搭！）"
+   ],
+   "src_dir": "扁平教程类"
+  },
+  {
+   "id": "su-hddeep",
+   "name": "手绘深度图",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "density": "图谱",
+   "best_for": "疗法结构、深度模型总览",
+   "palette": [
+    "#E0E0E0",
+    "#C0C0C0",
+    "#E0E0C0",
+    "#A0A0A0"
+   ],
+   "count": 16,
+   "rep": "图库/su-hddeep/su-hddeep_001.webp",
+   "identity": "深蓝 + 淡彩晕染 + 冰山隐喻（水面上下分层）+ 虚线框",
+   "layout": [
+    "大标题 + 中央冰山分层隐喻图",
+    "左右虚线框分区（核心概念/步骤机制）",
+    "右侧箭头卡组：暴露阶梯/结构化会谈/CBT家族/恶性循环",
+    "底部目标行 + 链条图示"
+   ],
+   "src_dir": "手绘"
+  },
+  {
+   "id": "su-hdbook",
+   "name": "手绘书籍",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "density": "图谱",
+   "best_for": "读书笔记、书单、金句",
+   "palette": [
+    "#E0E0E0",
+    "#E0E0C0",
+    "#C0C0C0",
+    "#A0A0A0"
+   ],
+   "count": 7,
+   "rep": "图库/su-hdbook/su-hdbook_001.webp",
+   "identity": "",
+   "layout": [],
+   "src_dir": "手绘书籍类"
+  },
+  {
+   "id": "su-hdchem",
+   "name": "手绘化学",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "density": "图谱",
+   "best_for": "化学式、反应原理",
+   "palette": [
+    "#E0E0E0",
+    "#E0E0C0",
+    "#C0C0C0",
+    "#E0C0A0"
+   ],
+   "count": 10,
+   "rep": "图库/su-hdchem/su-hdchem_001.webp",
+   "identity": "",
+   "layout": [],
+   "src_dir": "手绘化学类"
+  },
+  {
+   "id": "su-hdcute",
+   "name": "可爱清单",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "density": "贴图",
+   "best_for": "工具体验、清单型轻量内容",
+   "palette": [
+    "#E0E0E0",
+    "#000000",
+    "#C0C0C0",
+    "#200000"
+   ],
+   "count": 7,
+   "rep": "图库/su-hdcute/su-hdcute_001.webp",
+   "identity": "浅蓝底 + 深色大标题框 + 便签 + 插画人物场景 + 打勾清单",
+   "layout": [
+    "四角小星星 + 深色大标题框（蓝字强调+下划线）",
+    "浅蓝标签条（WorkBuddy 手搓工作台初体验）",
+    "C 位插画人物场景（电脑+咖啡+便签+植物）",
+    "打勾清单 + 落款"
+   ],
+   "src_dir": "手绘可爱风"
+  },
+  {
+   "id": "su-hdstory",
+   "name": "手绘故事",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "density": "贴图",
+   "best_for": "叙事、经历、故事型内容",
+   "palette": [
+    "#E0E0E0",
+    "#E0E0C0",
+    "#C0C0C0",
+    "#A0A0A0"
+   ],
+   "count": 7,
+   "rep": "图库/su-hdstory/su-hdstory_001.webp",
+   "identity": "",
+   "layout": [],
+   "src_dir": "手绘故事"
+  },
+  {
+   "id": "su-hdknow",
+   "name": "手绘结论",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "density": "贴图",
+   "best_for": "研究结论转译、反常识观点",
+   "palette": [
+    "#E0E0E0",
+    "#E0E0C0",
+    "#C0C0C0",
+    "#A0A0A0"
+   ],
+   "count": 6,
+   "rep": "图库/su-hdknow/su-hdknow_001.webp",
+   "identity": "简笔小人 + 橙衣 + 大弧线箭头 + 阶梯递进 + 四角星星 + 深蓝金句条",
+   "layout": [
+    "四角星星 + 超大标题（红色数字强调）",
+    "虚线 + 英文小标题 + 问题条（什么是胜者效应？）",
+    "C 位：阶梯递进小人 + 大弧线箭头",
+    "底部深蓝金句条 + 图片制作落款"
+   ],
+   "src_dir": "手绘知识"
+  },
+  {
+   "id": "su-hdview",
+   "name": "手绘观点",
+   "family": "print",
+   "family_name": "印刷杂志",
+   "density": "贴图",
+   "best_for": "观点评论、情绪单点输出",
+   "palette": [
+    "#E0E0E0",
+    "#E0E0C0",
+    "#C0C0C0",
+    "#202020"
+   ],
+   "count": 5,
+   "rep": "图库/su-hdview/su-hdview_001.webp",
+   "identity": "牛皮纸 + 粗黑大字 + 橙色强调词 + 单幅插画（放大镜+指纹）+ 印章感",
+   "layout": [
+    "超大粗黑大字标题（关键词橙色强调）",
+    "绿色圆角副题条（通用答案降价↓ 具体判断在升值↑）",
+    "C 位单幅插画（ChatGPT 对话框 + 放大镜 + 指纹）",
+    "底部落款"
+   ],
+   "src_dir": "手绘知识类"
+  },
+  {
+   "id": "su-hdsci",
+   "name": "手绘科普",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "density": "图谱",
+   "best_for": "通用科普、原理解读",
+   "palette": [
+    "#E0E0C0",
+    "#E0E0E0",
+    "#C0C0C0",
+    "#C0C0A0"
+   ],
+   "count": 8,
+   "rep": "图库/su-hdsci/su-hdsci_001.webp",
+   "identity": "",
+   "layout": [],
+   "src_dir": "手绘科普类"
+  },
+  {
+   "id": "su-magazine",
+   "name": "杂志栏目",
+   "family": "print",
+   "family_name": "印刷杂志",
+   "density": "图谱",
+   "best_for": "概念解读、栏目化系列",
+   "palette": [
+    "#1E4FD8"
+   ],
+   "count": 5,
+   "rep": "图库/su-magazine/su-magazine_001.webp",
+   "identity": "单色蓝印、做旧纸纹、版画质感、衬线粗字、斜体英文大标题、放大镜压流程图、期号「1/7」",
+   "layout": [
+    "期号条：「第78期 · 每天看懂一个Skills」+ 右侧散点装饰",
+    "斜体英文大标题（/brainstorming）+ 蓝色问题副题 + 一句导语",
+    "C 位：放大镜压住流程图/结构图（信息主图）",
+    "底部页码「1/7」+ 引导关注"
+   ],
+   "src_dir": "杂志类"
+  },
+  {
+   "id": "su-industry",
+   "name": "写实行业",
+   "family": "photo",
+   "family_name": "写实摄影",
+   "density": "图谱",
+   "best_for": "汽车机械硬件等真实产品科普",
+   "palette": [
+    "#E0E0E0",
+    "#C0C0C0",
+    "#A0A0A0",
+    "#808080"
+   ],
+   "count": 3,
+   "rep": "图库/su-industry/su-industry_001.webp",
+   "identity": "白底 + 实拍图 + VS 对比 + 引线标注 + 系列号「01/03」",
+   "layout": [
+    "顶栏系列号 01/03 + 超大问题标题 + 副题",
+    "原因01/02 分栏 + VS 对比（过去 vs 现在，实拍+特性卡）",
+    "灯泡结论条（过去是留足余量，现在是精算到位）",
+    "落款 + 金句收尾"
+   ],
+   "src_dir": "知识科普"
+  },
+  {
+   "id": "su-sciphy",
+   "name": "写实科普",
+   "family": "photo",
+   "family_name": "写实摄影",
+   "density": "图谱",
+   "best_for": "生物医学、人体结构、精确图解",
+   "palette": [
+    "#E0E0E0",
+    "#E0E0C0",
+    "#A0A0A0",
+    "#C0C0C0"
+   ],
+   "count": 10,
+   "rep": "图库/su-sciphy/su-sciphy_001.webp",
+   "identity": "暖白底 + 精确科学线 + 柔和明暗 + 低饱和分区上色 + 四角引线标注",
+   "layout": [
+    "顶部大图：主体结构三分区上色",
+    "四角引线标注框：彩标签 + 2-3 条要点",
+    "底部三栏小知识：图标 + 一句话",
+    "翻页圆点 + 底部标题条"
+   ],
+   "src_dir": "科普"
+  },
+  {
+   "id": "su-solar",
+   "name": "节气国风",
+   "family": "guofeng",
+   "family_name": "国风",
+   "density": "图谱",
+   "best_for": "二十四节气、时令、传统节庆",
+   "palette": [
+    "#E0E0C0",
+    "#E0C0C0",
+    "#C0C0A0",
+    "#C0A080"
+   ],
+   "count": 4,
+   "rep": "图库/su-solar/su-solar_001.webp",
+   "identity": "",
+   "layout": [],
+   "src_dir": "节气类"
+  },
+  {
+   "id": "su-nutrition",
+   "name": "营养科普",
+   "family": "handdrawn",
+   "family_name": "手绘插画",
+   "density": "图谱",
+   "best_for": "食材营养、搭配、饮食建议",
+   "palette": [
+    "#E0E0E0",
+    "#C0C0C0",
+    "#E0E0C0",
+    "#C0C0A0"
+   ],
+   "count": 4,
+   "rep": "图库/su-nutrition/su-nutrition_001.webp",
+   "identity": "",
+   "layout": [],
+   "src_dir": "营养类"
+  },
+  {
+   "id": "su-poem",
+   "name": "诗词国风",
+   "family": "guofeng",
+   "family_name": "国风",
+   "density": "图谱",
+   "best_for": "古诗词、文人故事、意境解读",
+   "palette": [
+    "#E0E0E0",
+    "#C0C0C0",
+    "#E0E0C0",
+    "#A0A0A0"
+   ],
+   "count": 8,
+   "rep": "图库/su-poem/su-poem_001.webp",
+   "identity": "",
+   "layout": [],
+   "src_dir": "诗词类"
+  },
+  {
+   "id": "su-food",
+   "name": "食物拆解",
+   "family": "photo",
+   "family_name": "写实摄影",
+   "density": "图谱",
+   "best_for": "食物成分、热量、结构拆解",
+   "palette": [
+    "#E0E0E0",
+    "#C0C0C0",
+    "#E0C0C0",
+    "#A08060"
+   ],
+   "count": 4,
+   "rep": "图库/su-food/su-food_001.webp",
+   "identity": "",
+   "layout": [],
+   "src_dir": "食物拆解"
+  }
+ ],
+ "_lib_note": "图库来源：豆包知识图解 227 张样卡 / 29 个目录 / 29 套。原图 207MB 已压成 800px webp 入包。"
+}

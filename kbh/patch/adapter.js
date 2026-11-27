@@ -823,6 +823,55 @@
   function initWebBridges() {
     initImgBridge();
     initSettingsEntry();
+    initWxScanWeb();
+    relaxInputs();
+  }
+
+  /* 🔴 2026-11-27 胜元拍板 BUG4：网页端排版太紧凑，「尤其是输入框」。
+     根因：真相源共享控件选择器只列了 input[type=text|password|number]，没列 type=url，
+     所以「粘贴文章链接」#rw-url 拿不到 padding:8px 12px，placeholder 紧贴边框；
+     大 textarea（#rw-text/#dx-input）虽继承 padding:8px 12px，但 13px 字配 8px 内边距偏挤。
+     网页端全屏浏览器、比桌面窗口更宽，理应更松。这里注入网页端专属宽松样式，
+     不动 index.html —— 桌面端保持原样，两端同源纪律不变。 */
+  function relaxInputs() {
+    var s = document.createElement("style");
+    s.id = "wb-relax-inputs";
+    s.textContent =
+      /* url/email 补进共享控件口径：让 #rw-url 与 text 输入框拿到同样的内边距 */
+      'input[type="url"],input[type="email"]{font-family:inherit;font-size:13px;padding:10px 14px;' +
+      'border-radius:var(--radius-sm,12px);border:1px solid var(--hairline,#333);' +
+      'background:var(--card-solid,transparent);color:var(--text,#eee);outline:none}' +
+      /* 卡片内首行不再贴顶 */
+      '#panels .card>.form-row:first-child{margin-top:10px}' +
+      '#panels .card .form-row{margin-bottom:14px}' +
+      /* 两个大输入框：加大内边距与行距，文字不再挤成一团 */
+      '#rw-text,#dx-input{padding:14px 16px!important;line-height:1.95!important;min-height:170px!important}';
+    (document.head || document.documentElement).appendChild(s);
+  }
+
+  /* 🔴 2026-11-27 胜元拍板 BUG1：网页端「扫码授权公众号」点了报「打开窗口失败」。
+     根因：桌面端靠本地后端 /api/wx/scan/start 开登录窗并把凭证存本机；网页端没有这个
+     能力，端点被 stub 成空对象 → 前端 !d.success → 兜底显示「打开窗口失败」，还配一句
+     误导性的「凭证只存本机、不上传」（网页端 Key 其实进云端保险箱）。
+     网页端没有等价替代（后端只有账密/验证码登录，拿不到公众号后台数据），所以不伪造一个
+     永远失败的功能 —— 直接覆盖全局 wxScanStart，给明确、可执行的提示。
+     内联 onclick="wxScanStart()" 点击时查的是 window.wxScanStart，覆盖即生效；不动 index.html。 */
+  function initWxScanWeb() {
+    window.wxScanStart = function () {
+      var ov = document.getElementById("ws-scan-ov");
+      if (ov) ov.remove();
+      ov = document.createElement("div");
+      ov.id = "ws-scan-ov";
+      ov.style.cssText = "position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:9999;display:flex;align-items:center;justify-content:center";
+      ov.innerHTML = '<div style="background:var(--card,#1c1c1c);color:var(--text,#eee);border-radius:14px;padding:22px 24px;max-width:340px;width:90%;box-shadow:0 10px 40px rgba(0,0,0,.35)">' +
+        '<div style="font-size:1rem;font-weight:800;margin-bottom:8px">📱 扫码授权公众号</div>' +
+        '<div style="font-size:.82rem;line-height:1.7;color:var(--text-2,#bbb)">网页端暂不支持扫码授权。公众号数据授权需要在<b>桌面端</b>完成（会打开微信登录窗并把凭证存在本机）。</div>' +
+        '<div style="font-size:.76rem;line-height:1.6;color:var(--text-3,#888);margin-top:10px">网页端可用：文本模型、写作/改写、去AI味等已配置好 Key 的功能照常使用。</div>' +
+        '<div style="display:flex;gap:8px;margin-top:16px"><button class="btn btn-sm" id="ws-scan-cancel" style="flex:1">知道了</button></div></div>';
+      document.body.appendChild(ov);
+      document.getElementById("ws-scan-cancel").onclick = function () { ov.remove(); };
+      ov.addEventListener("click", function (e) { if (e.target === ov) ov.remove(); });
+    };
   }
 
   /* ---------- 5e) 设置入口（2026-11-27）----------
@@ -885,6 +934,14 @@
     /* 网页端没有本机磁盘：「打包 zip」「打开文件夹」两个按钮点了只会报错，直接不显示。
        单张「⬇下载」由 initImgBridge 接管（<a download> 存到浏览器下载目录）。 */
     '[data-action="imgCardZipAll"],[data-action="imgCardFolder"]{display:none !important}' +
+    /* 🔴 2026-11-27 胜元拍板：网页端不做本地模型、不要使用教程 ——
+       ①去AI味页底部「本地模型」卡片 + 引擎切换里的「本地模型」按钮：网页端文本推理走用户
+       自定义 Deepseek（BYOK），没有本机 12B 模型，留着点了必报「本地模型未就绪」。
+       ②「使用教程」整个模块：那是桌面端「本机激活 + 双模式工作流」的产物，网页端已改云端
+       账号登录 + BYOK 保险箱，口径过时（还写着「密钥只存本机」）。隐藏而非删 DOM，桌面端源码不动。
+       v4 导航用 data-mod、旧侧栏用 data-module，两种属性都要盖住。 */
+    '#dx-model-card,#dx-local{display:none !important}' +
+    '[data-module="tutorial"],[data-mod="tutorial"],#mod-tutorial{display:none !important}' +
     /* 设置弹窗里属于「本机」的部分（本地模型 / 授权状态 / 生图密钥 / 朱雀 / 清缓存），
        网页端没有对应能力 —— 留着点了就是报错，直接不显示。 */
     '#llm-panel,#llm-toggle-btn,#set-lic-info,#set-clear-cache-btn{display:none !important}' +

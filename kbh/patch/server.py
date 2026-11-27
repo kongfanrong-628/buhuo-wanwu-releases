@@ -1033,6 +1033,11 @@ class Handler(SimpleHTTPRequestHandler):
             q = urllib.parse.parse_qs(urllib.parse.urlparse(self.path).query)
             self._serve_image((q.get("u") or q.get("url") or [""])[0])
             return
+        if path == "/api/tpl-img":
+            # 贴图模板库缩略图（本地图库，防目录穿越）。桌面端同签名端点见 main.py:555。
+            q = urllib.parse.parse_qs(urllib.parse.urlparse(self.path).query)
+            self._serve_tpl_img((q.get("path") or [""])[0])
+            return
         if path in ("/api/hotspot/sync/pull", "/api/hotspot/sync/state"):
             q = urllib.parse.parse_qs(urllib.parse.urlparse(self.path).query)
             params = {k: (v[0] if v else "") for k, v in q.items()}
@@ -1839,6 +1844,49 @@ class Handler(SimpleHTTPRequestHandler):
                 return raw
         except Exception:
             return None
+
+    def _serve_tpl_img(self, rel):
+        """贴图模板库缩略图：从 ROOT/模板/贴图/ 读本地图，防目录穿越。
+
+        桌面端 main.py:555 同签名；网页端此前缺这个端点，导致模板库 259 张封面
+        全裂成空图（templates.json 的 file/rep 是相对路径，靠这里解析）。
+        """
+        base = os.path.join(ROOT, "模板", "贴图")
+        safe = os.path.normpath(rel or "").replace("\\", "/").lstrip("/")
+        if not safe or ".." in safe.split("/"):
+            self.send_error(403, "bad path")
+            return
+        f = os.path.join(base, *safe.split("/"))
+        if not os.path.isfile(f):
+            self.send_error(404, "not found")
+            return
+        try:
+            with open(f, "rb") as fh:
+                data = fh.read()
+            # 🔴 缩略图版图库把 webp 内容写进了老后缀（.jpg/.png）文件里以保持
+            #    templates.json 的 file/rep 路径不变 —— 所以按文件头 sniff 真实类型，
+            #    不能只看后缀，否则浏览器拿到 image/jpeg 却是 webp 数据会裂图。
+            if data[:4] == b"RIFF" and data[8:12] == b"WEBP":
+                ctype = "image/webp"
+            elif data[:8] == b"\x89PNG\r\n\x1a\n":
+                ctype = "image/png"
+            elif data[:2] == b"\xff\xd8":
+                ctype = "image/jpeg"
+            else:
+                ctype = {".jpg": "image/jpeg", ".jpeg": "image/jpeg", ".png": "image/png",
+                         ".webp": "image/webp", ".gif": "image/gif"}.get(
+                    os.path.splitext(f)[1].lower(), "application/octet-stream")
+            self.send_response(200)
+            self.send_header("Content-Type", ctype)
+            self.send_header("Content-Length", str(len(data)))
+            self.send_header("Cache-Control", "public, max-age=3600")
+            self.end_headers()
+            self.wfile.write(data)
+        except Exception:
+            try:
+                self.send_error(500, "read failed")
+            except Exception:
+                pass
 
     def _serve_image(self, url):
         """
