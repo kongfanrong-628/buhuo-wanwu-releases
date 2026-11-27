@@ -889,6 +889,26 @@
        网页端没有对应能力 —— 留着点了就是报错，直接不显示。 */
     '#llm-panel,#llm-toggle-btn,#set-lic-info,#set-clear-cache-btn{display:none !important}' +
     'button[onclick="cacheClear()"]{display:none !important}' +
+    /* 🔴 2026-11-27 胜元拍板：网页端设置弹窗只保留三块 ——
+       「📝 文本模型 / ☁️ 云端账号 / 📤 微信公众号素材上传」，
+       其余（授权状态 / 皮肤 / Token 用量 / 本地去AI味 / 出图计费 / 生图密钥 / 朱雀 /
+       主功能模型通道 / 小红书 Cookie / 平台登录态 / 作品目录 / 作品与缓存）全部隐藏。
+       :has() 需 Chrome 105+，网页端用户均为现代浏览器；隐藏而非删 DOM，桌面端源码不动。 */
+    '#settings-modal .bh-field:has(#set-lic-info),' +
+    '#settings-modal .bh-field:has(#skin-picker),' +
+    '#settings-modal .bh-field:has(#token-stats-box),' +
+    '#settings-modal .bh-field:has(#llm-panel),' +
+    '#settings-modal .bh-field[data-page-node-id="img-billing-field"],' +
+    '#settings-modal .bh-field[data-page-node-id="axFO56N5mzsSZj1ohe9shq"],' +
+    '#settings-modal .bh-field[data-page-node-id="zhuque-key-field"],' +
+    '#settings-modal .bh-field:has(#set-channel-writing),' +
+    '#settings-modal .bh-field:has(#set-xhs-cookie),' +
+    '#ext-cookie-card,' +
+    '#settings-modal .bh-field:has(#set-works-dir),' +
+    '#settings-modal .bh-field:has(#set-clear-cache-btn),' +
+    /* 弹窗底部「密钥仅保存在你本机浏览器（localStorage）」对网页端不成立（Key 在云端保险箱） */
+    '#settings-modal div[data-page-node-id="oIVhecTTImhyC4DKp35DZK"]' +
+    '{display:none !important}' +
     /* 设置入口：左下角浮动按钮（桌面端侧栏那个入口在网页端被隐藏） */
     '#wbset-btn{position:fixed;left:16px;bottom:16px;z-index:9000;display:flex;align-items:center;' +
     'gap:4px;padding:7px 13px;border-radius:999px;background:rgba(255,255,255,.92);color:#2b3a22;' +
