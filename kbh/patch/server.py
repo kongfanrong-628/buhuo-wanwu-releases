@@ -1028,8 +1028,11 @@ class Handler(SimpleHTTPRequestHandler):
             ocr_flag = (q.get("ocr") or [""])[0] in ("1", "true", "yes")
             self._api_call(lambda: self._do_fetch(url, ocr_flag))
             return
-        if path == "/api/img":
+        if path in ("/api/img", "/api/feed/img"):
             # 两个名字都收：前端 imgProxy 生成的是 ?u=，手敲调试时更习惯写 ?url=
+            # 🔴 2026-11-27：/api/feed/img 是 v4 热点广场 <img src> 直连端点——
+            #   adapter 的 fetch 改写对 img 标签无效（img 不走 fetch），此前 24 张封面全裂。
+            #   同签名复用代理即可，adapter 侧的 /api/feed/img→/api/img 改写可并存不冲突。
             q = urllib.parse.parse_qs(urllib.parse.urlparse(self.path).query)
             self._serve_image((q.get("u") or q.get("url") or [""])[0])
             return
@@ -1037,6 +1040,12 @@ class Handler(SimpleHTTPRequestHandler):
             # 贴图模板库缩略图（本地图库，防目录穿越）。桌面端同签名端点见 main.py:555。
             q = urllib.parse.parse_qs(urllib.parse.urlparse(self.path).query)
             self._serve_tpl_img((q.get("path") or [""])[0])
+            return
+        if path == "/api/sticker/templates":
+            # 贴图号赛道模板（27 赛道 + per-file 风格/提示词）。桌面端同签名端点见 main.py:3522。
+            # 🔴 2026-11-27：网页端此前缺此端点 → stLoadData 报 not_found、贴图页面 blank。
+            #   数据从桌面端 list_templates() 导出成静态 JSON，封面 URL 已改写为 /api/tpl-img 代理。
+            self._api_call(lambda: self._do_sticker_templates())
             return
         if path in ("/api/hotspot/sync/pull", "/api/hotspot/sync/state"):
             q = urllib.parse.parse_qs(urllib.parse.urlparse(self.path).query)
@@ -1340,6 +1349,25 @@ class Handler(SimpleHTTPRequestHandler):
             return {"ok": False, "error": "upstream", "_http": e.code}
         except Exception as e:  # noqa: BLE001
             return {"ok": False, "error": "network", "message": "%s: %s" % (type(e).__name__, e)}
+
+    def _do_sticker_templates(self):
+        """贴图赛道模板：读桌面端导出的静态 JSON，补齐前端契约字段。
+
+        免费只读，不需登录——贴图模板是内置素材，与热点种子同理。
+        """
+        import json as _json
+        p = os.path.join(ROOT, "static", "data", "sticker_templates.json")
+        try:
+            with open(p, "r", encoding="utf-8") as fh:
+                d = _json.load(fh)
+        except Exception:
+            # 数据文件缺失时给空结构，别让前端 not_found（前端按 tracks 数组判活）
+            d = {}
+        d.setdefault("success", True)
+        d.setdefault("tracks", [])
+        d.setdefault("info_templates", [])
+        d.setdefault("caption_styles", [])
+        return d
 
     def _do_hotspot(self, action, params, handler, token=None):
         """热点同步三动作：publish / pull / state。
