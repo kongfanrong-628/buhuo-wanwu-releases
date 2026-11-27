@@ -18582,6 +18582,23 @@ document.addEventListener('click', async function(e){
     const body=String(x.content||'').replace(/<[^>]*>/g,'').replace(/\s/g,'');
     return !body.length && feedFormOf(x)==='unknown';
   }
+  /* 🔴 2026-11-27（胜元：「贴图——热点广场——一键同款，来的是长文二创页，不是贴图」）
+     根因：网页端 /api/feed/library 不可用 → 库存退化为 feed_seed.json 静态种子
+     （全无 form / content / coverW-H）→ feedFormOf 一律 unknown → 一键同款
+     只在 form==='sticker' 时才走贴图二创，unknown 全被送去长文「改写别人的稿」。
+     修正：抽一个「落点形态」判定——贴图号图文天生无正文，静态种子(unknown)应判贴图；
+     只有明确 article / comic / 正文≥800 字的才走长文。真实库存里带 form 的条目仍原样生效。 */
+  function feedRemixKind(x){
+    if(!x) return 'unknown';
+    const f=String(x.form||'').trim();
+    if(f==='article'||f==='sticker'||f==='comic') return f;   // 后端/已归类：直接采信
+    const body=String(x.content||'').replace(/<[^>]*>/g,'').replace(/\s/g,'');
+    const cw=Number(x.coverW||0), ch=Number(x.coverH||0);
+    if(ch/cw>2 && cw>0 && body.length<=100) return 'comic';   // 竖长条漫
+    if(body.length>=800) return 'article';                     // 有实质正文=长文
+    // 无 form、无长正文：热点广场静态种子/贴图号图文（图即内容）→ 贴图
+    return 'sticker';
+  }
   function vpShapeTag(x){
     const f=feedFormOf(x);
     if(f==='comic') return '<span class="vp-shape comic">漫画</span>';
@@ -19182,7 +19199,9 @@ document.addEventListener('click', async function(e){
     /* 🔴 2026-11-25（胜元：贴图点「做同款」跳到了长文二创；贴图与长文拆解方法不同）：
        本弹窗按形态走两套版式与两套拆解维度。贴图侧重「标题 + 图片」，
        长文侧重「标题 + 内容」；结尾的「用这版生成」也分流到不同二创页。 */
-    const isSticker=(feedFormOf(x)==='sticker');
+    /* 🔴 2026-11-27：展示形态沿用 feedFormOf（与卡片标签一致），
+       但二创落点走 feedRemixKind——静态种子 unknown 也要落到贴图二创。 */
+    const isSticker=(feedRemixKind(x)==='sticker');
     const dims=vpViralScore(x);
     const title=String(x.title||'');
     const cover=feedHttps(x.coverUrl||x.thumbnail);
@@ -19284,7 +19303,7 @@ document.addEventListener('click', async function(e){
          · 贴图 → _feedRegenFrom → 切「贴图二创」，铺参考图/标题/文案/赛道
          · 长文 → 保持原流程（改写别人的稿）
        贴图的模板方向（图片做法/标题/文案）作为 extra 一起带过去。 */
-    if(feedFormOf(x)==='sticker'){
+    if(feedRemixKind(x)==='sticker'){
       const stThought='【贴图同款·'+mode+'】图片做法：'+img+'；标题方向：'+title+'；文案：'+body+'。';
       await _feedRegenFrom(x, stThought);
       return;
