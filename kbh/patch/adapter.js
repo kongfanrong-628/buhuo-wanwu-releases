@@ -901,6 +901,7 @@
     '#settings-modal .bh-field[data-page-node-id="img-billing-field"],' +
     '#settings-modal .bh-field[data-page-node-id="axFO56N5mzsSZj1ohe9shq"],' +
     '#settings-modal .bh-field[data-page-node-id="zhuque-key-field"],' +
+    '#settings-modal .bh-field[data-page-node-id="zhuque-gw-field"],' +
     '#settings-modal .bh-field:has(#set-channel-writing),' +
     '#settings-modal .bh-field:has(#set-xhs-cookie),' +
     '#ext-cookie-card,' +
