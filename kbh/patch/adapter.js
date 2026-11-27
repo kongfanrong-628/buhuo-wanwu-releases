@@ -842,6 +842,23 @@
       }
       try { toast("设置面板没加载出来，刷新页面再试", "warn"); } catch (e) {}
     });
+
+    /* 弹窗顶部那句「密钥只保存在本机」在网页端是错的：Key 进了云端保险箱。
+       包一层 openSettings，打开后把文案换掉（不动 index.html，两端同源）。 */
+    var origOpen = window.openSettings;
+    function tune() {
+      var sub = document.querySelector("#settings-modal .bh-modal-sub");
+      if (sub) {
+        sub.textContent = "网页端：Key 加密存放在云端保险箱（AES-256-GCM），只在服务端代调模型时取明文 —— 不写日志、不回传前端。";
+      }
+    }
+    if (typeof origOpen === "function") {
+      window.openSettings = function () {
+        var r = origOpen.apply(this, arguments);
+        setTimeout(tune, 80);
+        return r;
+      };
+    }
   }
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", initWebBridges);
@@ -871,6 +888,7 @@
     /* 设置弹窗里属于「本机」的部分（本地模型 / 授权状态 / 生图密钥 / 朱雀 / 清缓存），
        网页端没有对应能力 —— 留着点了就是报错，直接不显示。 */
     '#llm-panel,#llm-toggle-btn,#set-lic-info,#set-clear-cache-btn{display:none !important}' +
+    'button[onclick="cacheClear()"]{display:none !important}' +
     /* 设置入口：左下角浮动按钮（桌面端侧栏那个入口在网页端被隐藏） */
     '#wbset-btn{position:fixed;left:16px;bottom:16px;z-index:9000;display:flex;align-items:center;' +
     'gap:4px;padding:7px 13px;border-radius:999px;background:rgba(255,255,255,.92);color:#2b3a22;' +
