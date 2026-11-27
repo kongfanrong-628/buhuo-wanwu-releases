@@ -942,6 +942,18 @@
        v4 导航用 data-mod、旧侧栏用 data-module，两种属性都要盖住。 */
     '#dx-model-card,#dx-local{display:none !important}' +
     '[data-module="tutorial"],[data-mod="tutorial"],#mod-tutorial{display:none !important}' +
+    /* 🔴 2026-11-27 胜元拍板：网页端不要「生态驾驶舱」——它是桌面端 cockpit_router 的
+       本机页面，网页端 /cockpit 只有 404 白屏。盖住：模块面板 + 旧侧栏入口 +
+       v4 热点广场侧栏的 cockpit 导航项（.pv-ni[data-mod=cockpit]），并把它所在的
+       「01 / OVERVIEW」整组一起藏（:has，Chrome 105+）。隐藏而非删 DOM，两端源码不动。 */
+    '#mod-cockpit,#nav-cockpit,[data-module="cockpit"],[data-mod="cockpit"],' +
+    '.pv-ni[data-mod="cockpit"],.pv-ng:has(.pv-ni[data-mod="cockpit"]){display:none !important}' +
+    /* 🔴 2026-11-27 胜元拍板：热点广场走「本地抓取 → 云端 → 网页端同步」只读口径，
+       不做站内红狐抓取/不扣积分。以下几个按钮在网页端走断链端点（/api/feed/detail、
+       /api/feed/refresh-async、/api/feed/enrich-covers），点了只会失败或误导「已扣5分」，
+       统一隐藏；「查看全部/一键同款/二创」保留（都是本地库存 0 分）。 */
+    '[data-plat-act="rewrite"],[data-feed-act="fix-all"],' +
+    'button[data-feed-act="ocr"],button[data-feed-act="ocr-run"]{display:none !important}' +
     /* 设置弹窗里属于「本机」的部分（本地模型 / 授权状态 / 生图密钥 / 朱雀 / 清缓存），
        网页端没有对应能力 —— 留着点了就是报错，直接不显示。 */
     '#llm-panel,#llm-toggle-btn,#set-lic-info,#set-clear-cache-btn{display:none !important}' +
